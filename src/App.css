@@ -1,38 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+:root {
+  --color-back: white;
+  --color-contrast: black;
+  --color-green: rgb(3, 63, 58);
+  --color-1: rgb(44, 51, 51);
+  --color-2: rgb(57, 91, 100);
+  --color-3: rgb(165, 201, 202);
+  --color-4: rgb(231, 246, 242);
 }
 
-@keyframes App-logo-spin {
+section {
+  width: 80%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.sectionTitle {
+  padding: 3%;
+  color: var(--color-2);
+}
+
+/* Header */
+.header {
+  margin: 0;
+  height: 40vh;
+  width: 100%;
+  background-color: var(--color-1);
+  color: var(--color-back);
+  text-align: center;
+  background-image: url("../public/images/HeaderImage2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+#headerTitle {
+  font-family: "Courier New", Courier, monospace;
+  width: 50vw;
+  font-size: 4vw;
+  font-weight: bold;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid var(--color-3); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /*  Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-delay: 1s;
+}
+
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
   }
 }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-3);
+  }
+}
+
+/* AboutMe */
+
+.portrait-info {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+}
+
+.infoArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  column-gap: 7%;
+  padding: 3%;
+  text-align: left;
+}
+
+.info .logos {
+  color: var(--color-2);
+}
+
+#portrait {
+  height: 30vh;
+  border-radius: 50%;
+  margin-right: 10%;
+}
+
+.aboutMe > p {
+  font-size: 0.9em;
+  padding: 3%;
+  text-align: center;
+  max-width: 1000px;
+}
+.aboutMe > ul {
+  line-height: 200%;
+  font-size: 0.9em;
+  background: var(--color-4);
+  border-radius: 5px;
+  padding: 2%;
+  max-width: 1000px;
+}
+
+#traits {
+  color: var(--color-2);
+  font-size: 1.5em;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 2%;
+  max-width: 1000px;
+}
+
+/* TechStack */
+.logoList {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  color: var(--color-1);
+  flex-wrap: nowrap;
+}
+.logos {
+  color: var(--color-1);
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+}
+
+#logoTile {
+  height: 3em;
+  width: 4em;
+  padding: 0.5%;
+  margin: 0.5%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 2px 4px 0px var(--color-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-tooltip {
+  background-color: var(--color-2);
+  color: var(--color-back);
+  border-radius: 10px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 2%;
+  padding: 2%;
+  border-radius: 3px;
+  background-color: var(--color-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 5px 0px var(--color-2);
+}
+
+.projects :hover {
+  opacity: 0.7;
+}
+
+.card h3 {
+  padding: 3%;
+  color: var(--color-4);
+}
+
+.card p {
+  color: var(--color-4);
+}
+
+.card a {
+  /* border: 1px solid var(--color-3); */
+  margin: 3%;
+}
+
+.screenshot {
+  object-fit: cover;
+}
+.screenshot :hover {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  padding: 1%;
+  width: 100%;
+  background-color: var(--color-1);
+  color: var(--color-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.colContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col1,
+.col2,
+.col3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .logoList {
+    flex-wrap: wrap;
+  }
+  .portrait-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #portrait {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logoList {
+    margin: 0%;
+  }
+}
+/* https://colorhunt.co/palette/2c3333395b64a5c9cae7f6f2 */
