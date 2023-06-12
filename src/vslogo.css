@@ -1,0 +1,52 @@
+.vsLogo-Container {
+  display: flex;
+  align-items: center;
+  height: 0px;
+  /* width: 50%; */
+  position: sticky;
+  top: 35px;
+  left: -45px;
+  z-index: 2;
+}
+
+.vslogo-Name {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 20px;
+  color: var(--color-2);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.vsLogo-Container:hover > .vslogo-Name {
+  opacity: 1;
+}
+
+#vsLogo-V {
+  align-self: center;
+  height: 30px;
+  width: auto;
+  transform: rotate(0deg);
+  transition: transform 1s ease;
+}
+
+.vsLogo-Container:hover > #vsLogo-V {
+  transform: rotate(-90deg);
+}
+
+#vsLogo-S {
+  align-self: center;
+  height: 40px;
+  width: auto;
+  transform: translateX(-50px);
+  transition: transform 1s ease;
+}
+
+.vsLogo-Container:hover > #vsLogo-S {
+  transform: translateX(1px);
+}
+
+@media only screen and (max-width: 700px) {
+  .vslogo-Name {
+    font-size: 15px;
+  }
+}
