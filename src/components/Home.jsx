@@ -9,7 +9,6 @@ import Samples from "./Samples";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import VSLogo from "./VSLogo";
-import Downtown1 from "./Projects/Downtown/Downtown1";
 
 export default function Home() {
   return (
@@ -69,16 +68,15 @@ export default function Home() {
       </Menu>
 
       <LandingPage />
-      <div className="main">
-        <AboutMe />
+      <main>
         <Services />
+        <AboutMe />
         <TechStack />
-
         <Projects />
         <Samples />
         <Contact />
         <Footer />
-      </div>
+      </main>
     </div>
   );
 }

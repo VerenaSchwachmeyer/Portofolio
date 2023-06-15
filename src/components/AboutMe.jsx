@@ -1,11 +1,11 @@
 import React from "react";
-import { IconContext } from "react-icons";
-import { MdLocationPin } from "react-icons/md";
-import { MdMail } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import VSLogo from "./VSLogo";
+// import { IconContext } from "react-icons";
+// import { MdLocationPin } from "react-icons/md";
+// import { MdMail } from "react-icons/md";
+// import { FaLinkedin } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
+// import { Link } from "react-router-dom";
+// import VSLogo from "./VSLogo";
 
 export default function AboutMe() {
   // const infos = [
@@ -104,10 +104,6 @@ export default function AboutMe() {
             optimal user experience - but with a differentiated, clean code in
             the background. <br></br>
             <br></br>
-            My experience from my previous scientific work in clinical research,
-            or as a physiotherapist, has taught me to work accordingly: Make it
-            easy to understand for others but have a versatile skill set and
-            expertise yourself.
           </p>
         </div>
         {/* <p id="traits">Versatile. Empathic. Solution-oriented.</p> */}

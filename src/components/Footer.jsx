@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import VSLogo from "./VSLogo";
-import ScrollIntoView from "react-scroll-into-view";
 import { IconContext } from "react-icons";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -155,7 +153,12 @@ function Footer() {
           </IconContext.Provider>
 
           <p>photo and logo by Tobias Büchner:</p>
-          <Link to="http://dervj.de/" className="footerLinks">
+          <Link
+            to="http://dervj.de/"
+            target="_blank"
+            rel="noreferrer"
+            className="footerLinks"
+          >
             <h4>der VJ</h4>
           </Link>
         </div>

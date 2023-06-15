@@ -3,10 +3,9 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style: none;
 }
 
-.main {
+main {
   width: 99%;
   display: flex;
   flex-direction: column;
@@ -68,7 +67,7 @@ button {
   font-size: 1.1em;
   /* color: var(--color-4);
   background-color: var(--color-5); */
-  border-radius: 3px;
+  border-radius: 5px;
   color: var(--color-back);
   margin: 2%;
   min-width: 150px;
@@ -80,7 +79,6 @@ button {
 
 button:hover {
   cursor: pointer;
-  /* background-color: var(--color-2-a); */
 }
 
 button a {
@@ -92,12 +90,18 @@ button a {
   background-color: var(--color-5);
   color: var(--color-4);
   padding: 2%;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 button a:hover {
   background-color: var(--color-3);
 }
+
+button:active {
+  transform: translate(3px, 3px);
+  background-color: var(--color-5);
+}
+
 section {
   width: 80%;
   display: flex;
@@ -141,7 +145,7 @@ section {
   right: 0;
   z-index: 1;
   background-image: url("../public/images/Verena-code-1119-5-small.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   object-position: right top;
   margin: none;
@@ -256,35 +260,68 @@ header {
 /* Services */
 .serviceContainer {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.serviceItem {
-  height: 100%;
-  width: 100%;
-  min-width: 100px;
-  max-width: 300px;
-  border: 5px solid var(--color-5);
-  border-radius: 10px;
-  box-sizing: content-box;
-  display: block;
-  align-self: center;
-  justify-self: center;
+.serviceFlipCard {
+  background-color: transparent;
+  width: 40%;
+  min-width: 300px;
+  height: 40vh;
+  max-height: 300px;
+  perspective: 1000px;
   margin: 2%;
-  /* background: linear-gradient(to right, red 50%, blue 50%); */
 }
 
-.serviceItem:hover * {
-  background-color: var(--color-2);
-  color: var(--color-4);
+.serviceCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px 0px var(--color-1);
+  background-color: var(--color-4);
+  color: var(--color-1);
+}
+
+.serviceFlipCard:hover .serviceCard {
+  transform: rotateY(180deg);
+}
+
+#serviceCard-front,
+#serviceCard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+#serviceCard-back {
+  transform: rotateY(180deg);
+}
+
+#serviceCard-back h3 {
+  font-size: 2em;
+}
+
+#serviceCard-back li {
+  font-size: 1.1em;
 }
 
 .serviceContent {
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-4);
+  color: var(--color-1);
 }
 
 .serviceLogo {
@@ -381,7 +418,8 @@ header {
 .logoList {
   display: flex;
   justify-content: space-evenly;
-  max-width: 1000px;
+  width: 100%;
+
   color: var(--color-1);
   flex-wrap: nowrap;
 }
@@ -410,7 +448,7 @@ header {
 #my-tooltip {
   background-color: var(--color-2);
   color: var(--color-back);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Projects */
@@ -431,7 +469,7 @@ header {
 }
 
 .projectText {
-  height: 98%;
+  height: 75%;
   width: 40%;
   padding: var(--padding-Thickness);
   display: flex;
@@ -440,9 +478,17 @@ header {
   justify-content: flex-start;
 }
 
+.project h2 {
+  font-size: 3.5em;
+  padding: 0% 3% 5% 0%;
+  color: var(--color-5);
+  text-align: left;
+  margin-top: 18%;
+}
+
 .project h3 {
-  font-size: 3em;
-  padding: 10% 3% 5% 0%;
+  font-size: 2.5em;
+  padding: 0% 3% 5% 0%;
   color: var(--color-5);
   text-align: left;
   margin-top: 18%;
@@ -454,9 +500,24 @@ header {
   overflow-wrap: break-word;
   text-align: justify;
 }
+
 .projectButton {
   background-color: var(--color-5);
   color: var(--color-1);
+}
+
+.projectButton a {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.projectButton a:hover {
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+.projectButton a:clicked {
+  transform: translateY(3px);
 }
 
 .projectScreenshot {
@@ -479,16 +540,31 @@ header {
 }
 
 .carouselPrevButton {
-  font-size: 2em;
-  color: var(--color-4);
-  position: "absolute";
-  right: 0;
-  top: "40%";
+  font-size: 2.5em;
+  height: 90px;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  color: grey;
+  opacity: 0.5;
+}
+
+.carouselPrevButton:hover {
+  opacity: 1;
 }
 
 .carouselNextButton {
-  font-size: 2em;
-  color: var(--color-4);
+  font-size: 2.5em;
+  height: 90px;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  color: grey;
+  opacity: 0.5;
+}
+
+.carouselNextButton:hover {
+  opacity: 1;
 }
 
 #slide1 {
@@ -496,63 +572,106 @@ header {
 }
 
 /* Samples */
-.cardContainer {
-  width: 18%;
-  height: 25em;
-  min-width: 300px;
-  margin: 1%;
-  padding: 2%;
-  box-sizing: content-box;
-  display: block;
-  background: var(--color-back);
-  border-radius: 3px;
-  box-shadow: 1px 2px 5px 0px var(--color-2);
-}
-
-.cardContainer h3 {
-  color: var(--color-1);
-  font-size: 1.8em;
-}
-
-.cardContainer p {
-  color: var(--color-1);
-  margin: 10% 3% 3% 3%;
-  font-size: 1.4em;
-  text-align: justify;
-}
-
-.samples {
+.sampleContainer {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-/* outline: var(--color-1) solid 1px;
-  outline-offset: 5px; */
-/* object-position: 50% 100%; */
+.cardContainer {
+  position: relative;
+  display: block;
+  width: 35%;
+  height: 25em;
+  min-width: 300px;
+  margin: 2%;
+  padding: 2%;
 
-#sample a {
-  margin: auto;
+  background: var(--color-back);
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px 0px var(--color-2);
   box-sizing: border-box;
-  width: 100%;
+}
+
+.cardContainerContent {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-#sample :hover * {
+.cardContainerContent h3 {
+  color: var(--color-1);
+  font-size: 1.8em;
+}
+
+.cardContainerContent p {
+  color: var(--color-1);
+  margin: 10% 3% 3% 3%;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.cardContainer:hover .cardContainerContent {
   cursor: pointer;
-  opacity: 0.5;
-  /* transform: translateY(-10px); */
+  opacity: 0.3;
 }
 
 .screenshotSample {
   object-fit: cover;
-  height: 60%;
-  width: 100%;
+  height: 65%;
+  width: 90%;
   /* object-position: 50% 100%; */
+}
+
+.sampleButtonContainer {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.sampleButton {
+  margin: 3%;
+  transition: 0.5s;
+  opacity: 0;
+  background: var(--color-5);
+  /* z-index: 2; */
+}
+
+.sampleButton a {
+  background-color: var(--color-5);
+  color: var(--color-4);
+  padding: 5%;
+  opacity: 1;
+  z-index: 2;
+}
+
+/* .cardContainerContent:hover ~ .sampleButtonContainer {
+  opacity: 1;
+} */
+
+.sampleButton a:hover {
+  background: var(--color-2);
+  color: var(--color-1);
+  transition: 0.1s;
+}
+
+.cardContainer:hover .sampleButton {
+  opacity: 1;
+  /* transform: translateY(150px); */
+  transition-delay: 0.1s;
+}
+
+.sampleButtonContainer:hover ~ .cardContainerContent {
+  opacity: 0.3;
 }
 
 /* Footer */
@@ -570,9 +689,13 @@ footer {
 .footerLinks {
   background-color: var(--color-1);
   color: var(--color-3);
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 0px;
+}
+
+.footerLinks:hover {
+  color: var(--color-2);
 }
 
 #footerLogos {
@@ -586,7 +709,7 @@ footer {
 
 .colContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .col1,
@@ -596,6 +719,7 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  min-width: 300px;
 }
 
 .col3 > p {
@@ -631,6 +755,7 @@ textarea {
   padding: 1%;
   margin: 1%;
   border: 3px solid var(--color-3);
+  border-radius: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
@@ -657,14 +782,55 @@ textarea:focus {
   background-color: var(--color-3);
   color: var(--color-1);
   padding: 2%;
-  width: 30%;
+  width: 200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .formButton:hover {
-  background-color: var(--color-2-a);
+  background-color: var(--color-2);
+  color: var(--color-4);
+}
+
+.modal {
+  position: absolute;
+  height: 25vh;
+  width: 50vw;
+  margin: auto;
+  top: 25%;
+  left: 25%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px 0px var(--color-2);
+  background-color: white;
+  color: var(--color-1);
+  padding: 2%;
+  display: grid;
+}
+
+.modal h3 {
+  font-size: 2em;
+  color: var(--color-1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 51, 51, 0.6);
+}
+
+.modalButton {
+  background-color: var(--color-5);
+  color: var(--color-1);
+  margin: auto;
+  padding: 2%;
+}
+
+.modalButton:hover {
+  background-color: var(--color-2);
   color: var(--color-4);
 }
 
@@ -820,20 +986,58 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .logoList {
+    margin: 0%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .logoList {
+    flex-wrap: wrap;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .logoList {
     margin-left: 3%;
     margin-right: 3%;
   }
+
   .header {
     max-height: 250px;
+  }
+
+  .col1,
+  .col2,
+  .col3 {
+    margin-top: 30px;
+  }
+  .carouselPrevButton {
+    top: 80%;
+    left: 10%;
+    margin: 30px;
+  }
+
+  .carouselNextButton {
+    top: 80%;
+    right: 10%;
+    margin: 30px;
+  }
+
+  .project h3 {
+    font-size: 2.2em;
   }
 }
 
 /* cell phone width */
 @media only screen and (max-width: 600px) {
-  .logoList {
-    flex-wrap: wrap;
+  h1 {
+    font-size: 3.4em;
+  }
+
+  .startImage {
+    background-size: contain;
   }
 
   .portrait-info {
@@ -867,35 +1071,42 @@ Note: Beware of modifying this element as it can break the animations - you shou
   #sample {
     min-width: 340px;
   }
-}
 
-@media only screen and (min-width: 1200px) {
-  .logoList {
-    margin: 0%;
+  .project {
+    margin: 0;
+  }
+
+  .project h3 {
+    font-size: 2em;
+  }
+
+  .project p {
+    font-size: 1em;
   }
 }
 
-.impressum h2 {
+#impressum h2 {
   color: var(--color-2);
 }
 
-.impressum h3,
-.impressum h4,
-.impressum h6 {
+#impressum h3,
+#impressum h4,
+#impressum h6 {
   color: var(--color-1);
   padding: 2% 0% 2% 0%;
 }
-
-.impressum p {
+#impressum p {
   font-size: 1em;
 }
 
-.impressumContainer > p {
+#impressumContainer > p {
   color: var(--color-1);
   font-size: 0.8em;
 }
 
 /* Errorpage */
 #errorpage {
-  height: 55vh;
+  height: 50vh;
+  background-color: var(--color-back);
+  color: var(--color-1);
 }

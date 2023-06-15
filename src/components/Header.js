@@ -1,4 +1,3 @@
-import { slide as Menu } from "react-burger-menu";
 import VSLogo from "./VSLogo";
 
 function Header() {

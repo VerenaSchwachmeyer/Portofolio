@@ -11,6 +11,9 @@ import { SiPostgresql } from "react-icons/si";
 import { Tooltip } from "react-tooltip";
 import { DiVisualstudio } from "react-icons/di";
 import { SiGimp } from "react-icons/si";
+import { SiMui } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { SiWebrtc } from "react-icons/si";
 import "react-tooltip/dist/react-tooltip.css";
 
 function TechStack() {
@@ -22,8 +25,9 @@ function TechStack() {
     { id: 5, name: "Node JS", icon: <FaNode /> },
     { id: 6, name: "Mongo DB", icon: <DiMongodb /> },
     { id: 7, name: "PostGreSQL", icon: <SiPostgresql /> },
+    { id: 8, name: "MySQL", icon: <GrMysql /> },
     {
-      id: 8,
+      id: 9,
       name: "ExpressJS",
       icon: (
         <img
@@ -33,9 +37,9 @@ function TechStack() {
         ></img>
       ),
     },
-    { id: 9, name: "GitHub", icon: <FaGithub /> },
+    { id: 10, name: "GitHub", icon: <FaGithub /> },
     {
-      id: 10,
+      id: 11,
       name: "MATLAB",
       icon: (
         <img
@@ -45,13 +49,15 @@ function TechStack() {
         ></img>
       ),
     },
-    { id: 11, name: "Visual Studio Code", icon: <DiVisualstudio /> },
+    { id: 12, name: "Visual Studio Code", icon: <DiVisualstudio /> },
     {
-      id: 12,
+      id: 13,
       name: "git",
       icon: <FaGitSquare />,
     },
-    { id: 13, name: "Gimp", icon: <SiGimp /> },
+    { id: 14, name: "Material UI", icon: <SiMui /> },
+    { id: 15, name: "WebRTC", icon: <SiWebrtc /> },
+    { id: 16, name: "Gimp", icon: <SiGimp /> },
   ];
 
   const logoItems = logos.map((logo) => {

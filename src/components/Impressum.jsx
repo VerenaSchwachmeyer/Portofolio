@@ -5,9 +5,9 @@ import { AiFillPhone } from "react-icons/ai";
 
 export default function Impressum() {
   return (
-    <>
+    <main>
       <Header />
-      <section className="impressum">
+      <section id="impressum">
         <h2>Impressum</h2>
         <div className="impressumContainer">
           <br></br>
@@ -27,7 +27,7 @@ export default function Impressum() {
           </p>
 
           <br></br>
-          <p>USt-ID-Nr: DE1234567890</p>
+          {/* <p>USt-ID-Nr: DE1234567890</p> */}
           <br></br>
 
           <div classname="disclaimer">
@@ -85,6 +85,6 @@ export default function Impressum() {
         </div>
       </section>
       <Footer />
-    </>
+    </main>
   );
 }

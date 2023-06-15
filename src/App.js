@@ -1,7 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Impressum from "./components/Impressum";
 import Errorpage from "./components/Errorpage/Errorpage";

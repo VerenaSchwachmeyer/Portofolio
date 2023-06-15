@@ -2,10 +2,10 @@ export default function Downtown1() {
   return (
     <div className="project secondary">
       <div className="projectText">
-        <h3>Downtown</h3>
+        <h2>Downtown</h2>
         <p className="slide1">
-          Platform that provides an accessible, digital meet-up spot for people
-          with Down syndrome.
+          Downtown is a platform that provides an accessible, digital meet-up
+          spot for people with Down syndrome.
         </p>
         <button className="projectButton">
           <a href="https://frontend-downtown.vercel.app/" target="blank">

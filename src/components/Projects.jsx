@@ -1,5 +1,4 @@
 import React from "react";
-import ProjectTile from "./ProjectTile";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { GrNext } from "react-icons/gr";
@@ -7,6 +6,7 @@ import { GrPrevious } from "react-icons/gr";
 import Downtown1 from "./Projects/Downtown/Downtown1";
 import Downtown2 from "./Projects/Downtown/Downtown2";
 import Downtown3 from "./Projects/Downtown/Downtown3";
+import Downtown4 from "./Projects/Downtown/Downtown4";
 
 function Projects() {
   //This list of projects could be "outsourced" into a separate file or even database in the future
@@ -39,7 +39,7 @@ function Projects() {
 
   const handleDragStart = (e) => e.preventDefault();
 
-  const items = [<Downtown1 />, <Downtown2 />, <Downtown3 />];
+  const items = [<Downtown1 />, <Downtown2 />, <Downtown4 />, <Downtown3 />];
 
   const responsive = {
     0: { items: 1 },
@@ -47,56 +47,25 @@ function Projects() {
     1024: { items: 1 },
   };
   return (
-    <section>
-      <h2 id="projects" className="sectionTitle">
-        Projects
-      </h2>
+    <section id="projects">
+      <h2 className="sectionTitle">Projects</h2>
 
       <AliceCarousel
         mouseTracking
+        infinite
+        autowidth
         items={items}
         paddingLeftt={5}
         paddingRight={0}
         responsive={responsive}
         itemsFit="fill"
         renderPrevButton={() => {
-          return (
-            <GrPrevious
-              className="carouselPrevButton"
-              style={{
-                fontSize: "3em",
-                position: "absolute",
-                left: 0,
-                top: "40%",
-                color: "grey",
-              }}
-            />
-          );
+          return <GrPrevious className="carouselPrevButton" />;
         }}
         renderNextButton={() => {
-          return (
-            <GrNext
-              className="carouselNextButton"
-              style={{
-                fontSize: "3em",
-                height: "90px",
-                position: "absolute",
-                right: 0,
-                top: "40%",
-                color: "grey",
-              }}
-            />
-          );
+          return <GrNext className="carouselNextButton" />;
         }}
       />
-
-      {/* {projects.map((project) => {
-        return (
-          <>
-            <ProjectTile {...project} key={project.id} />
-          </>
-        );
-      })} */}
     </section>
   );
 }
