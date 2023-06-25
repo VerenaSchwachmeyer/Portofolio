@@ -2,6 +2,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Lottie from "lottie-react";
 import Error404 from "./lotties/Error404.json";
+import Scroll2Top from "../Scroll2Top";
 
 export default function Errorpage() {
   const styles = {
@@ -13,6 +14,7 @@ export default function Errorpage() {
 
   return (
     <main>
+      <Scroll2Top />
       <Header />
       <section id="errorpage">
         <h3>Oops! Something went wrong.</h3>

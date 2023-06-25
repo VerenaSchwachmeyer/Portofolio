@@ -47,25 +47,27 @@ function Projects() {
     1024: { items: 1 },
   };
   return (
-    <section id="projects">
-      <h2 className="sectionTitle">Projects</h2>
+    <section id="projects" className="primary">
+      <div className="content">
+        <h2 className="sectionTitle">Projects</h2>
 
-      <AliceCarousel
-        mouseTracking
-        infinite
-        autowidth
-        items={items}
-        paddingLeftt={5}
-        paddingRight={0}
-        responsive={responsive}
-        itemsFit="fill"
-        renderPrevButton={() => {
-          return <GrPrevious className="carouselPrevButton" />;
-        }}
-        renderNextButton={() => {
-          return <GrNext className="carouselNextButton" />;
-        }}
-      />
+        <AliceCarousel
+          mouseTracking
+          infinite
+          autowidth
+          items={items}
+          paddingLeftt={5}
+          paddingRight={0}
+          responsive={responsive}
+          itemsFit="fill"
+          renderPrevButton={() => {
+            return <GrPrevious className="carouselPrevButton" />;
+          }}
+          renderNextButton={() => {
+            return <GrNext className="carouselNextButton" />;
+          }}
+        />
+      </div>
     </section>
   );
 }

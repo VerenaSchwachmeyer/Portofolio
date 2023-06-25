@@ -16,9 +16,8 @@ main {
 
 /* Source Color Code: https://colorhunt.co/palette/2c3333395b64a5c9cae7f6f2 */
 :root {
-  --color-back: white;
-  --color-contrast: black;
   --color-green: rgb(3, 63, 58);
+  --color-0: rgb(20, 23, 23);
   --color-1: rgb(44, 51, 51);
   --color-1-a: rgba(44, 51, 51, 0.8);
   --color-2: rgb(57, 91, 100);
@@ -26,36 +25,65 @@ main {
   --color-3: rgb(165, 201, 202);
   --color-4: rgb(231, 246, 242);
   --color-5: rgb(178, 222, 223);
+  --color-6: white;
   --fadeInTime: 2s;
   --padding-Thickness: 3%;
 }
 
-/* complementary color scheme */
-.secondary {
-  --color-back: rgb(44, 51, 51);
-  --color-1: rgb(231, 246, 242);
-  --color-4: rgb(44, 51, 51);
+.primary {
+  background-color: var(--color-6);
+  --color-text: var(--color-1);
+  --color-heading: var(--color-2);
+  --color-contrast: var(--color-0);
+  --color-button-background: var(--color-3);
+  --color-button-border: var(--color-1);
+  --color-button-text: var(--color-1);
 }
 
+/* complementary color scheme */
+.secondary {
+  --color-background: var(--color-1);
+  --color-text: var(--color-6);
+  --color-heading: var(--color-5);
+  --color-contrast: var(--color-5);
+  --color-button-background: var(--color-1);
+  --color-button-border: var(--color-5);
+  --color-button-text: var(--color-5);
+}
+
+/* graphics color scheme */
+.graphics {
+  --color-background: var(--color-3);
+  --color-text: var(--color-contrast);
+  --color-heading: var(--color-contrast);
+}
+
+/* headings */
 h1 {
   font-size: 5em;
-  font-family: "Roboto-Regular";
+  font-family: "Kievit-Regular";
 }
 
 h2 {
   font-size: 3.2em;
   font-family: "Kievit-Bold";
-  text-transform: capitalize;
 }
 
 h3 {
-  font-family: "Roboto-Bold";
+  font-family: "Kievit-Bold";
   padding-bottom: var(--padding-Thickness);
 }
 
 h4 {
+  font-family: "Kievit-Bold";
   font-size: 0.9em;
   padding-bottom: var(--padding-Thickness);
+}
+
+h5 {
+  font-size: 1em;
+  padding-bottom: var(--padding-Thickness);
+  color: var(--color-heading);
 }
 
 p {
@@ -63,77 +91,104 @@ p {
   line-height: 1.3;
 }
 
-button {
+/* button and link styling */
+button,
+.buttonLinks {
   font-size: 1.1em;
-  /* color: var(--color-4);
-  background-color: var(--color-5); */
+  background-color: var(--color-button-background);
+  color: var(--color-button-text);
+  border: 2px solid var(--color-button-border);
   border-radius: 5px;
-  color: var(--color-back);
-  margin: 2%;
   min-width: 150px;
-  border: none;
+  padding: 10px;
   margin: auto;
-  letter-spacing: 0.7px;
-  display: inline-block;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-button a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
   text-align: center;
-  background-color: var(--color-5);
-  color: var(--color-4);
-  padding: 2%;
+  letter-spacing: 0.7px;
+  display: inline;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+button:hover,
+.buttonLinks:hover {
+  cursor: pointer;
+  background-color: var(--color-button-text);
+  color: var(--color-button-background);
+  border: 2px solid var(--color-button-background);
   border-radius: 5px;
 }
 
-button a:hover {
-  background-color: var(--color-3);
-}
-
-button:active {
+button:active,
+.buttonLinks:active {
   transform: translate(3px, 3px);
-  background-color: var(--color-5);
 }
 
+/* link styling without button */
+a {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 30px;
+  text-align: center;
+  padding: 1%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+/* overall page styling */
 section {
-  width: 80%;
+  width: 100%;
+  /* background-color: var(--color-background);
+  color: var(--color-text); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.content {
+  width: 80%;
   margin-top: var(--padding-Thickness);
   margin-bottom: var(--padding-Thickness);
 }
 
 .sectionTitle {
   padding: var(--padding-Thickness);
-  color: var(--color-2);
+  color: var(--color-heading);
   width: 100%;
+}
+
+/* Skip Link */
+.skip {
+  position: absolute;
+  left: -100000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* VS Logo */
 .VSlogo-top {
-  height: 30px;
+  height: 0px;
   width: 100px;
   position: sticky;
-  top: 25px;
-  left: 25px;
+  top: 0px;
+  left: 0px;
   z-index: 2;
-  padding-left: 2%;
 }
 
 /*landingpage*/
 .startpage {
-  background-color: var(--color-contrast);
+  background-color: var(--color-0);
   margin: 0;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
 }
 
@@ -174,20 +229,12 @@ figcaption {
   z-index: 2;
 }
 
-/* #logo {
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  opacity: 0.3;
-  height: 100px;
-} */
-
 .startTextContainer {
   box-sizing: border-box;
   position: absolute;
   left: 5%;
   top: 40vh;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .startText {
@@ -206,16 +253,16 @@ figcaption {
 }
 
 .wrapper {
-  background-color: var(--color-contrast);
   color: var(--color-3);
   display: grid;
   place-items: right;
   width: 20%;
 }
 
-.wrapper h4 {
+#softwareDeveloper {
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  font-weight: bold;
   color: var(--color-3);
   opacity: 0;
   margin: 2%;
@@ -228,14 +275,18 @@ figcaption {
   padding: 0;
 }
 
-#startButton {
-  background-color: var(--color-contrast);
-  color: var(--color-3);
+#contactMebutton {
+  background-color: transparent;
   border: 2px solid var(--color-3);
-  position: absolute;
-  padding: var(--padding-Thickness);
-  left: 35%;
-  top: 120%;
+  color: var(--color-3);
+  margin-top: 10%;
+  position: relative;
+  left: 25%;
+}
+
+#contactMebutton:hover {
+  background-color: var(--color-3);
+  color: var(--color-1);
 }
 
 /* Header */
@@ -285,8 +336,8 @@ header {
   transform-style: preserve-3d;
   border-radius: 5px;
   box-shadow: 0px 2px 6px 0px var(--color-1);
-  background-color: var(--color-4);
-  color: var(--color-1);
+  background-color: var(--color-background);
+  color: var(--color-contrast);
 }
 
 .serviceFlipCard:hover .serviceCard {
@@ -303,12 +354,22 @@ header {
   border-radius: 5px;
 }
 
+#serviceCard-front {
+  background-color: var(--color-3);
+}
+
 #serviceCard-back {
   transform: rotateY(180deg);
 }
 
 #serviceCard-back h3 {
   font-size: 2em;
+  color: var(--color-heading);
+}
+
+#serviceCard-back h4 {
+  font-size: 1.7em;
+  color: var(--color-heading);
 }
 
 #serviceCard-back li {
@@ -320,12 +381,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-4);
-  color: var(--color-1);
+  background-color: var(--color-background);
+  color: var(--color-6);
 }
 
 .serviceLogo {
-  color: var(--color-2);
+  color: var(--color-text);
   font-size: 7em;
   padding: 5%;
   align-self: center;
@@ -333,7 +394,7 @@ header {
 }
 
 .serviceTitle {
-  color: var(--color-2);
+  color: var(--color-text);
   font-size: 1.7em;
   text-align: center;
   text-transform: capitalize;
@@ -446,8 +507,8 @@ header {
 }
 
 #my-tooltip {
-  background-color: var(--color-2);
-  color: var(--color-back);
+  background-color: var(--color-background);
+  color: var(--color-text);
   border-radius: 5px;
 }
 
@@ -461,8 +522,8 @@ header {
   /* width: 70vw; */
   max-height: 500px;
   overflow: hidden;
-  background: var(--color-back);
-  color: var(--color-1);
+  background: var(--color-background);
+  color: var(--color-text);
   border-radius: 5px;
   box-shadow: 1px 2px 5px 0px var(--color-2);
   box-sizing: content-box;
@@ -478,7 +539,7 @@ header {
   justify-content: flex-start;
 }
 
-.project h2 {
+.project h3 {
   font-size: 3.5em;
   padding: 0% 3% 5% 0%;
   color: var(--color-5);
@@ -486,7 +547,7 @@ header {
   margin-top: 18%;
 }
 
-.project h3 {
+.project h4 {
   font-size: 2.5em;
   padding: 0% 3% 5% 0%;
   color: var(--color-5);
@@ -498,15 +559,14 @@ header {
   font-size: 1.2em;
   width: 90%;
   overflow-wrap: break-word;
-  text-align: justify;
 }
 
-.projectButton {
+/* .projectButton {
   background-color: var(--color-5);
   color: var(--color-1);
-}
+} */
 
-.projectButton a {
+/* .projectButton a {
   box-sizing: border-box;
   padding: 10px;
 }
@@ -514,11 +574,11 @@ header {
 .projectButton a:hover {
   background-color: var(--color-2);
   color: var(--color-1);
-}
+} */
 
-.projectButton a:clicked {
+/* .projectButton a:clicked {
   transform: translateY(3px);
-}
+} */
 
 .projectScreenshot {
   object-fit: cover;
@@ -588,7 +648,7 @@ header {
   margin: 2%;
   padding: 2%;
 
-  background: var(--color-back);
+  background: var(--color-background);
   border-radius: 5px;
   box-shadow: 1px 2px 5px 0px var(--color-2);
   box-sizing: border-box;
@@ -604,12 +664,13 @@ header {
 }
 
 .cardContainerContent h3 {
-  color: var(--color-1);
+  color: var(--color-heading);
   font-size: 1.8em;
+  text-align: center;
 }
 
 .cardContainerContent p {
-  color: var(--color-1);
+  color: var(--color-text);
   margin: 10% 3% 3% 3%;
   font-size: 1.2em;
   text-align: justify;
@@ -617,7 +678,7 @@ header {
 
 .cardContainer:hover .cardContainerContent {
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .screenshotSample {
@@ -627,7 +688,7 @@ header {
   /* object-position: 50% 100%; */
 }
 
-.sampleButtonContainer {
+.sampleLinkContainer {
   height: 0;
   display: flex;
   flex-direction: column;
@@ -635,44 +696,34 @@ header {
   justify-content: center;
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 90%;
 }
 
-.sampleButton {
-  margin: 3%;
+.sampleLink {
+  margin: 2%;
   transition: 0.5s;
   opacity: 0;
-  background: var(--color-5);
-  /* z-index: 2; */
+  align-self: center;
 }
 
-.sampleButton a {
-  background-color: var(--color-5);
-  color: var(--color-4);
-  padding: 5%;
+.sampleLink:hover {
   opacity: 1;
   z-index: 2;
 }
-
-/* .cardContainerContent:hover ~ .sampleButtonContainer {
-  opacity: 1;
+/* 
+.sampleLink:hover {
+  transition: 0.1s;
 } */
 
-.sampleButton a:hover {
-  background: var(--color-2);
-  color: var(--color-1);
-  transition: 0.1s;
-}
-
-.cardContainer:hover .sampleButton {
+.cardContainer:hover .sampleLink {
   opacity: 1;
   /* transform: translateY(150px); */
   transition-delay: 0.1s;
 }
 
-.sampleButtonContainer:hover ~ .cardContainerContent {
-  opacity: 0.3;
-}
+/* .sampleButtonContainer:hover ~ .cardContainerContent {
+  opacity: 0.5;
+} */
 
 /* Footer */
 footer {
@@ -686,25 +737,14 @@ footer {
   justify-content: center;
 }
 
-.footerLinks {
-  background-color: var(--color-1);
-  color: var(--color-3);
-  font-size: 1.2em;
-  font-weight: bold;
-  letter-spacing: 0px;
-}
-
-.footerLinks:hover {
-  color: var(--color-2);
-}
-
 #footerLogos {
-  color: var(--color-3);
-  padding-bottom: 15px;
+  background-color: var(--color-1);
+  color: var(--color-6);
 }
 
 #footerLogos:hover {
-  color: var(--color-2);
+  background-color: var(--color-6);
+  color: var(--color-1);
 }
 
 .colContainer {
@@ -739,17 +779,11 @@ footer {
   padding: 1%;
 }
 
-/* contact form */
-/* .contactForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
-
 input,
 textarea {
   background-color: var(--color-4);
+  color: var(--color-contrast);
+  font-size: 1.1em;
   width: 80%;
   height: 48px;
   padding: 1%;
@@ -770,27 +804,27 @@ textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 input:focus,
 textarea:focus {
   border: 3px solid var(--color-2);
+  /* transform: scale(1.05); */
 }
 
 .formButton {
-  background-color: var(--color-3);
-  color: var(--color-1);
-  padding: 2%;
-  width: 200px;
   display: flex;
+  box-sizing: border-box;
   justify-content: space-evenly;
   align-items: center;
+  width: 200px;
 }
 
-.formButton:hover {
-  background-color: var(--color-2);
-  color: var(--color-4);
+label {
+  width: 80%;
+  margin-top: 20px;
+  /* text-align: left; */
 }
 
 .modal {
@@ -855,11 +889,13 @@ textarea:focus {
 .bm-burger-bars {
   background: var(--color-2);
   border-radius: 10px;
+  border: solid 2px var(--color-6);
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: var(--color-2-a);
+  background: var(--color-5);
+  border: solid 2px var(--color-0);
 }
 
 /* Position and sizing of clickable cross button */
@@ -870,7 +906,7 @@ textarea:focus {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: var(--color-back);
+  background: var(--color-background);
 }
 
 /*
@@ -906,13 +942,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: inline-block;
   margin-top: 10%;
   font-size: 1.4em;
-  color: var(--color-3);
+  color: var(--color-6);
   background-color: var(--color-1);
 }
 
 .bm-item:hover,
 #menu-item:hover {
-  color: var(--color-back);
+  color: var(--color-background);
 }
 
 /* Styling of overlay */
@@ -1095,8 +1131,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: var(--color-1);
   padding: 2% 0% 2% 0%;
 }
+
 #impressum p {
   font-size: 1em;
+  text-align: justify;
 }
 
 #impressumContainer > p {
@@ -1104,9 +1142,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: 0.8em;
 }
 
+#impressumQuelle {
+  text-align: right;
+}
+
 /* Errorpage */
 #errorpage {
-  height: 50vh;
-  background-color: var(--color-back);
+  height: 58vh;
+  background-color: var(--color-background);
   color: var(--color-1);
 }

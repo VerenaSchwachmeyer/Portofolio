@@ -1,3 +1,5 @@
+import ScrollIntoView from "react-scroll-into-view";
+
 export default function LandingPage() {
   return (
     <div id="top" className="startpage">
@@ -10,11 +12,16 @@ export default function LandingPage() {
           </h1>
 
           <div className="wrapper">
-            <h4 id="softwareDeveloper">Software Developer</h4>
+            <p id="softwareDeveloper">Software Developer</p>
           </div>
-          {/* <button>Contact me</button> */}
+
+          <ScrollIntoView selector="#contact">
+            <button id="contactMebutton">Contact me</button>
+          </ScrollIntoView>
         </div>
-        <figcaption>Photo: Tobias Büchner | dervj.de</figcaption>
+        <figcaption aria-hidden="true">
+          Photo: Tobias Büchner | dervj.de
+        </figcaption>
       </div>
     </div>
   );

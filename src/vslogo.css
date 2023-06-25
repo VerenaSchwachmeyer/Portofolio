@@ -5,7 +5,7 @@
   /* width: 50%; */
   position: sticky;
   top: 35px;
-  left: -45px;
+  margin: 15px;
   z-index: 2;
 }
 

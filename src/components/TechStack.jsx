@@ -29,24 +29,14 @@ function TechStack() {
     {
       id: 9,
       name: "ExpressJS",
-      icon: (
-        <img
-          src="/images/ExpressJS-Logo1.png"
-          height="40em"
-          alt="ExpressJs Logo"
-        ></img>
-      ),
+      icon: <img src="/images/ExpressJS-Logo1.png" height="40em" alt=""></img>,
     },
     { id: 10, name: "GitHub", icon: <FaGithub /> },
     {
       id: 11,
       name: "MATLAB",
       icon: (
-        <img
-          src="/images/Matlab-Logo-color-1.png"
-          height="40em"
-          alt="Matlab Logo"
-        ></img>
+        <img src="/images/Matlab-Logo-color-1.png" height="40em" alt=""></img>
       ),
     },
     { id: 12, name: "Visual Studio Code", icon: <DiVisualstudio /> },
@@ -67,26 +57,30 @@ function TechStack() {
           id="logoTile"
           data-tooltip-id="my-tooltip"
           data-tooltip-content={logo.name}
+          role="img"
+          aria-label={logo.name}
         >
           {logo.icon}
         </div>
-        <Tooltip id="my-tooltip" />
+        <Tooltip id="my-tooltip" className="graphics" />
       </>
     );
   });
 
   return (
-    <section id="techStack" className="techStack">
-      <h2 className="sectionTitle">Tech Stack</h2>
-      <div className="logoList">
-        <IconContext.Provider
-          value={{
-            size: "2.5em",
-            className: "logos",
-          }}
-        >
-          {logoItems}
-        </IconContext.Provider>
+    <section id="techStack" className="primary">
+      <div className="content">
+        <h2 className="sectionTitle">Tech Stack</h2>
+        <div className="logoList">
+          <IconContext.Provider
+            value={{
+              size: "2.5em",
+              className: "logos",
+            }}
+          >
+            {logoItems}
+          </IconContext.Provider>
+        </div>
       </div>
     </section>
   );

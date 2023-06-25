@@ -90,25 +90,35 @@ export default function AboutMe() {
 
   return (
     <>
-      <section id="aboutme" className="aboutMe">
-        <h2 className="sectionTitle">About me</h2>
-        <div className="container4Logo">{/* <VSLogo /> */}</div>
-        <div className="portrait-info">
-          <img
-            id="portrait"
-            src="/images/VerenaSchwachmeyer.png"
-            alt="Verena Schwachmeyer"
-          />
-          <p id="aboutmeText">
-            Smart web solutions should have a simple and clear design for an
-            optimal user experience - but with a differentiated, clean code in
-            the background. <br></br>
-            <br></br>
-          </p>
-        </div>
-        {/* <p id="traits">Versatile. Empathic. Solution-oriented.</p> */}
-        {/* <div className="infoArea">{infoItems}</div> */}
-        {/* <ul>
+      <section id="aboutme" className="primary">
+        <div className="content">
+          <h2 className="sectionTitle">About me</h2>
+          <div className="container4Logo">{/* <VSLogo /> */}</div>
+          <div className="portrait-info">
+            <img
+              id="portrait"
+              src="/images/VerenaSchwachmeyer.png"
+              alt="Portrait of Verena Schwachmeyer"
+              aria-label="Portrait of Verena wearing a dark blue shirt. Blond hair, blue eyes."
+            />
+            <p id="aboutmeText">
+              I have worked in clinical research as a post-doctoral fellow for
+              12 years before I decided to pursue my passion for coding as a
+              web-developer. With my previous experience I speak not only the
+              language of "techies" but also physicians, therapists, or nurses.
+              But a medical topic of your project is not necessary - contact me
+              for any subject matter.
+              <br></br>
+              <br></br>
+              Smart web solutions need a simple and accessible design for an
+              optimal user experience - but with a clean code in the background.{" "}
+              <br></br>
+              <br></br>
+            </p>
+          </div>
+          {/* <p id="traits">Versatile. Empathic. Solution-oriented.</p> */}
+          {/* <div className="infoArea">{infoItems}</div> */}
+          {/* <ul>
           <li>
             <strong>Versatility: </strong>
             <br></br>Coding, data analysis, direct customer contact, public
@@ -127,6 +137,7 @@ export default function AboutMe() {
             problem and find a way to solve it.
           </li>
         </ul> */}
+        </div>
       </section>
     </>
   );

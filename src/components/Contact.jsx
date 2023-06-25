@@ -52,41 +52,84 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact">
-      <h2 className="sectionTitle">Contact</h2>
-      <form ref={form} className="contactForm" onSubmit={sendEmail}>
-        <input type="text" placeholder="your name" name="user_name" required />
-        <input
-          type="user_email"
-          placeholder="your e-mail address"
-          name="email"
-          required
-        />
-        <input type="text" placeholder="subject" name="subject" required />
-        <textarea placeholder="your message" name="message" required />
-        <button className="formButton">
-          <RiMailSendLine size="1.7em" />
-          <p>Send Mail</p>
-        </button>
-      </form>
-      <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        className="modal"
-        overlayClassName="overlay"
-        contentLabel="Contact Confirmation"
-      >
-        <h3 ref={(_subtitle) => (subtitle = _subtitle)}>Thank you</h3>
+    <section id="contact" className="primary">
+      <div className="content">
+        <h2 className="sectionTitle">Contact</h2>
+        <form
+          ref={form}
+          className="contactForm"
+          role="form"
+          aria-label="contact form to send an email"
+          onSubmit={sendEmail}
+        >
+          <label for="user_name" className="primary">
+            What's your name? *
+          </label>
+          <input
+            type="text"
+            placeholder="name"
+            name="user_name"
+            id="user_name"
+            required
+          />
+          <label for="user_email" className="primary">
+            Enter your e-mail address *
+          </label>
+          <input
+            type="user_email"
+            placeholder="e-mail"
+            name="email"
+            id="user_email"
+            required
+          />
+          <label for="subject" className="primary">
+            What can I do for you? *
+          </label>
+          <input
+            type="text"
+            placeholder="subject"
+            name="subject"
+            id="subject"
+            required
+          />
+          <label for="message" className="primary">
+            Enter your message *
+          </label>
+          <textarea
+            placeholder="your message"
+            name="message"
+            id="message"
+            required
+          />
+          <button className="formButton" aria-label="button">
+            <RiMailSendLine size="1.7em" />
+            <p>Send Mail</p>
+          </button>
+        </form>
+        <Modal
+          isOpen={modalIsOpen}
+          onAfterOpen={afterOpenModal}
+          onRequestClose={closeModal}
+          className="modal"
+          overlayClassName="overlay"
+          contentLabel="Contact Confirmation"
+        >
+          <h3 ref={(_subtitle) => (subtitle = _subtitle)}>Thank you</h3>
 
-        <div>
-          Your message has been successfully sent. Thanks for contacting me, I
-          will get back to you soon.
-        </div>
-        <button className="modalButton" onClick={closeModal}>
-          close
-        </button>
-      </Modal>
+          <div>
+            Your message has been successfully sent. Thanks for contacting me, I
+            will get back to you soon.
+          </div>
+          <button
+            className="modalButton"
+            role="button"
+            aria-label="button"
+            onClick={closeModal}
+          >
+            close
+          </button>
+        </Modal>
+      </div>
     </section>
   );
 }

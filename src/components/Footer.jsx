@@ -79,54 +79,18 @@ function Footer() {
           <p id="copyright">&copy; 2023 Copyright - Verena Schwachmeyer</p>
         </div>
 
-        <div className="col2">
-          <h3>Navigation</h3>
-          {/* <ScrollIntoView selector="#aboutme">
-            <button
-              id="footer-links"
-              className="mdl-button mdl-js-button mdl-button--raised"
-            >
-              About Me
-            </button>
-          </ScrollIntoView>
-
-          <ScrollIntoView selector="#techStack">
-            <button
-              id="footer-links"
-              className="mdl-button mdl-js-button mdl-button--raised"
-            >
-              Tech Stack
-            </button>
-          </ScrollIntoView>
-
-          <ScrollIntoView selector="#projects">
-            <button
-              id="footer-links"
-              className="mdl-button mdl-js-button mdl-button--raised"
-            >
-              My Work
-            </button>
-          </ScrollIntoView>
-
-          <ScrollIntoView selector="#contact">
-            <button
-              id="footer-links"
-              className="mdl-button mdl-js-button mdl-button--raised"
-            >
-              Contact
-            </button>
-          </ScrollIntoView> */}
-
-          <Link to="/" className="footerLinks">
-            <h4>Home</h4>
+        <nav className="col2">
+          <h5 className="secondary">Navigation</h5>
+          <Link to="/" className="secondary">
+            Home
           </Link>
-          <Link to="/impressum" className="footerLinks">
-            <h4>Impressum</h4>
+          <Link to="/impressum" className="secondary">
+            Impressum
           </Link>
-        </div>
+        </nav>
 
         <div className="col3">
-          <h3>Links</h3>
+          <h5 className="secondary">Links</h5>
 
           <IconContext.Provider
             value={{
@@ -139,13 +103,18 @@ function Footer() {
                 to="https://de.linkedin.com/in/verena-schwachmeyer"
                 target="_blank"
                 rel="noreferrer"
+                role="link"
+                aria-label="go to LinkedIn page"
               >
                 <FaLinkedin id="footerLogos" />
               </Link>
               <Link
+                reloadDocument
                 to="https://github.com/VerenaSchwachmeyer"
                 target="_blank"
                 rel="noreferrer"
+                role="link"
+                aria-label="go to Github page"
               >
                 <FaGithub id="footerLogos" />
               </Link>
@@ -154,12 +123,16 @@ function Footer() {
 
           <p>photo and logo by Tobias Büchner:</p>
           <Link
+            reloadDocument
             to="http://dervj.de/"
             target="_blank"
             rel="noreferrer"
-            className="footerLinks"
+            className="secondary"
+            tabindex="0"
+            role="link"
+            aria-label="go to page of derVJ"
           >
-            <h4>der VJ</h4>
+            der VJ
           </Link>
         </div>
       </div>

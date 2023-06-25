@@ -9,19 +9,18 @@ import Samples from "./Samples";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import VSLogo from "./VSLogo";
+import Scroll2Top from "./Scroll2Top";
+import SkipLink from "./SkipLink";
 
 export default function Home() {
   return (
     <div>
-      {/* <img
-        className="homeLogoTop"
-        src="/images/VS_Logo_w_code.png"
-        height="40px"
-        alt="Verenas Logo"
-      ></img> */}
+      <Scroll2Top />
+      <SkipLink />
+
       <VSLogo id="VSlogo-top" />
 
-      <Menu right>
+      <Menu right role="menu" aria-label="Menu">
         <ScrollIntoView selector="#services">
           <button
             id="menu-item"
@@ -68,7 +67,7 @@ export default function Home() {
       </Menu>
 
       <LandingPage />
-      <main>
+      <main id="main">
         <Services />
         <AboutMe />
         <TechStack />

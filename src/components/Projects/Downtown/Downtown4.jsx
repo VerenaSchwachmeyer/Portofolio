@@ -2,7 +2,7 @@ export default function Downtown3() {
   return (
     <div className="project secondary">
       <div className="projectText">
-        <h3>Guidance</h3>
+        <h4>Guidance</h4>
         <p className="slide1">
           Step-by-step instructions guide the users through the app - so that no
           one is left behind.

@@ -35,13 +35,15 @@ function Samples() {
   ];
 
   return (
-    <section id="samples">
-      <h2 className="sectionTitle">Coding Samples</h2>
+    <section id="samples" className="primary">
+      <div className="content">
+        <h2 className="sectionTitle">Coding Samples</h2>
 
-      <div className="sampleContainer">
-        {samples.map((project) => {
-          return <CodingSampleTile {...project} key={project.id} />;
-        })}
+        <div className="sampleContainer">
+          {samples.map((project) => {
+            return <CodingSampleTile {...project} key={project.id} />;
+          })}
+        </div>
       </div>
     </section>
   );

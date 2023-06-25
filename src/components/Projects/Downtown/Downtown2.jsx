@@ -2,7 +2,7 @@ export default function Downtown2() {
   return (
     <div className="project secondary">
       <div className="projectText">
-        <h3>Accessibility</h3>
+        <h4>Accessibility</h4>
         <p className="slide1">
           People with down syndrome have a different perception and often poor
           eye sight. The design needs to be as simple as possible but still
