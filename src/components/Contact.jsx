@@ -58,11 +58,10 @@ export default function Contact() {
         <form
           ref={form}
           className="contactForm"
-          role="form"
           aria-label="contact form to send an email"
           onSubmit={sendEmail}
         >
-          <label for="user_name" className="primary">
+          <label htmlFor="user_name" className="primary">
             What's your name? *
           </label>
           <input
@@ -72,7 +71,7 @@ export default function Contact() {
             id="user_name"
             required
           />
-          <label for="user_email" className="primary">
+          <label htmlFor="user_email" className="primary">
             Enter your e-mail address *
           </label>
           <input
@@ -82,7 +81,7 @@ export default function Contact() {
             id="user_email"
             required
           />
-          <label for="subject" className="primary">
+          <label htmlFor="subject" className="primary">
             What can I do for you? *
           </label>
           <input
@@ -92,7 +91,7 @@ export default function Contact() {
             id="subject"
             required
           />
-          <label for="message" className="primary">
+          <label htmlFor="message" className="primary">
             Enter your message *
           </label>
           <textarea
@@ -101,7 +100,7 @@ export default function Contact() {
             id="message"
             required
           />
-          <button className="formButton" aria-label="button">
+          <button className="formButton" aria-label="send mail">
             <RiMailSendLine size="1.7em" />
             <p>Send Mail</p>
           </button>
@@ -122,8 +121,7 @@ export default function Contact() {
           </div>
           <button
             className="modalButton"
-            role="button"
-            aria-label="button"
+            aria-label="close"
             onClick={closeModal}
           >
             close

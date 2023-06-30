@@ -15,7 +15,7 @@ function Samples() {
     },
     {
       id: 4,
-      name: `To-Do List "Memorandum"`,
+      name: `To-Do List`,
       linkSite: "https://mariamac92.github.io/Notizzettel/",
       linkRepo: "https://github.com/MariamaC92/Notizzettel/",
       src: "/images/Screenshot_Memorandum-1.jpg",

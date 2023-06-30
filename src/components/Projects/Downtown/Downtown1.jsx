@@ -12,10 +12,12 @@ export default function Downtown1() {
           target="blank"
           rel="noreferrer"
           className="buttonLinks secondary"
+          aria-label="Link to Downtown"
         >
           Visit Website
         </a>
       </div>
+      {/* <div className="poligon"></div> */}
       <img
         className="projectScreenshot"
         src="/images/Downtown-Titelbild-1.jpg"

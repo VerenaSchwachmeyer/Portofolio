@@ -11,7 +11,7 @@ export default function Downtown3() {
       <img
         className="projectScreenshot"
         src="/images/Screenshot-Downtown-5.jpg"
-        alt="Landing Page of Downtown website"
+        alt="Screenshot of website showing buttons for two chatrooms with instructions how to use them."
         style={{ objectPosition: "left", objectFit: "cover" }}
       />
     </div>

@@ -1,28 +1,12 @@
-// import { slide as Menu } from "react-burger-menu";
-// import ScrollIntoView from "react-scroll-into-view";
-import HeaderHome from "./HeaderHome";
-import LandingPage from "./LandingPage";
-import Services from "./Services";
-import AboutMe from "./AboutMe";
-import TechStack from "./TechStack";
-import Projects from "./Projects";
-import Samples from "./Samples";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import { slide as Menu } from "react-burger-menu";
 import VSLogo from "./VSLogo";
-import Scroll2Top from "./Scroll2Top";
-import SkipLink from "./SkipLink";
+import ScrollIntoView from "react-scroll-into-view";
 
-export default function Home() {
+export default function HeaderHome() {
   return (
-    <div>
-      <Scroll2Top />
-      <SkipLink />
-
-      <HeaderHome />
-      {/* <VSLogo id="VSlogo-top" /> */}
-
-      {/* <Menu right role="menu" aria-label="Menu">
+    <header className="headerHome">
+      <VSLogo id="VSlogo-top" />
+      <Menu right role="menu" aria-label="Menu">
         <ScrollIntoView selector="#services">
           <button
             id="menu-item"
@@ -66,18 +50,7 @@ export default function Home() {
             Contact
           </button>
         </ScrollIntoView>
-      </Menu> */}
-
-      <LandingPage />
-      <main id="main" lang="en">
-        <Services />
-        <AboutMe />
-        <TechStack />
-        <Projects />
-        <Samples />
-        <Contact />
-        <Footer />
-      </main>
-    </div>
+      </Menu>
+    </header>
   );
 }

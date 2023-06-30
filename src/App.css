@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 
 main {
@@ -107,6 +106,7 @@ button,
   display: inline;
   transition: 0.3s;
   z-index: 3;
+  text-decoration: none;
 }
 
 button:hover,
@@ -178,17 +178,30 @@ section {
 .VSlogo-top {
   height: 0px;
   width: 100px;
-  position: sticky;
+  /* position: sticky;
   top: 0px;
-  left: 0px;
-  z-index: 2;
+  left: 0px; */
+  /* z-index: 2; */
+}
+
+/* headerHome */
+.headerHome {
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 /*landingpage*/
 .startpage {
   background-color: var(--color-0);
   margin: 0;
-  height: 95vh;
+  height: 90vh;
   width: 100vw;
 }
 
@@ -341,6 +354,10 @@ header {
 }
 
 .serviceFlipCard:hover .serviceCard {
+  cursor: pointer;
+}
+
+.serviceFlipCard:hover .serviceCard {
   transform: rotateY(180deg);
 }
 
@@ -370,6 +387,8 @@ header {
 #serviceCard-back h4 {
   font-size: 1.7em;
   color: var(--color-heading);
+  margin: 4%;
+  text-align: center;
 }
 
 #serviceCard-back li {
@@ -480,13 +499,14 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-
-  color: var(--color-1);
-  flex-wrap: nowrap;
+  color: var(--color-0);
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .logos {
-  color: var(--color-1);
+  color: var(--color-text);
+  background-color: var(--color-background);
   display: flex;
   justify-content: space-evenly;
   max-width: 1200px;
@@ -494,13 +514,14 @@ header {
 }
 
 #logoTile {
-  height: 3.4em;
-  width: 4.8em;
+  background-color: var(--color-background);
+  height: 70px;
+  width: 70px;
   padding: 0.5%;
-  margin: 0.5%;
+  margin: 5px;
   border: none;
-  border-radius: 20px;
-  box-shadow: 0px 2px 6px 0px var(--color-3);
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px 0px var(--color-text);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -521,6 +542,7 @@ header {
   height: 70vh;
   /* width: 70vw; */
   max-height: 500px;
+  /* position: absolute; */
   overflow: hidden;
   background: var(--color-background);
   color: var(--color-text);
@@ -559,38 +581,53 @@ header {
   font-size: 1.2em;
   width: 90%;
   overflow-wrap: break-word;
+  margin: 10px;
 }
 
-/* .projectButton {
-  background-color: var(--color-5);
-  color: var(--color-1);
-} */
-
-/* .projectButton a {
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.projectButton a:hover {
-  background-color: var(--color-2);
-  color: var(--color-1);
-} */
-
-/* .projectButton a:clicked {
-  transform: translateY(3px);
-} */
-
-.projectScreenshot {
-  object-fit: cover;
+.poligon {
+  display: inline-block;
   height: 100%;
-  width: 60%;
-  clip-path: polygon(
-    0% 0%,
+  width: 10%;
+  background: var(--color-6);
+  box-sizing: border-box;
+  -webkit-clip-path: polygon(
+    45px 0%,
+    0% 50%,
+    40px 100%,
+    40px 100%,
+    5px 50%,
+    45px 0%
+  );
+  clip-path: 
+    /* 0% 0%,
     0% 50%,
     80px 0%,
     100% 0%,
     100% 100%,
     80px 100%,
+    0% 50% */ polygon(
+    40px 0%,
+    0% 50%,
+    45px 100%,
+    45px 100%,
+    5px 50%,
+    40px 0%
+  );
+}
+
+.projectScreenshot {
+  object-fit: cover;
+  height: 100%;
+  width: 60%;
+  position: relative;
+  left: 2%;
+  clip-path: polygon(
+    0% 0%,
+    0% 50%,
+    40px 0%,
+    100% 0%,
+    100% 100%,
+    40px 100%,
     0% 50%
   );
 }
@@ -704,6 +741,7 @@ header {
   transition: 0.5s;
   opacity: 0;
   align-self: center;
+  width: 190px;
 }
 
 .sampleLink:hover {
@@ -735,6 +773,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+footer a {
+  text-underline-offset: 3px;
 }
 
 #footerLogos {
@@ -873,8 +915,8 @@ label {
   position: fixed;
   width: 36px;
   height: 30px;
-  right: 36px;
-  top: 36px;
+  right: 25px;
+  top: 20px;
   opacity: 1;
   animation: fadeIn ease var(--fadeInTIme);
   -webkit-animation: fadeIn ease var(--fadeInTIme);
@@ -1091,8 +1133,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     max-height: 200px;
   }
 
-  section {
-    width: 90%;
+  .content {
+    width: 95%;
   }
 
   input,
@@ -1110,14 +1152,33 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .project {
     margin: 0;
+    width: 100%;
+    flex-direction: column;
   }
 
+  .project h4,
   .project h3 {
-    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  .projectText {
+    width: 90%;
   }
 
   .project p {
     font-size: 1em;
+    width: 100%;
+  }
+
+  .projectScreenshot {
+    width: 100%;
+    clip-path: none;
+    object-position: center right;
+    /* object-fit: contain; */
+  }
+
+  label {
+    width: 100%;
   }
 }
 

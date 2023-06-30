@@ -5,77 +5,77 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 function Footer() {
-  const infos = [
-    {
-      id: "github",
-      icon: (
-        <a
-          href="https://github.com/VerenaSchwachmeyer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithub />
-        </a>
-      ),
-      text: (
-        <a
-          className="link2Repo"
-          href="https://github.com/VerenaSchwachmeyer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          github.com/VerenaSchwachmeyer
-        </a>
-      ),
-    },
-    {
-      id: "linkedin",
-      icon: (
-        <a
-          href="https://de.linkedin.com/in/verena-schwachmeyer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-      ),
-      text: (
-        <a
-          className="link2Repo"
-          href="https://de.linkedin.com/in/verena-schwachmeyer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          linkedin.com/in/verena-schwachmeyer
-        </a>
-      ),
-    },
-  ];
+  // const infos = [
+  //   {
+  //     id: "github",
+  //     icon: (
+  //       <a
+  //         href="https://github.com/VerenaSchwachmeyer"
+  //         target="_blank"
+  //         rel="noreferrer"
+  //       >
+  //         <FaGithub />
+  //       </a>
+  //     ),
+  //     text: (
+  //       <a
+  //         className="link2Repo"
+  //         href="https://github.com/VerenaSchwachmeyer"
+  //         target="_blank"
+  //         rel="noreferrer"
+  //       >
+  //         github.com/VerenaSchwachmeyer
+  //       </a>
+  //     ),
+  //   },
+  //   {
+  //     id: "linkedin",
+  //     icon: (
+  //       <a
+  //         href="https://de.linkedin.com/in/verena-schwachmeyer"
+  //         target="_blank"
+  //         rel="noreferrer"
+  //       >
+  //         <FaLinkedin />
+  //       </a>
+  //     ),
+  //     text: (
+  //       <a
+  //         className="link2Repo"
+  //         href="https://de.linkedin.com/in/verena-schwachmeyer"
+  //         target="_blank"
+  //         rel="noreferrer"
+  //       >
+  //         linkedin.com/in/verena-schwachmeyer
+  //       </a>
+  //     ),
+  //   },
+  // ];
 
-  const infoItems = infos.map((info) => {
-    return (
-      <div className="info">
-        <div className="icon">
-          {info.link}
-          <IconContext.Provider
-            value={{
-              size: "1.5em",
-              className: "logos",
-            }}
-          >
-            {info.icon}
-          </IconContext.Provider>
-        </div>
-        <p>{info.text}</p>
-      </div>
-    );
-  });
+  // const infoItems = infos.map((info) => {
+  //   return (
+  //     <div className="info">
+  //       <div className="icon">
+  //         {info.link}
+  //         <IconContext.Provider
+  //           value={{
+  //             size: "1.5em",
+  //             className: "logos",
+  //           }}
+  //         >
+  //           {info.icon}
+  //         </IconContext.Provider>
+  //       </div>
+  //       <p>{info.text}</p>
+  //     </div>
+  //   );
+  // });
 
   return (
     <footer>
       <div className="colContainer">
         <div className="col1">
-          <img src="/images/VS_Logo_w_code.png" height="60px"></img>
+          <img src="/images/VS_Logo_w_code.png" alt="" height="60px"></img>
           <p id="copyright">&copy; 2023 Copyright - Verena Schwachmeyer</p>
         </div>
 
@@ -104,7 +104,7 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 role="link"
-                aria-label="go to LinkedIn page"
+                aria-label="go to LinkedIn profile"
               >
                 <FaLinkedin id="footerLogos" />
               </Link>
@@ -114,7 +114,7 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 role="link"
-                aria-label="go to Github page"
+                aria-label="go to Github profile"
               >
                 <FaGithub id="footerLogos" />
               </Link>
@@ -128,7 +128,6 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             className="secondary"
-            tabindex="0"
             role="link"
             aria-label="go to page of derVJ"
           >

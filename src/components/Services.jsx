@@ -70,7 +70,7 @@ export default function Services() {
                 id="serviceCard-back"
                 aria-label="backside of card"
               >
-                <h4>Optimization of:</h4>
+                <h4 lang="en">Optimization of Operability:</h4>
                 <ul>
                   <li>Color Contrast</li>
                   <li>Screen Reader Usability</li>
@@ -94,9 +94,7 @@ export default function Services() {
                 id="serviceCard-back"
                 aria-label="backside of card"
               >
-                <h4>
-                  Balancing the<br></br>requirements of:
-                </h4>
+                <h4>Balancing the requirements of:</h4>
                 <ul role="list" aria-label="containing">
                   <li>Database Architecture</li>
                   <li>Scientific Standards</li>

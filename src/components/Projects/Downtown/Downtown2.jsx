@@ -12,7 +12,7 @@ export default function Downtown2() {
       <img
         className="projectScreenshot"
         src="/images/Downtown-LandingPage-4.jpg"
-        alt="Landing Page of Downtown website"
+        alt="Screenshot showing website with high color contrast, changeable font sizes and switch for light and dark mode."
         style={{ objectPosition: "left top" }}
       />
     </div>

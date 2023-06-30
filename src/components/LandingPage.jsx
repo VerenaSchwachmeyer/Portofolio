@@ -6,7 +6,7 @@ export default function LandingPage() {
       <div className="startImage">
         {/* <img id="logo" src="/images/VS_Logo.png"></img> */}
         <div className="startTextContainer">
-          <h1 className="startText">
+          <h1 className="startText" lang="de">
             {/* <VSLogo /> */}
             Verena Schwachmeyer
           </h1>

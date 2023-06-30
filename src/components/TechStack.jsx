@@ -47,23 +47,22 @@ function TechStack() {
     },
     { id: 14, name: "Material UI", icon: <SiMui /> },
     { id: 15, name: "WebRTC", icon: <SiWebrtc /> },
-    { id: 16, name: "Gimp", icon: <SiGimp /> },
+    // { id: 16, name: "Gimp", icon: <SiGimp /> },
   ];
 
   const logoItems = logos.map((logo) => {
     return (
-      <>
+      <li key={logo.id} aria-label={logo.name} tabIndex="0">
         <div
           id="logoTile"
+          className="graphics"
           data-tooltip-id="my-tooltip"
           data-tooltip-content={logo.name}
-          role="img"
-          aria-label={logo.name}
         >
           {logo.icon}
         </div>
-        <Tooltip id="my-tooltip" className="graphics" />
-      </>
+        <Tooltip id="my-tooltip" className="secondary" />
+      </li>
     );
   });
 
@@ -71,16 +70,16 @@ function TechStack() {
     <section id="techStack" className="primary">
       <div className="content">
         <h2 className="sectionTitle">Tech Stack</h2>
-        <div className="logoList">
+        <ul className="logoList">
           <IconContext.Provider
             value={{
               size: "2.5em",
-              className: "logos",
+              className: "logos graphics",
             }}
           >
             {logoItems}
           </IconContext.Provider>
-        </div>
+        </ul>
       </div>
     </section>
   );

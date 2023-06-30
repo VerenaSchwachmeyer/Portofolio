@@ -37,7 +37,7 @@ function Projects() {
   // },
   //];
 
-  const handleDragStart = (e) => e.preventDefault();
+  // const handleDragStart = (e) => e.preventDefault();
 
   const items = [<Downtown1 />, <Downtown2 />, <Downtown4 />, <Downtown3 />];
 
@@ -53,7 +53,7 @@ function Projects() {
 
         <AliceCarousel
           mouseTracking
-          infinite
+          // infinite
           autowidth
           items={items}
           paddingLeftt={5}
