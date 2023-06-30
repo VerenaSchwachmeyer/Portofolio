@@ -97,7 +97,7 @@ export default function AboutMe() {
           <div className="portrait-info">
             <img
               id="portrait"
-              src="/images/VerenaSchwachmeyer.png"
+              src="./images/VerenaSchwachmeyer.png"
               alt="Portrait of Verena Schwachmeyer"
               aria-label="Portrait of Verena wearing a dark blue shirt. Blond hair, blue eyes."
             />
