@@ -49,4 +49,7 @@
   .vslogo-Name {
     font-size: 15px;
   }
+  #vsLogo-S {
+    transform: translateX(-40px);
+  }
 }

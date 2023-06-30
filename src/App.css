@@ -105,7 +105,7 @@ button,
   letter-spacing: 0.7px;
   display: inline;
   transition: 0.3s;
-  z-index: 3;
+  z-index: 2;
   text-decoration: none;
 }
 
@@ -619,8 +619,6 @@ header {
   object-fit: cover;
   height: 100%;
   width: 60%;
-  position: relative;
-  left: 2%;
   clip-path: polygon(
     0% 0%,
     0% 50%,
@@ -869,19 +867,39 @@ label {
   /* text-align: left; */
 }
 
+.loadingSpinner {
+  position: relative;
+  top: -400px;
+}
+
 .modal {
-  position: absolute;
-  height: 25vh;
+  /* position: fixed; */
+  height: 30vh;
   width: 50vw;
   margin: auto;
-  top: 25%;
-  left: 25%;
+  position: absolute;
+  top: 50%;
+  /* width: 100%; */
   border-radius: 5px;
   box-shadow: 1px 2px 5px 0px var(--color-2);
-  background-color: white;
+  background-color: var(--color-6);
   color: var(--color-1);
-  padding: 2%;
+  padding: 50px;
   display: grid;
+  z-index: 5;
+}
+
+.react-responsive-modal-modal {
+  border-radius: 5px;
+  padding: 100px;
+}
+
+.react-responsive-modal-closeButton {
+  width: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  justify-content: flex-end;
 }
 
 .modal h3 {
@@ -1112,6 +1130,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 3.4em;
+  }
+
+  footer a {
+    font-size: 1.5em;
+    padding: 2%;
   }
 
   .startImage {

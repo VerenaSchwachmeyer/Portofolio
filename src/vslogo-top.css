@@ -34,7 +34,7 @@
   align-self: center;
   height: 100px;
   width: auto;
-  transform: translateX(0px);
+  transform: translateX(-40px);
   transition: transform 1s ease;
 }
 

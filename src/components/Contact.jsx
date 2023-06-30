@@ -1,29 +1,21 @@
 import { RiMailSendLine } from "react-icons/ri";
-import { useRef, useState } from "react";
+import { useRef, useState, CSSProperties } from "react";
 import emailjs from "@emailjs/browser";
-import Modal from "react-modal";
-
-Modal.setAppElement("#root");
-
-// const customStyles = {
-//   content: {
-//     top: "50%",
-//     left: "50%",
-//     right: "auto",
-//     bottom: "auto",
-//     marginRight: "-50%",
-//     transform: "translate(-50%, -50%)",
-//   },
-// };
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
+import CircleLoader from "react-spinners/ClipLoader";
 
 export default function Contact() {
   const form = useRef();
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm(
         "service_f97y0mr",
@@ -33,23 +25,23 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          setIsOpen(true);
+          setLoading(false);
+          setOpen(true);
         },
         (error) => {
+          setLoading(false);
+          alert("An Error occured. Your mail has not been sent.");
           console.log(error.text);
         }
       );
     e.target.reset();
   };
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    // subtitle.style.color = "#f00";
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
+  const override: CSSProperties = {
+    display: "block",
+    margin: "0 auto",
+    border: "4px solid var(--color-1)",
+  };
 
   return (
     <section id="contact" className="primary">
@@ -105,29 +97,31 @@ export default function Contact() {
             <p>Send Mail</p>
           </button>
         </form>
-        <Modal
-          isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
-          onRequestClose={closeModal}
-          className="modal"
-          overlayClassName="overlay"
-          contentLabel="Contact Confirmation"
-        >
-          <h3 ref={(_subtitle) => (subtitle = _subtitle)}>Thank you</h3>
-
-          <div>
-            Your message has been successfully sent. Thanks for contacting me, I
-            will get back to you soon.
-          </div>
-          <button
-            className="modalButton"
-            aria-label="close"
-            onClick={closeModal}
-          >
-            close
-          </button>
-        </Modal>
       </div>
+      <Modal
+        open={open}
+        onClose={onCloseModal}
+        center
+        aria-labelledby="my-modal-title"
+        aria-describedby="my-modal-description"
+      >
+        <h3 id="my-modal-title">Thank you</h3>
+
+        <div id="my-modal-description">
+          Your message has been successfully sent. Thanks for contacting me, I
+          will get back to you soon.
+        </div>
+      </Modal>
+      {loading && (
+        <CircleLoader
+          className="loadingSpinner"
+          loading={loading}
+          cssOverride={override}
+          size={150}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      )}
     </section>
   );
 }

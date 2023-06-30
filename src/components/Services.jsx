@@ -32,6 +32,7 @@ export default function Services() {
               </div>
             </div>
           </div>
+
           {/* Web Applications */}
           <div className="serviceFlipCard">
             <div className="serviceCard">
