@@ -210,9 +210,11 @@ section {
   background-color: var(--color-0);
   margin: 0;
   height: 90vh;
+  min-height: 350px;
   width: 100vw;
-  position: relative;
-  top: -10vh;
+  overflow: hidden;
+  /* position: relative;
+  top: -10vh; */
 }
 
 .startImage {
@@ -302,7 +304,7 @@ figcaption {
   background-color: transparent;
   border: 2px solid var(--color-5);
   color: var(--color-5);
-  margin-top: 10%;
+  margin-top: 5vh;
   position: relative;
   left: 25%;
 }
@@ -345,7 +347,8 @@ header {
   width: 40%;
   min-width: 300px;
   height: 40vh;
-  max-height: 300px;
+  /* max-height: 300px; */
+  min-height: 300px;
   perspective: 1000px;
   margin: 2%;
 }
@@ -390,7 +393,7 @@ header {
 }
 
 #serviceCard-back h3 {
-  font-size: 2em;
+  font-size: 100%;
   color: var(--color-heading);
 }
 
@@ -416,7 +419,7 @@ header {
 
 .serviceLogo {
   color: var(--color-text);
-  font-size: 7em;
+  font-size: 600%;
   padding: 5%;
   align-self: center;
   justify-self: center;
@@ -552,6 +555,7 @@ header {
   height: 70vh;
   /* width: 70vw; */
   max-height: 500px;
+  min-height: 300px;
   /* position: absolute; */
   overflow: hidden;
   background: var(--color-background);
@@ -1143,7 +1147,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* cell phone width */
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 3.4em;
+    font-size: 3em;
   }
 
   footer a {
@@ -1251,14 +1255,63 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: var(--color-1);
 }
 
-@media only screen and (max-width: 700px) and (orientation: landscape) {
+/* Cell phone held wide */
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
   h1 {
-    font-size: 2.6em;
+    font-size: 3em;
     position: relative;
     top: -10px;
   }
 
+  #softwareDeveloper {
+    font-size: 1em;
+  }
+
   #contactMeButton {
-    margin-top: 5px;
+    margin-top: 3px;
+  }
+
+  .project {
+    margin: 0;
+  }
+
+  .project h3 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+
+  .project h4 {
+    font-size: 1.8em;
+    margin-top: 0;
+  }
+
+  .project p {
+    font-size: 1em;
+  }
+
+  .carouselNextButton,
+  .carouselPrevButton {
+    margin: 0;
+    top: 80%;
+  }
+}
+
+@media only screen and (max-height: 400px) and (orientation: landscape) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .project h3 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+
+  .project h4 {
+    font-size: 1.8em;
+    margin-top: 0;
+  }
+
+  .project p {
+    font-size: 1em;
   }
 }

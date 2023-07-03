@@ -36,9 +36,7 @@ function TechStack() {
     {
       id: 11,
       name: "MATLAB",
-      icon: (
-        <img src="/images/Matlab-Logo-color-1.png" height="40em" alt=""></img>
-      ),
+      icon: <img src="/images/Matlab-Logo-bw.png" height="40em" alt=""></img>,
     },
     { id: 12, name: "Visual Studio Code", icon: <DiVisualstudio /> },
     {
