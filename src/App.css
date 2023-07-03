@@ -25,7 +25,7 @@ main {
   --color-4: rgb(231, 246, 242);
   --color-5: rgb(178, 222, 223);
   --color-6: white;
-  --fadeInTime: 2s;
+  --fadeInTime: 1s;
   --padding-Thickness: 3%;
 }
 
@@ -61,6 +61,7 @@ main {
 h1 {
   font-size: 5em;
   font-family: "Kievit-Regular";
+  width: 50%;
 }
 
 h2 {
@@ -190,11 +191,18 @@ section {
   position: sticky;
   top: 0;
   z-index: 4;
+  background-color: transparent;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1),
     rgba(0, 0, 0, 0)
   );
+  animation-delay: 1000ms;
+  animation: fadeIn ease var(--fadeInTme);
+  -webkit-animation: fadeIn ease var(--fadeInTme);
+  -moz-animation: fadeIn ease var(--fadeInTime);
+  -o-animation: fadeIn ease var(--fadeInTime);
+  -ms-animation: fadeIn ease var(--fadeInTime);
 }
 
 /*landingpage*/
@@ -203,6 +211,8 @@ section {
   margin: 0;
   height: 90vh;
   width: 100vw;
+  position: relative;
+  top: -10vh;
 }
 
 .startImage {
@@ -212,7 +222,7 @@ section {
   top: 0;
   right: 0;
   z-index: 1;
-  background-image: url("../public/images/Verena-code-1119-5-small.png");
+  background-image: url("../public/images/Verena-code-1119-5-small-lighter.png");
   background-size: cover;
   background-repeat: no-repeat;
   object-position: right top;
@@ -262,7 +272,7 @@ figcaption {
 
 .startTextContainer > h1 {
   text-align: left;
-  color: var(--color-3);
+  color: var(--color-5);
 }
 
 .wrapper {
@@ -276,7 +286,7 @@ figcaption {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.2em;
   font-weight: bold;
-  color: var(--color-3);
+  color: var(--color-5);
   opacity: 0;
   margin: 2%;
   animation: typing 2s steps(19, end), blink 0.5s step-end infinite alternate;
@@ -290,15 +300,15 @@ figcaption {
 
 #contactMebutton {
   background-color: transparent;
-  border: 2px solid var(--color-3);
-  color: var(--color-3);
+  border: 2px solid var(--color-5);
+  color: var(--color-5);
   margin-top: 10%;
   position: relative;
   left: 25%;
 }
 
 #contactMebutton:hover {
-  background-color: var(--color-3);
+  background-color: var(--color-5);
   color: var(--color-1);
 }
 
@@ -1104,6 +1114,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     max-height: 250px;
   }
 
+  h3 {
+    padding: 20px;
+  }
+
   .col1,
   .col2,
   .col3 {
@@ -1235,4 +1249,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
   height: 58vh;
   background-color: var(--color-background);
   color: var(--color-1);
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+  h1 {
+    font-size: 2.6em;
+    position: relative;
+    top: -10px;
+  }
+
+  #contactMeButton {
+    margin-top: 5px;
+  }
 }

@@ -14,6 +14,7 @@ import { SiGimp } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { SiWebrtc } from "react-icons/si";
+import { SiBootstrap } from "react-icons/si";
 import "react-tooltip/dist/react-tooltip.css";
 
 function TechStack() {
@@ -47,7 +48,8 @@ function TechStack() {
     },
     { id: 14, name: "Material UI", icon: <SiMui /> },
     { id: 15, name: "WebRTC", icon: <SiWebrtc /> },
-    // { id: 16, name: "Gimp", icon: <SiGimp /> },
+    { id: 16, name: "Bootstrap", icon: <SiBootstrap /> },
+    // { id: 17, name: "Gimp", icon: <SiGimp /> },
   ];
 
   const logoItems = logos.map((logo) => {

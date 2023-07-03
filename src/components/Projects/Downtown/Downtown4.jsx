@@ -10,7 +10,7 @@ export default function Downtown3() {
       </div>
       <img
         className="projectScreenshot"
-        src="/images/Screenshot-Downtown-3.jpg"
+        src="/images/Screenshot-Downtown-Guidance.jpg"
         alt="Screenshot of website showing instructions how to log in"
         style={{ objectPosition: "left center" }}
       />

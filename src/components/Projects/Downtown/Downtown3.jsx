@@ -10,7 +10,7 @@ export default function Downtown3() {
       </div>
       <img
         className="projectScreenshot"
-        src="/images/Screenshot-Downtown-5.jpg"
+        src="/images/Screenshot-Downtown-Videochat.jpg"
         alt="Screenshot of website showing buttons for two chatrooms with instructions how to use them."
         style={{ objectPosition: "left", objectFit: "cover" }}
       />
