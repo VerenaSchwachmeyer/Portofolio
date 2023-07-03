@@ -542,6 +542,7 @@ header {
   background-color: var(--color-background);
   color: var(--color-text);
   border-radius: 5px;
+  font-size: 1.2em;
 }
 
 /* Projects */

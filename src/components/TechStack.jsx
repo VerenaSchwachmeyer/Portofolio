@@ -52,7 +52,14 @@ function TechStack() {
 
   const logoItems = logos.map((logo) => {
     return (
-      <li key={logo.id} aria-label={logo.name} tabIndex="0">
+      <li
+        key={logo.id}
+        aria-label={logo.name}
+        tabIndex="0"
+        data-tooltip-id="my-tooltip"
+        data-tooltip-content={logo.name}
+      >
+        <Tooltip id="my-tooltip" className="secondary" />
         <div
           id="logoTile"
           className="graphics"
@@ -61,7 +68,6 @@ function TechStack() {
         >
           {logo.icon}
         </div>
-        <Tooltip id="my-tooltip" className="secondary" />
       </li>
     );
   });
