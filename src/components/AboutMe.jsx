@@ -111,7 +111,7 @@ export default function AboutMe() {
               <br></br>
               <br></br>
               Smart web solutions need a simple and accessible design for an
-              optimal user experience - but with a clean code in the background.{" "}
+              optimal user experience but with a clean code in the background.{" "}
               <br></br>
               <br></br>
             </p>
