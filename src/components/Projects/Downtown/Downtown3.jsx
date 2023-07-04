@@ -1,6 +1,6 @@
 export default function Downtown3() {
   return (
-    <div className="project secondary">
+    <div className="project secondary" tabindex="0">
       <div className="projectText">
         <h4>Video chatrooms</h4>
         <p className="slide1">

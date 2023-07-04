@@ -6,7 +6,7 @@ export default function HeaderHome() {
   return (
     <header className="headerHome">
       <VSLogo id="VSlogo-top" />
-      <Menu right role="menu" aria-label="Menu">
+      <Menu right role="menu" aria-label="Menu" className="menuHeader">
         <ScrollIntoView selector="#services">
           <button
             id="menu-item"

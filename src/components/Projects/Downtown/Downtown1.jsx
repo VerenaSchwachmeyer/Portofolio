@@ -1,6 +1,6 @@
 export default function Downtown1() {
   return (
-    <div className="project secondary">
+    <div className="project secondary" tabindex="0">
       <div className="projectText">
         <h3 className="secondary">Downtown</h3>
         <p className="slide1 secondary">

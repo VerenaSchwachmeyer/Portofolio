@@ -345,7 +345,7 @@ header {
   width: 40%;
   min-width: 300px;
   height: 40vh;
-  /* max-height: 300px; */
+  max-height: 330px;
   min-height: 300px;
   perspective: 1000px;
   margin: 2%;
@@ -417,7 +417,8 @@ header {
 
 .serviceLogo {
   color: var(--color-text);
-  font-size: 600%;
+  font-size: 700%;
+  min-width: 150px;
   padding: 5%;
   align-self: center;
   justify-self: center;
@@ -645,6 +646,8 @@ header {
 
 .alice-carousel__stage-item {
   padding-right: 5%;
+  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .carouselPrevButton {
@@ -693,6 +696,7 @@ header {
   width: 35%;
   height: 25em;
   min-width: 300px;
+  min-height: 500px;
   margin: 2%;
   padding: 2%;
 
@@ -732,6 +736,7 @@ header {
 .screenshotSample {
   object-fit: cover;
   height: 65%;
+  min-height: 250px;
   width: 90%;
   /* object-position: 50% 100%; */
 }
@@ -793,6 +798,8 @@ footer a {
 #footerLogos {
   background-color: var(--color-1);
   color: var(--color-6);
+  font-size: 1.5em;
+  margin: 0px 10px 0px 10px;
 }
 
 #footerLogos:hover {
@@ -973,13 +980,17 @@ label {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 40px !important;
+  width: 40px !important;
+  padding: 5px;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: var(--color-background);
+  background-color: var(--color-6);
+  height: 30px !important;
+  right: 10px !important;
+  top: 5px !important;
 }
 
 /*
@@ -988,6 +999,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 */
 .bm-menu-wrap {
   position: fixed;
+  top: 0;
   height: 100%;
 }
 
@@ -1028,6 +1040,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   color: var(--color-2);
   background: var(--color-2-a);
+  top: 0;
+  width: 100vw !important;
 }
 
 @keyframes fadeIn {

@@ -52,6 +52,8 @@ function Projects() {
         <h2 className="sectionTitle">Projects</h2>
 
         <AliceCarousel
+          role="list"
+          aria-label="Project named Downtown"
           mouseTracking
           // infinite
           autowidth
@@ -61,10 +63,22 @@ function Projects() {
           responsive={responsive}
           itemsFit="fill"
           renderPrevButton={() => {
-            return <GrPrevious className="carouselPrevButton" />;
+            return (
+              <GrPrevious
+                className="carouselPrevButton"
+                role="button"
+                aria-label="go to previous slide"
+              />
+            );
           }}
           renderNextButton={() => {
-            return <GrNext className="carouselNextButton" />;
+            return (
+              <GrNext
+                className="carouselNextButton"
+                role="button"
+                aria-label="go to next slide"
+              />
+            );
           }}
         />
       </div>
