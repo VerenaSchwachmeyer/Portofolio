@@ -25,7 +25,7 @@ export default function Services() {
                 tabindex="0"
               >
                 <h4>Frontend Development:</h4>
-                <ul role="list" aria-label="containing">
+                <ul>
                   <li>UI/UX Design</li>
                   <li>Responsive Design</li>
                   <li>Single or Multi Page</li>
@@ -103,7 +103,7 @@ export default function Services() {
                 tabindex="0"
               >
                 <h4>Balancing the requirements of:</h4>
-                <ul role="list" aria-label="containing">
+                <ul>
                   <li>Database Architecture</li>
                   <li>Scientific Standards</li>
                   <li>Easy Data Input</li>

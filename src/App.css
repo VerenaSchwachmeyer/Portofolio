@@ -771,10 +771,14 @@ header {
   z-index: 2;
 }
 
+.sampleLink:focus-within ~ .cardContainerContent {
+  opacity: 0.1;
+}
+
 .cardContainer:hover .sampleLink {
   opacity: 1;
   /* transform: translateY(150px); */
-  transition-delay: 0.1s;
+  transition-delay: 0.2s;
 }
 
 /* .sampleButtonContainer:hover ~ .cardContainerContent {

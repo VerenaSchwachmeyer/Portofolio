@@ -10,7 +10,7 @@ import { DiMongodb } from "react-icons/di";
 import { SiPostgresql } from "react-icons/si";
 import { Tooltip } from "react-tooltip";
 import { DiVisualstudio } from "react-icons/di";
-import { SiGimp } from "react-icons/si";
+// import { SiGimp } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { SiWebrtc } from "react-icons/si";

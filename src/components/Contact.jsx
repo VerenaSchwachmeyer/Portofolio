@@ -10,7 +10,6 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
 
-  const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
   const sendEmail = (e) => {
