@@ -22,11 +22,12 @@ export default function Services() {
                 className="serviceContent secondary"
                 id="serviceCard-back"
                 aria-label="backside of card"
+                tabindex="0"
               >
                 <h4>Frontend Development:</h4>
                 <ul role="list" aria-label="containing">
                   <li>UI/UX Design</li>
-                  <li>Fully Responsive</li>
+                  <li>Responsive Design</li>
                   <li>Single or Multi Page</li>
                 </ul>
               </div>
@@ -44,11 +45,15 @@ export default function Services() {
                 <h3 className="serviceTitle graphics">Web Applications</h3>
               </div>
 
-              <div className="serviceContent secondary" id="serviceCard-back">
+              <div
+                className="serviceContent secondary"
+                id="serviceCard-back"
+                tabindex="0"
+              >
                 <h4>Full Stack Development:</h4>
                 <ul>
                   <li>Browser-Based</li>
-                  <li>Enhanced Functionality</li>
+                  <li>including Functionality</li>
                   <li>Frontend</li>
                   <li>
                     Backend including <br></br>Server & Database
@@ -70,13 +75,14 @@ export default function Services() {
                 className="serviceContent secondary"
                 id="serviceCard-back"
                 aria-label="backside of card"
+                tabindex="0"
               >
-                <h4 lang="en">Optimization of Operability:</h4>
+                <h4>Optimization of Operability:</h4>
                 <ul>
-                  <li>Color Contrast</li>
+                  <li>Visual Optimization</li>
                   <li>Screen Reader Usability</li>
                   <li>Motor Control</li>
-                  <li>Text Formatting</li>
+                  <li>No Cognitive Overload</li>
                 </ul>
               </div>
             </div>
@@ -94,6 +100,7 @@ export default function Services() {
                 className="serviceContent secondary"
                 id="serviceCard-back"
                 aria-label="backside of card"
+                tabindex="0"
               >
                 <h4>Balancing the requirements of:</h4>
                 <ul role="list" aria-label="containing">

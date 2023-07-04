@@ -111,7 +111,8 @@ button,
 }
 
 button:hover,
-.buttonLinks:hover {
+.buttonLinks:hover,
+.buttonLinks:focus-within {
   cursor: pointer;
   background-color: var(--color-button-text);
   color: var(--color-button-background);
@@ -356,7 +357,7 @@ header {
   width: 100%;
   height: 100%;
   text-align: left;
-  transition: transform 0.6s;
+  transition: transform 0.9s;
   transform-style: preserve-3d;
   border-radius: 5px;
   box-shadow: 0px 2px 6px 0px var(--color-1);
@@ -369,6 +370,10 @@ header {
 }
 
 .serviceFlipCard:hover .serviceCard {
+  transform: rotateY(180deg);
+}
+
+.serviceFlipCard:focus-within .serviceCard {
   transform: rotateY(180deg);
 }
 
@@ -760,14 +765,11 @@ header {
   width: 190px;
 }
 
-.sampleLink:hover {
+.sampleLink:hover,
+.sampleLink:focus-within {
   opacity: 1;
   z-index: 2;
 }
-/* 
-.sampleLink:hover {
-  transition: 0.1s;
-} */
 
 .cardContainer:hover .sampleLink {
   opacity: 1;
