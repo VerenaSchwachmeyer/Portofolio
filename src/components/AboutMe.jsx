@@ -104,16 +104,17 @@ export default function AboutMe() {
             <p id="aboutmeText">
               I have worked in clinical research as a post-doctoral fellow for
               12 years before I decided to pursue my passion for coding as a
-              web-developer. With my previous experience I speak not only the
-              language of "techies" but also physicians, therapists, or nurses.
-              But a medical topic of your project is not necessary - contact me
-              for any subject matter.
-              <br></br>
+              web-developer. With my previous experience as a scientist and
+              physiotherapist, I speak not only the language of "techies" but
+              also physicians, therapists, nurses, and patients. But a medical
+              topic of your project is not necessary - contact me for any
+              subject matter.
+              {/* <br></br>
               <br></br>
               Smart web solutions need a simple and accessible design for an
               optimal user experience but with a clean code in the background.{" "}
               <br></br>
-              <br></br>
+              <br></br> */}
             </p>
           </div>
           {/* <p id="traits">Versatile. Empathic. Solution-oriented.</p> */}

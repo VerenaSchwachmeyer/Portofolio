@@ -11,7 +11,7 @@ function Samples() {
       src: "/images/Screenshot_MemeGenerator-1.jpg",
       alt: "Screenshot of Website",
       caption:
-        "Create your own memes using React JS, REST-API and upload/save file functions.",
+        "Create your own memes. Used tech stack: React JS, REST-API and upload/save file functions.",
     },
     {
       id: 4,
@@ -21,7 +21,7 @@ function Samples() {
       src: "/images/Screenshot_Memorandum-1.jpg",
       alt: "Screenshot of Blog",
       caption:
-        "Make notes on the fly, no biggie. Using HTML, CSS and Vanilla Javascript.",
+        "Make notes on the fly, no biggie. Used tech stack: HTML, CSS and Vanilla Javascript.",
     },
     // {
     //   id: 5,

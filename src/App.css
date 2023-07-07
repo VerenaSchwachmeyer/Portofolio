@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.app {
+  overflow-x: hidden;
+}
+
 main {
   width: 99%;
   display: flex;
@@ -736,6 +740,7 @@ header {
 .cardContainer:hover .cardContainerContent {
   cursor: pointer;
   opacity: 0.1;
+  transition: 0.3s;
 }
 
 .screenshotSample {
@@ -759,7 +764,7 @@ header {
 
 .sampleLink {
   margin: 2%;
-  transition: 0.5s;
+  transition: 0.3s;
   opacity: 0;
   align-self: center;
   width: 190px;
@@ -769,6 +774,7 @@ header {
 .sampleLink:focus-within {
   opacity: 1;
   z-index: 2;
+  transition: 0.3s;
 }
 
 .sampleLink:focus-within ~ .cardContainerContent {
@@ -778,7 +784,7 @@ header {
 .cardContainer:hover .sampleLink {
   opacity: 1;
   /* transform: translateY(150px); */
-  transition-delay: 0.2s;
+  transition-delay: 0.3s;
 }
 
 /* .sampleButtonContainer:hover ~ .cardContainerContent {
