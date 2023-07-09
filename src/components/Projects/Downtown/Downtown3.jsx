@@ -8,12 +8,14 @@ export default function Downtown3() {
           left by a group member at any time.
         </p>
       </div>
-      <img
-        className="projectScreenshot"
-        src="/images/Screenshot-Downtown-Videochat.jpg"
-        alt="Screenshot of website showing buttons for two chatrooms with instructions how to use them."
-        style={{ objectPosition: "left", objectFit: "cover" }}
-      />
+      <div className="poligon">
+        <img
+          className="projectScreenshot"
+          src="/images/Screenshot-Downtown-Videochat.jpg"
+          alt="Screenshot of website showing buttons for two chatrooms with instructions how to use them."
+          style={{ objectPosition: "left", objectFit: "cover" }}
+        />
+      </div>
     </div>
   );
 }

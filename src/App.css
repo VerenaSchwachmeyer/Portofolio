@@ -617,12 +617,24 @@ header {
 }
 
 .poligon {
+  /* display: inline-block; */
   display: inline-block;
+  position: relative;
+  width: 100%;
   height: 100%;
-  width: 10%;
-  background: var(--color-6);
+  background: white;
   box-sizing: border-box;
-  -webkit-clip-path: polygon(
+  /* overflow: hidden; */
+  clip-path: polygon(
+    0% 0%,
+    0% 50%,
+    40px 0%,
+    100% 0%,
+    100% 100%,
+    40px 100%,
+    0% 50%
+  );
+  /* -webkit-clip-path: polygon(
     45px 0%,
     0% 50%,
     40px 100%,
@@ -637,20 +649,22 @@ header {
     100% 0%,
     100% 100%,
     80px 100%,
-    0% 50% */ polygon(
+    0% 50%  polygon(
     40px 0%,
     0% 50%,
     45px 100%,
     45px 100%,
     5px 50%,
     40px 0%
-  );
+  ); */
 }
 
 .projectScreenshot {
   object-fit: cover;
+  position: absolute;
+  left: 2px; /* equal to border thickness */
   height: 100%;
-  width: 60%;
+  width: 100%;
   clip-path: polygon(
     0% 0%,
     0% 50%,
@@ -1248,7 +1262,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: 100%;
   }
 
-  .projectScreenshot {
+  .poligon {
+    clip-path: none;
+  }
+
+  .projectScreenshot,
+  .poligon {
+    left: 0px;
     width: 100%;
     clip-path: none;
     object-position: center right;
@@ -1337,7 +1357,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .carouselNextButton,
   .carouselPrevButton {
     margin: 0;
-    top: 80%;
+    top: 85%;
   }
 }
 

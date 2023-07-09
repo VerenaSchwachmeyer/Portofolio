@@ -17,12 +17,13 @@ export default function Downtown1() {
           Visit Website
         </a>
       </div>
-      {/* <div className="poligon"></div> */}
-      <img
-        className="projectScreenshot"
-        src="/images/Downtown-Titelbild-1.jpg"
-        alt="A group of 4 people with down syndrome are standing together and laughing."
-      />
+      <div className="poligon">
+        <img
+          className="projectScreenshot"
+          src="/images/Downtown-Titelbild-1.jpg"
+          alt="A group of 4 people with down syndrome are standing together and laughing."
+        />
+      </div>
     </div>
   );
 }
