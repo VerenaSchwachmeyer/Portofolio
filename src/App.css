@@ -374,11 +374,11 @@ header {
   cursor: pointer;
 }
 
-.serviceFlipCard:hover .serviceCard {
+.flip .serviceCard {
   transform: rotateY(180deg);
 }
 
-.serviceFlipCard:focus-within .serviceCard {
+.serviceFlipCard:focus .serviceCard {
   transform: rotateY(180deg);
 }
 
@@ -536,6 +536,9 @@ header {
 }
 
 .logoListItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 12%;
   height: 100px;
 }
@@ -1258,6 +1261,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .formButton {
     margin: 20px;
+  }
+
+  .projectScreenshot {
+    border-top: 2px solid var(--color-6);
   }
 }
 
