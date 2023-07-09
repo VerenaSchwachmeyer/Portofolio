@@ -219,6 +219,11 @@ section {
   overflow: hidden;
 }
 
+.startpageContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
 .startImage {
   height: 100vh;
   min-height: 350px;
@@ -230,7 +235,7 @@ section {
   background-image: url("../public/images/Verena-code-1119-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  object-position: right top;
+  background-position: left top;
   margin: 0;
   animation: fadeIn ease var(--fadeInTme);
   -webkit-animation: fadeIn ease var(--fadeInTme);
@@ -1215,7 +1220,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .startImage {
-    background-size: contain;
+    background-size: cover;
+    background-position: right top;
+  }
+
+  .startpageContainer {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   .portrait-info {
@@ -1386,5 +1396,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .project p {
     font-size: 1em;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  #softwareDeveloper {
+    animation: none;
   }
 }
