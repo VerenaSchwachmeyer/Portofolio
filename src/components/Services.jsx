@@ -5,13 +5,27 @@ import { FaUserMd } from "react-icons/fa";
 import { MdOutlineAppSettingsAlt } from "react-icons/md";
 
 export default function Services() {
+  const handleTouchStart = (e) => {
+    e.preventDefault();
+    e.target.focus();
+  };
+
+  const handleTouchEnd = (e) => {
+    e.preventDefault();
+    e.target.blur();
+  };
+
   return (
     <section id="services" className="section primary" aria-label="services">
       <div className="content">
         <h2 className="sectionTitle">Services</h2>
         <div className="serviceContainer">
           {/* Websites */}
-          <div className="serviceFlipCard">
+          <div
+            className="serviceFlipCard"
+            onTouchStart={(e) => handleTouchStart(e)}
+            onTouchEnd={(e) => handleTouchEnd(e)}
+          >
             <div className="serviceCard" aria-label="frontside of card">
               <div className="serviceContent primary" id="serviceCard-front">
                 <CgWebsite className="serviceLogo graphics" />
@@ -35,7 +49,11 @@ export default function Services() {
           </div>
 
           {/* Web Applications */}
-          <div className="serviceFlipCard">
+          <div
+            className="serviceFlipCard"
+            onTouchStart={(e) => handleTouchStart(e)}
+            onTouchEnd={(e) => handleTouchEnd(e)}
+          >
             <div className="serviceCard">
               <div className="serviceContent primary" id="serviceCard-front">
                 <div>
@@ -64,7 +82,11 @@ export default function Services() {
           </div>
 
           {/* Accessibility */}
-          <div className="serviceFlipCard">
+          <div
+            className="serviceFlipCard"
+            onTouchStart={(e) => handleTouchStart(e)}
+            onTouchEnd={(e) => handleTouchEnd(e)}
+          >
             <div className="serviceCard" aria-label="frontside of card">
               <div className="serviceContent primary" id="serviceCard-front">
                 <ImAccessibility className="serviceLogo graphics" />
@@ -89,7 +111,11 @@ export default function Services() {
           </div>
 
           {/* Medical Content */}
-          <div className="serviceFlipCard">
+          <div
+            className="serviceFlipCard"
+            onTouchStart={(e) => handleTouchStart(e)}
+            onTouchEnd={(e) => handleTouchEnd(e)}
+          >
             <div className="serviceCard" aria-label="frontside of card">
               <div className="serviceContent primary" id="serviceCard-front">
                 <FaUserMd className="serviceLogo graphics" />
