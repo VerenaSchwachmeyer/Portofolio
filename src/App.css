@@ -1032,6 +1032,11 @@ label {
 Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
+.menuHeader {
+  width: 100vw;
+  height: 100vh;
+}
+
 .bm-menu-wrap {
   position: fixed;
   top: 0;
@@ -1068,7 +1073,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .bm-item:hover,
 #menu-item:hover {
-  color: var(--color-background);
+  /* background-color: var(--color-4);
+  color: var(--color-1); */
+  /* text-decoration: underline;
+  text-underline-offset: 4px;*/
 }
 
 /* Styling of overlay */

@@ -4,9 +4,8 @@ import ScrollIntoView from "react-scroll-into-view";
 
 export default function HeaderHome() {
   return (
-    <header className="headerHome">
-      <VSLogo id="VSlogo-top" />
-      <Menu right role="menu" aria-label="Menu" className="menuHeader">
+    <>
+      <Menu right role="menu" aria-label="Menu" className="primary">
         <ScrollIntoView selector="#services">
           <button
             id="menu-item"
@@ -51,6 +50,9 @@ export default function HeaderHome() {
           </button>
         </ScrollIntoView>
       </Menu>
-    </header>
+      <header className="headerHome">
+        <VSLogo id="VSlogo-top" />
+      </header>
+    </>
   );
 }
