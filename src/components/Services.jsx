@@ -8,9 +8,9 @@ import { MdOutlineAppSettingsAlt } from "react-icons/md";
 export default function Services() {
   const [focused, setFocused] = useState(false);
 
-useEffect( ()=>{
- focused === true ? e.target.focus() : e.target.blur();
-  ,[]})
+  useEffect((e) => {
+    focused === true ? e.target.focus() : e.target.blur();
+  }, []);
 
   // const handleTouchStart = (e) => {
   //   e.preventDefault();
