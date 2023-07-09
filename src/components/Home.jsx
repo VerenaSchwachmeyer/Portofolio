@@ -20,53 +20,6 @@ export default function Home() {
       <SkipLink />
 
       <HeaderHome />
-      {/* <VSLogo id="VSlogo-top" /> */}
-
-      {/* <Menu right role="menu" aria-label="Menu">
-        <ScrollIntoView selector="#services">
-          <button
-            id="menu-item"
-            className="mdl-button mdl-js-button mdl-button--raised"
-          >
-            Services
-          </button>
-        </ScrollIntoView>
-        <ScrollIntoView selector="#aboutme">
-          <button
-            id="menu-item"
-            className="mdl-button mdl-js-button mdl-button--raised"
-          >
-            About Me
-          </button>
-        </ScrollIntoView>
-
-        <ScrollIntoView selector="#techStack">
-          <button
-            id="menu-item"
-            className="mdl-button mdl-js-button mdl-button--raised"
-          >
-            Tech Stack
-          </button>
-        </ScrollIntoView>
-
-        <ScrollIntoView selector="#projects">
-          <button
-            id="menu-item"
-            className="mdl-button mdl-js-button mdl-button--raised"
-          >
-            My Work
-          </button>
-        </ScrollIntoView>
-
-        <ScrollIntoView selector="#contact">
-          <button
-            id="menu-item"
-            className="mdl-button mdl-js-button mdl-button--raised"
-          >
-            Contact
-          </button>
-        </ScrollIntoView>
-      </Menu> */}
 
       <LandingPage />
       <main id="main" lang="en">

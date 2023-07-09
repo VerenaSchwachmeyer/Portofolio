@@ -231,7 +231,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   object-position: right top;
-  margin: none;
+  margin: 0;
   animation: fadeIn ease var(--fadeInTme);
   -webkit-animation: fadeIn ease var(--fadeInTme);
   -moz-animation: fadeIn ease var(--fadeInTime);
