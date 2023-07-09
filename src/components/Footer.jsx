@@ -121,7 +121,7 @@ function Footer() {
             </div>
           </IconContext.Provider>
 
-          <p>photo and logo by Tobias Büchner:</p>
+          {/* <p>photo and logo by Tobias Büchner:</p>
           <Link
             reloadDocument
             to="http://dervj.de/"
@@ -132,7 +132,7 @@ function Footer() {
             aria-label="go to page of derVJ"
           >
             der VJ
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>

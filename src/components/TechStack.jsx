@@ -58,6 +58,7 @@ function TechStack() {
         tabIndex="0"
         data-tooltip-id="my-tooltip"
         data-tooltip-content={logo.name}
+        className="logoListItems"
       >
         <Tooltip id="my-tooltip" className="secondary" />
         <div

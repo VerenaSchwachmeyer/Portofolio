@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { CgWebsite } from "react-icons/cg";
 // import { BiDesktop } from "react-icons/bi";
 import { ImAccessibility } from "react-icons/im";
@@ -8,17 +8,15 @@ import { MdOutlineAppSettingsAlt } from "react-icons/md";
 export default function Services() {
   const [focused, setFocused] = useState(false);
 
-  useEffect((e) => {
-    focused === true ? e.target.focus() : e.target.blur();
-  }, []);
-
-  // const handleTouchStart = (e) => {
-  //   e.preventDefault();
-  //   e.target.focus();
-  // };
+  const handleTouchStart = (e) => {
+    e.preventDefault();
+    setFocused(!focused);
+    focused === true ? e.currentTarget.focus() : e.currentTarget.blur();
+  };
 
   const handleTouchEnd = (e) => {
     e.preventDefault();
+    setFocused(false);
     e.target.blur();
   };
 
@@ -39,8 +37,8 @@ export default function Services() {
                 className="serviceContent secondary"
                 id="serviceCard-back"
                 aria-label="backside of card"
-                tabindex="0"
-                onTouchStart={setFocused(!focused)}
+                tabIndex="0"
+                onTouchStart={(e) => handleTouchStart(e)}
                 onTouchEnd={(e) => handleTouchEnd(e)}
               >
                 <h4>Frontend Development:</h4>
@@ -67,8 +65,8 @@ export default function Services() {
               <div
                 className="serviceContent secondary"
                 id="serviceCard-back"
-                tabindex="0"
-                onTouchStart={setFocused(!focused)}
+                tabIndex="0"
+                onTouchStart={(e) => handleTouchStart(e)}
                 onTouchEnd={(e) => handleTouchEnd(e)}
               >
                 <h4>Full Stack Development:</h4>
@@ -96,8 +94,8 @@ export default function Services() {
                 className="serviceContent secondary"
                 id="serviceCard-back"
                 aria-label="backside of card"
-                tabindex="0"
-                onTouchStart={setFocused(!focused)}
+                tabIndex="0"
+                onTouchStart={(e) => handleTouchStart(e)}
                 onTouchEnd={(e) => handleTouchEnd(e)}
               >
                 <h4>Optimization of Operability:</h4>
@@ -123,8 +121,8 @@ export default function Services() {
                 className="serviceContent secondary"
                 id="serviceCard-back"
                 aria-label="backside of card"
-                tabindex="0"
-                onTouchStart={setFocused(!focused)}
+                tabIndex="0"
+                onTouchStart={(e) => handleTouchStart(e)}
                 onTouchEnd={(e) => handleTouchEnd(e)}
               >
                 <h4>Balancing the requirements of:</h4>

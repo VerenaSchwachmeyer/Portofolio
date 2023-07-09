@@ -535,6 +535,11 @@ header {
   padding: var(--padding-Thickness);
 }
 
+.logoListItems {
+  width: 12%;
+  height: 100px;
+}
+
 #logoTile {
   background-color: var(--color-background);
   height: 70px;
@@ -1143,6 +1148,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     padding: 20px;
   }
 
+  .logoListItems {
+    width: 90px;
+  }
+
   .col1,
   .col2,
   .col3 {
@@ -1172,7 +1181,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   h2 {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   footer a {
@@ -1245,6 +1254,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   label {
     width: 100%;
+  }
+
+  .formButton {
+    margin: 20px;
   }
 }
 
