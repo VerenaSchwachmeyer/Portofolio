@@ -285,6 +285,7 @@ figcaption {
   display: grid;
   place-items: right;
   width: 20%;
+  width: 300px;
 }
 
 #softwareDeveloper {
@@ -1134,11 +1135,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 @media only screen and (max-width: 768px) {
-  .logoList {
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-
   .header {
     max-height: 250px;
   }
