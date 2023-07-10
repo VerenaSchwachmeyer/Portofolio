@@ -1221,11 +1221,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .startImage {
     background-size: cover;
-    background-position: right top;
+    background-position: right -50px top;
   }
 
   .startpageContainer {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .portrait-info {
