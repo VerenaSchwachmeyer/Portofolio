@@ -858,7 +858,11 @@ footer a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+}
+
+.col1 {
+  flex-shrink: 1;
 }
 
 .col1,
@@ -869,7 +873,7 @@ footer a {
   justify-content: flex-start;
   align-items: center;
   min-width: 300px;
-  max-width: 30vw;
+  max-width: 25vw;
 }
 
 .col3 > p {
@@ -1063,6 +1067,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: var(--color-1);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  overflow-y: auto !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -1086,13 +1091,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background-color: var(--color-1);
 }
 
-.bm-item:hover,
+/* .bm-item:hover,
 #menu-item:hover {
-  /* background-color: var(--color-4);
-  color: var(--color-1); */
-  /* text-decoration: underline;
+  color: var(--color-1);
+  background-color: var(--color-4);
+} */
+/* background-color: var(--color-4);
+  text-decoration: underline;
   text-underline-offset: 4px;*/
-}
 
 /* Styling of overlay */
 .bm-overlay {
@@ -1197,6 +1203,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .col3 {
     margin-top: 30px;
   }
+
   .carouselPrevButton {
     top: 80%;
     left: 10%;

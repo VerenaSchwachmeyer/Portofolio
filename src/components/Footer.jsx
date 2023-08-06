@@ -75,7 +75,7 @@ function Footer() {
     <footer>
       <div className="colContainer">
         <div className="col1">
-          <img src="/images/VS_Logo_w_code.avif" alt="" height="60px"></img>
+          <img src="/images/VS-Logo-no-code.png" alt="" height="60px"></img>
           <p id="copyright">&copy; 2023 Copyright - Verena Schwachmeyer</p>
         </div>
 

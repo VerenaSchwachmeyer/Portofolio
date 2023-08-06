@@ -30,9 +30,10 @@ export default function Impressum() {
             </p>
 
             <br></br>
-            <h3>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG</h3>
-            <p>Die Umsatzsteuer-Nummer befindet sich in der Beantragung.</p>
-            {/* <p>USt-ID-Nr: DE1234567890</p> */}
+            <h3>Umsatzsteuer-Identifikationsnummer </h3>
+            <p> Gemäß §19 UStG im Jahr 2022 umsatzsteuerberfreit.</p>
+            {/* <p>Die Umsatzsteuer-Nummer befindet sich in der Beantragung.</p> */}
+            {/* <p> gemäß § 27a UStG ...USt-ID-Nr: DE1234567890</p> */}
             <br></br>
 
             <div classname="disclaimer">

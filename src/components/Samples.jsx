@@ -8,7 +8,7 @@ function Samples() {
       name: "Meme Generator",
       linkSite: "https://charming-pothos-c44bc4.netlify.app/",
       linkRepo: "https://github.com/VerenaSchwachmeyer/Meme-Generator",
-      src: "/images/Screenshot_MemeGenerator-1.jpg",
+      src: "/images/Screenshot_MemeGenerator-2.jpg",
       alt: "Screenshot of Website",
       caption:
         "Create your own memes. Used tech stack: React JS, REST-API and upload/save file functions.",
