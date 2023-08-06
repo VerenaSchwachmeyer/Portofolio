@@ -101,12 +101,14 @@ export default function Contact() {
         open={open}
         onClose={onCloseModal}
         center
-        aria-labelledby="my-modal-title"
-        aria-describedby="my-modal-description"
+        aria-modal="true"
+        aria-labelledby="Message-was-sent"
+        aria-describedby="modal-description"
+        aria-busy="false"
       >
-        <h3 id="my-modal-title">Thank you</h3>
+        <h3 id="Message-was-sent">Thank you</h3>
 
-        <div id="my-modal-description">
+        <div id="modal-description">
           Your message has been successfully sent. Thanks for contacting me, I
           will get back to you soon.
         </div>
@@ -117,6 +119,7 @@ export default function Contact() {
           loading={loading}
           cssOverride={override}
           size={150}
+          aria-busy="true"
           aria-label="Loading Spinner"
           data-testid="loader"
         />

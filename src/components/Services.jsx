@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { CgWebsite } from "react-icons/cg";
-// import { BiDesktop } from "react-icons/bi";
 import { ImAccessibility } from "react-icons/im";
 import { FaUserMd } from "react-icons/fa";
 import { MdOutlineAppSettingsAlt } from "react-icons/md";
@@ -36,14 +35,17 @@ export default function Services() {
             }}
           >
             <div className="serviceCard" aria-label="frontside of card">
-              <div className="serviceContent primary" id="serviceCard-front">
+              <div
+                className="serviceContent serviceCard-front primary"
+                // id="serviceCard-front"
+              >
                 <CgWebsite className="serviceLogo graphics" />
                 <h3 className="serviceTitle graphics">Websites</h3>
               </div>
 
               <div
-                className="serviceContent secondary"
-                id="serviceCard-back"
+                className="serviceContent serviceCard-back secondary"
+                // id="serviceCard-back"
                 aria-label="backside of card"
                 tabIndex="0"
               >
@@ -66,7 +68,7 @@ export default function Services() {
             }}
           >
             <div className="serviceCard">
-              <div className="serviceContent primary" id="serviceCard-front">
+              <div className="serviceContent serviceCard-front primary">
                 <div>
                   <MdOutlineAppSettingsAlt className="serviceLogo graphics" />
                 </div>
@@ -75,8 +77,7 @@ export default function Services() {
               </div>
 
               <div
-                className="serviceContent secondary"
-                id="serviceCard-back"
+                className="serviceContent serviceCard-back secondary"
                 tabIndex="0"
               >
                 <h4>Full Stack Development:</h4>
@@ -101,14 +102,13 @@ export default function Services() {
             }}
           >
             <div className="serviceCard" aria-label="frontside of card">
-              <div className="serviceContent primary" id="serviceCard-front">
+              <div className="serviceContent serviceCard-front primary">
                 <ImAccessibility className="serviceLogo graphics" />
                 <h3 className="serviceTitle graphics">Accessibility</h3>
               </div>
 
               <div
-                className="serviceContent secondary"
-                id="serviceCard-back"
+                className="serviceContent serviceCard-back secondary"
                 aria-label="backside of card"
                 tabIndex="0"
               >
@@ -133,14 +133,13 @@ export default function Services() {
             // onTouchEnd={(e) => handleTouchEnd(e)}
           >
             <div className="serviceCard" aria-label="frontside of card">
-              <div className="serviceContent primary" id="serviceCard-front">
+              <div className="serviceContent serviceCard-front primary">
                 <FaUserMd className="serviceLogo graphics" />
                 <h3 className="serviceTitle graphics">Medical Orientation</h3>
               </div>
 
               <div
-                className="serviceContent secondary"
-                id="serviceCard-back"
+                className="serviceContent serviceCard-back secondary"
                 aria-label="backside of card"
                 tabIndex="0"
               >

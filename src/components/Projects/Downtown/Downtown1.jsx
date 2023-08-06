@@ -20,7 +20,7 @@ export default function Downtown1() {
       <div className="poligon">
         <img
           className="projectScreenshot"
-          src="/images/Downtown-Titelbild-1.jpg"
+          src="/images/Downtown-Titelbild-2.jpg"
           alt="A group of 4 people with down syndrome are standing together and laughing."
         />
       </div>

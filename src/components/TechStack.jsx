@@ -15,6 +15,7 @@ import { SiMui } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { SiWebrtc } from "react-icons/si";
 import { SiBootstrap } from "react-icons/si";
+import { SiGoogletagmanager } from "react-icons/si";
 import "react-tooltip/dist/react-tooltip.css";
 
 function TechStack() {
@@ -30,24 +31,34 @@ function TechStack() {
     {
       id: 9,
       name: "ExpressJS",
-      icon: <img src="/images/ExpressJS-Logo1.png" height="40em" alt=""></img>,
+      icon: (
+        <img src="/images/ExpressJS-Logo-color0.png" height="40em" alt=""></img>
+      ),
     },
-    { id: 10, name: "GitHub", icon: <FaGithub /> },
+    // { id: 10, name: "Google Tag Manager", icon: <SiGoogletagmanager /> },
+    { id: 11, name: "GitHub", icon: <FaGithub /> },
     {
-      id: 11,
+      id: 12,
       name: "MATLAB",
-      icon: <img src="/images/Matlab-Logo-bw.png" height="40em" alt=""></img>,
+      icon: (
+        <img
+          src="/images/Matlab-Logo-color0.png"
+          height="40em"
+          width="auto"
+          alt=""
+        ></img>
+      ),
     },
-    { id: 12, name: "Visual Studio Code", icon: <DiVisualstudio /> },
+    { id: 13, name: "Visual Studio Code", icon: <DiVisualstudio /> },
     {
-      id: 13,
+      id: 14,
       name: "git",
       icon: <FaGitSquare />,
     },
-    { id: 14, name: "Material UI", icon: <SiMui /> },
-    { id: 15, name: "WebRTC", icon: <SiWebrtc /> },
-    { id: 16, name: "Bootstrap", icon: <SiBootstrap /> },
-    // { id: 17, name: "Gimp", icon: <SiGimp /> },
+    { id: 15, name: "Material UI", icon: <SiMui /> },
+    { id: 16, name: "WebRTC", icon: <SiWebrtc /> },
+    { id: 17, name: "Bootstrap", icon: <SiBootstrap /> },
+    // { id: 18, name: "Gimp", icon: <SiGimp /> },
   ];
 
   const logoItems = logos.map((logo) => {

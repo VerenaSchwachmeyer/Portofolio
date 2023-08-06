@@ -21,7 +21,7 @@ function Samples() {
       src: "/images/Screenshot_Memorandum-1.jpg",
       alt: "Screenshot of Blog",
       caption:
-        "Make notes on the fly, no biggie. Used tech stack: HTML, CSS and Vanilla Javascript.",
+        "Make notes on the fly, no biggie. Code written in Vanilla JavaScript.",
     },
     // {
     //   id: 5,

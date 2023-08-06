@@ -1,4 +1,5 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +58,7 @@ main {
 /* graphics color scheme */
 .graphics {
   --color-background: var(--color-3);
-  --color-text: var(--color-contrast);
+  --color-text: var(--color-0);
   --color-heading: var(--color-contrast);
 }
 
@@ -84,10 +85,11 @@ h4 {
   padding-bottom: var(--padding-Thickness);
 }
 
-h5 {
+.footerHeading {
   font-size: 1em;
   padding-bottom: var(--padding-Thickness);
   color: var(--color-heading);
+  font-family: "Roboto-Regular";
 }
 
 p {
@@ -196,7 +198,7 @@ section {
   position: sticky;
   top: 0;
   z-index: 4;
-  background-color: transparent;
+  background: transparent;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1),
@@ -232,7 +234,7 @@ section {
   top: 0;
   right: 0;
   z-index: 1;
-  background-image: url("../public/images/Verena-code-1119-6.jpg");
+  background-image: url("../public/images/Verena-Schwachmeyer-Coding-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
@@ -330,7 +332,7 @@ header {
   height: 15vh;
   width: 100%;
   text-align: center;
-  background-image: url("../public/images/Verena-code-1119-6.jpg");
+  background-image: url("../public/images/Verena-Schwachmeyer-Coding-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -367,7 +369,7 @@ header {
   width: 100%;
   height: 100%;
   text-align: left;
-  transition: transform 0.9s;
+  transition: box-shadow 0.9s, transform 0.9s;
   transform-style: preserve-3d;
   border-radius: 5px;
   box-shadow: 0px 2px 6px 0px var(--color-1);
@@ -377,6 +379,8 @@ header {
 
 .serviceFlipCard:hover .serviceCard {
   cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 1px 6px 6px 0px var(--color-1);
 }
 
 .flip .serviceCard {
@@ -387,8 +391,8 @@ header {
   transform: rotateY(180deg);
 }
 
-#serviceCard-front,
-#serviceCard-back {
+.serviceCard-front,
+.serviceCard-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -397,27 +401,27 @@ header {
   border-radius: 5px;
 }
 
-#serviceCard-front {
-  background-color: var(--color-3);
+.serviceCard-front {
+  background-color: var(--color-3) !important;
 }
 
-#serviceCard-back {
+.serviceCard-back {
   transform: rotateY(180deg);
 }
 
-#serviceCard-back h3 {
+.serviceCard-back h3 {
   font-size: 100%;
   color: var(--color-heading);
 }
 
-#serviceCard-back h4 {
+.serviceCard-back h4 {
   font-size: 1.7em;
   color: var(--color-heading);
   margin: 4%;
   text-align: center;
 }
 
-#serviceCard-back li {
+.serviceCard-back li {
   font-size: 1.1em;
 }
 
@@ -483,6 +487,7 @@ header {
 
 #portrait {
   height: 30vh;
+  min-height: 100px;
   border-radius: 50%;
 }
 
@@ -765,7 +770,8 @@ header {
   text-align: justify;
 }
 
-.cardContainer:hover .cardContainerContent {
+.cardContainer:hover .cardContainerContent,
+.cardContainer:focus-within .cardContainerContent {
   cursor: pointer;
   opacity: 0.1;
   transition: 0.3s;
@@ -812,7 +818,7 @@ header {
 .cardContainer:hover .sampleLink {
   opacity: 1;
   /* transform: translateY(150px); */
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
 
 /* .sampleButtonContainer:hover ~ .cardContainerContent {
@@ -848,8 +854,11 @@ footer a {
 }
 
 .colContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .col1,
@@ -860,6 +869,7 @@ footer a {
   justify-content: flex-start;
   align-items: center;
   min-width: 300px;
+  max-width: 30vw;
 }
 
 .col3 > p {
@@ -1221,11 +1231,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .startImage {
     background-size: cover;
-    background-position: right -50px top;
+    background-position: right -90px top 0px;
   }
 
   .startpageContainer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   .portrait-info {
@@ -1256,7 +1266,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-size: 0.7em;
   }
 
-  #sample {
+  .sample {
     min-width: 340px;
   }
 
