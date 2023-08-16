@@ -31,7 +31,7 @@ export default function Impressum() {
 
             <br></br>
             <h3>Umsatzsteuer-Identifikationsnummer </h3>
-            <p> Gemäß §19 UStG im Jahr 2022 umsatzsteuerberfreit.</p>
+            <p> Gemäß §19 UStG im Jahr 2023 umsatzsteuerbefreit.</p>
             {/* <p>Die Umsatzsteuer-Nummer befindet sich in der Beantragung.</p> */}
             {/* <p> gemäß § 27a UStG ...USt-ID-Nr: DE1234567890</p> */}
             <br></br>

@@ -3,8 +3,6 @@
   align-items: center;
   height: 0px;
   /* width: 50%; */
-  position: sticky;
-  top: 35px;
   margin: 15px;
   z-index: 2;
 }

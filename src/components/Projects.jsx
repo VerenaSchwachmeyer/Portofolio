@@ -7,6 +7,7 @@ import Downtown1 from "./Projects/Downtown/Downtown1";
 import Downtown2 from "./Projects/Downtown/Downtown2";
 import Downtown3 from "./Projects/Downtown/Downtown3";
 import Downtown4 from "./Projects/Downtown/Downtown4";
+import Linov1 from "./Projects/Linov/Linov1";
 
 function Projects() {
   //This list of projects could be "outsourced" into a separate file or even database in the future
@@ -49,7 +50,7 @@ function Projects() {
   return (
     <section id="projects" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">Projects</h2>
+        <h2 className="sectionTitle">Work</h2>
 
         <AliceCarousel
           role="list"
@@ -81,6 +82,7 @@ function Projects() {
             );
           }}
         />
+        <Linov1 />
       </div>
     </section>
   );

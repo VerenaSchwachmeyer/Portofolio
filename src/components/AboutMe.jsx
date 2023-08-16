@@ -101,7 +101,7 @@ export default function AboutMe() {
               alt="Portrait of Verena Schwachmeyer"
               aria-label="Portrait of Verena wearing a dark blue shirt. Blond hair, blue eyes."
             />
-            <p id="aboutmeText">
+            <p className="aboutmeText">
               I have worked in clinical research as a post-doctoral fellow for
               12 years before I decided to pursue my passion for coding as a
               web-developer. With my previous experience as a scientist and
@@ -109,35 +109,8 @@ export default function AboutMe() {
               also physicians, therapists, nurses, and patients. But a medical
               topic of your project is not necessary - contact me for any
               subject matter.
-              {/* <br></br>
-              <br></br>
-              Smart web solutions need a simple and accessible design for an
-              optimal user experience but with a clean code in the background.{" "}
-              <br></br>
-              <br></br> */}
             </p>
           </div>
-          {/* <p id="traits">Versatile. Empathic. Solution-oriented.</p> */}
-          {/* <div className="infoArea">{infoItems}</div> */}
-          {/* <ul>
-          <li>
-            <strong>Versatility: </strong>
-            <br></br>Coding, data analysis, direct customer contact, public
-            speaking, consulting project partners, medical writing, etc etc.
-            etc.
-          </li>
-          <li>
-            <strong>Soft skills: </strong>
-            <br></br>
-            Critical self-reflexion and empathy for customers, project partners,
-            team members, and oneself (!) are key to ANYTHING.
-          </li>
-          <li>
-            <strong> Analytical, inductive thinking: </strong> <br></br>No
-            wasting time with lamenting - instead understand the underlying
-            problem and find a way to solve it.
-          </li>
-        </ul> */}
         </div>
       </section>
     </>

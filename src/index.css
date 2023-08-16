@@ -46,9 +46,57 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Segoe-SemiBold";
+  src: url("../public/fonts/Segoe/SegoeUI-Semibold.ttf") format("truetype"),
+    url("../public/fonts/Segoe/SegoeUI-Semibold.eot") format("woff"),
+    url("../public/fonts/Segoe/SegoeUI-Semibold.woff2") format("woff2"),
+    url("../public/fonts/Segoe/SegoeUI-Semibold.eot") format("eot"),
+    url("../public/fonts/Segoe/SegoeUI-Semibold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe-Light";
+  src: url("../public/fonts/Segoe/SegoeUI-Light.ttf") format("truetype"),
+    url("../public/fonts/Segoe/SegoeUI-Light.woff") format("woff"),
+    url("../public/fonts/Segoe/SegoeUI-Light.woff2") format("woff2"),
+    url("../public/fonts/Segoe/SegoeUI-Light.eot") format("eot"),
+    url("../public/fonts/Segoe/SegoeUI-Light.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe-Semilight";
+  src: url("../public/fonts/Segoe/SegoeUI-Semilight.ttf") format("truetype"),
+    url("../public/fonts/Segoe/SegoeUI-Semilight.woff") format("woff"),
+    url("../public/fonts/Segoe/SegoeUI-Semilight.woff2") format("woff2"),
+    url("../public/fonts/Segoe/SegoeUI-Semilight.eot") format("eot"),
+    url("../public/fonts/Segoe/SegoeUI-Semilight.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe-Bold";
+  src: url("../public/fonts/Segoe/Segoe-Bold.ttf") format("truetype"),
+    url("../public/fonts/Segoe/Segoe-Bold.woff") format("woff"),
+    url("../public/fonts/Segoe/Segoe-Bold.woff2") format("woff2"),
+    url("../public/fonts/Segoe/Segoe-Bold.eot") format("eot"),
+    url("../public/fonts/Segoe/Segoe-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
-  font-family: "Roboto-Regular";
+  font-family: "Segoe-Semilight", sans-serif;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

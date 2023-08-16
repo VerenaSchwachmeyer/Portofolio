@@ -40,7 +40,7 @@ export default function Services() {
                 // id="serviceCard-front"
               >
                 <CgWebsite className="serviceLogo graphics" />
-                <h3 className="serviceTitle graphics">Websites</h3>
+                <h3 className="serviceTitle graphics">WEBSITES</h3>
               </div>
 
               <div
@@ -51,7 +51,8 @@ export default function Services() {
               >
                 <h4>Frontend Development:</h4>
                 <ul>
-                  <li>UI/UX Design</li>
+                  <li>User Interface (UI)</li>
+                  <li>High quality user experience (UX)</li>
                   <li>Responsive Design</li>
                   <li>Single or Multi Page</li>
                 </ul>
@@ -73,7 +74,7 @@ export default function Services() {
                   <MdOutlineAppSettingsAlt className="serviceLogo graphics" />
                 </div>
 
-                <h3 className="serviceTitle graphics">Web Applications</h3>
+                <h3 className="serviceTitle graphics">WEB APPLICATIONS</h3>
               </div>
 
               <div
@@ -104,7 +105,7 @@ export default function Services() {
             <div className="serviceCard" aria-label="frontside of card">
               <div className="serviceContent serviceCard-front primary">
                 <ImAccessibility className="serviceLogo graphics" />
-                <h3 className="serviceTitle graphics">Accessibility</h3>
+                <h3 className="serviceTitle graphics">ACCESSIBILITY</h3>
               </div>
 
               <div
@@ -135,7 +136,7 @@ export default function Services() {
             <div className="serviceCard" aria-label="frontside of card">
               <div className="serviceContent serviceCard-front primary">
                 <FaUserMd className="serviceLogo graphics" />
-                <h3 className="serviceTitle graphics">Medical Orientation</h3>
+                <h3 className="serviceTitle graphics">MEDICAL ORIENTATION</h3>
               </div>
 
               <div
@@ -152,6 +153,15 @@ export default function Services() {
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          {/* <p className="aboutmeText">
+            I develop websites with a fully responsive frontend. full-stack web
+            apps that include a database and server communication via API. Your
+            website can be checked and improved for optimal accessibility. I can
+            provide a deep understanding and best consulting service for apps
+            with a medical aim.
+          </p> */}
         </div>
       </div>
     </section>
