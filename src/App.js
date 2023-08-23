@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Impressum from "./components/Impressum";
-import Errorpage from "./components/Errorpage/Errorpage";
+import Errorpage404 from "./components/Errorpage/Errorpage404";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/impressum" element={<Impressum />} />
-          <Route path="/*" element={<Errorpage />} />
+          <Route path="/*" element={<Errorpage404 />} />
         </Routes>
       </div>
     </div>

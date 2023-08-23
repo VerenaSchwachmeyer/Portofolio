@@ -50,7 +50,7 @@ function Projects() {
   return (
     <section id="projects" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">Work</h2>
+        <h2 className="sectionTitle">My Work</h2>
 
         <AliceCarousel
           role="list"

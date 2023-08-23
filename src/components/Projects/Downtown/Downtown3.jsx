@@ -11,9 +11,9 @@ export default function Downtown3() {
       <div className="poligon">
         <img
           className="projectScreenshot"
-          src="/images/Screenshot-Downtown-Videochat.jpg"
+          src="/images/Screenshot-Downtown-Dashboard-2.jpg"
           alt="Screenshot of website showing buttons for two chatrooms with instructions how to use them."
-          style={{ objectPosition: "left", objectFit: "cover" }}
+          style={{ objectPosition: "left top", objectFit: "cover" }}
         />
       </div>
     </div>

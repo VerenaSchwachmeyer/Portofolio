@@ -9,7 +9,7 @@ function Samples() {
       linkSite: "https://charming-pothos-c44bc4.netlify.app/",
       linkRepo: "https://github.com/VerenaSchwachmeyer/Meme-Generator",
       src: "/images/Screenshot_MemeGenerator-2.jpg",
-      alt: "Screenshot of Website",
+      alt: "Screenshot of Meme Generator",
       caption:
         "Create your own memes. Used tech stack: React JS, REST-API and upload/save file functions.",
     },
@@ -19,7 +19,7 @@ function Samples() {
       linkSite: "https://mariamac92.github.io/Notizzettel/",
       linkRepo: "https://github.com/MariamaC92/Notizzettel/",
       src: "/images/Screenshot_Memorandum-1.jpg",
-      alt: "Screenshot of Blog",
+      alt: "Screenshot of To-Do-List",
       caption:
         "Make notes on the fly, no biggie. Logic written in Vanilla JavaScript.",
     },

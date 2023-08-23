@@ -14,14 +14,12 @@ export default function LandingPage() {
     <div id="top" className="startpage">
       <div className="startImage">
         <div className="startpageContainer">
-          {/* <img id="logo" src="/images/VS_Logo.png"></img> */}
           <div className="startTextContainer">
             <FaReact className="landingPageLogo" />
             <FaJs className="landingPageLogo" />
             <FaNode className="landingPageLogo" />
             <GrMysql className="landingPageLogo" />
             <h1 className="startText" lang="de">
-              {/* <VSLogo /> */}
               Verena Schwachmeyer
             </h1>
 
@@ -33,7 +31,7 @@ export default function LandingPage() {
                 <button id="contactMebutton">Contact me</button>
               </ScrollIntoView>
               <ScrollIntoView selector="#services" smooth="true">
-                <button id="contactMebutton">More info</button>
+                <button id="moreInfobutton">More info</button>
               </ScrollIntoView>
             </div>
             {/* <Lottie

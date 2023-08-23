@@ -12,9 +12,9 @@ export default function Downtown2() {
       <div className="poligon">
         <img
           className="projectScreenshot"
-          src="/images/Downtown-LandingPage-4.jpg"
-          alt="Screenshot showing website showing accessible features such as high color contrast, changeable font sizes and a switch for light and dark mode."
-          style={{ objectPosition: "left top" }}
+          src="/images/Laptop-Downtown-Dashboard.jpg"
+          alt="Screenshot showing the user dashboard with accessible features."
+          style={{ objectPosition: "left" }}
         />
       </div>
     </div>

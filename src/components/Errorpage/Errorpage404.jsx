@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 import Error404 from "./lotties/Error404.json";
 import Scroll2Top from "../Scroll2Top";
 
-export default function Errorpage() {
+export default function Errorpage404() {
   const styles = {
     height: 200,
   };
@@ -17,6 +17,7 @@ export default function Errorpage() {
       <Scroll2Top />
       <Header />
       <section id="errorpage">
+        <h1 id="errorH1">404</h1>
         <h3>Oops! Something went wrong.</h3>
         <Lottie animationData={Error404} style={styles} />
       </section>
