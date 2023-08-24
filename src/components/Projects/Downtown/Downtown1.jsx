@@ -1,11 +1,14 @@
+import { Trans } from "react-i18next";
+
 export default function Downtown1() {
   return (
     <div className="project secondary" tabIndex="0">
       <div className="projectText">
-        <h3 className="secondary">Video Chat</h3>
+        <h3 className="secondary">
+          <Trans i18nKey="projects.downtown1H3"></Trans>
+        </h3>
         <p className="slide1 secondary">
-          This app provides an accessible, digital meet-up spot for people with
-          Down syndrome.
+          <Trans i18nKey="projects.downtown1text"></Trans>
         </p>
         {/* <a
           href="https://frontend-downtown.vercel.app/"

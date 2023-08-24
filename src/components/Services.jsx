@@ -3,6 +3,7 @@ import { CgWebsite } from "react-icons/cg";
 import { ImAccessibility } from "react-icons/im";
 import { FaUserMd } from "react-icons/fa";
 import { MdOutlineAppSettingsAlt } from "react-icons/md";
+import { Trans } from "react-i18next";
 
 export default function Services() {
   const [flipped1, setFlipped1] = useState(false);
@@ -24,7 +25,9 @@ export default function Services() {
   return (
     <section id="services" className="section primary" aria-label="services">
       <div className="content">
-        <h2 className="sectionTitle">Services</h2>
+        <h2 className="sectionTitle">
+          <Trans i18nKey="services.heading"></Trans>
+        </h2>
         <div className="serviceContainer">
           {/* Websites */}
           <div
@@ -40,7 +43,9 @@ export default function Services() {
                 // id="serviceCard-front"
               >
                 <CgWebsite className="serviceLogo graphics" />
-                <h3 className="serviceTitle graphics">WEBSITES</h3>
+                <h3 className="serviceTitle graphics">
+                  <Trans i18nKey="services.websitesH3"></Trans>
+                </h3>
               </div>
 
               <div
@@ -49,12 +54,22 @@ export default function Services() {
                 aria-label="backside of card about my website services"
                 tabIndex="0"
               >
-                <h4>Frontend Development:</h4>
+                <h4>
+                  <Trans i18nKey="services.websitesH4"></Trans>
+                </h4>
                 <ul>
-                  <li>User Interface (UI)</li>
-                  <li>High quality user experience (UX)</li>
-                  <li>Responsive Design</li>
-                  <li>Single or Multi Page</li>
+                  <li>
+                    <Trans i18nKey="services.websitesPoint1"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.websitesPoint2"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.websitesPoint3"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.websitesPoint4"></Trans>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -74,20 +89,30 @@ export default function Services() {
                   <MdOutlineAppSettingsAlt className="serviceLogo graphics" />
                 </div>
 
-                <h3 className="serviceTitle graphics">WEB APPLICATIONS</h3>
+                <h3 className="serviceTitle graphics">
+                  <Trans i18nKey="services.webappsH3"></Trans>
+                </h3>
               </div>
 
               <div
                 className="serviceContent serviceCard-back secondary"
                 tabIndex="0"
               >
-                <h4>Full Stack Development:</h4>
+                <h4>
+                  <Trans i18nKey="services.webappsH4"></Trans>
+                </h4>
                 <ul>
-                  <li>Browser-Based</li>
-                  <li>including Functionality</li>
-                  <li>Frontend</li>
                   <li>
-                    Backend including <br></br>Server & Database
+                    <Trans i18nKey="services.webappsPoint1"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.webappsPoint2"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.webappsPoint3"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.webappsPoint4"></Trans>
                   </li>
                 </ul>
               </div>
@@ -105,7 +130,9 @@ export default function Services() {
             <div className="serviceCard" aria-label="frontside of card">
               <div className="serviceContent serviceCard-front primary">
                 <ImAccessibility className="serviceLogo graphics" />
-                <h3 className="serviceTitle graphics">ACCESSIBILITY</h3>
+                <h3 className="serviceTitle graphics">
+                  <Trans i18nKey="services.accH3"></Trans>
+                </h3>
               </div>
 
               <div
@@ -113,12 +140,22 @@ export default function Services() {
                 aria-label="backside of card"
                 tabIndex="0"
               >
-                <h4>Optimization of Operability:</h4>
+                <h4>
+                  <Trans i18nKey="services.accH4"></Trans>
+                </h4>
                 <ul>
-                  <li>Visual Optimization</li>
-                  <li>Screen Reader Usability</li>
-                  <li>Motor Control</li>
-                  <li>No Cognitive Overload</li>
+                  <li>
+                    <Trans i18nKey="services.accPoint1"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.accPoint2"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.accPoint3"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.accPoint4"></Trans>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -136,7 +173,9 @@ export default function Services() {
             <div className="serviceCard" aria-label="frontside of card">
               <div className="serviceContent serviceCard-front primary">
                 <FaUserMd className="serviceLogo graphics" />
-                <h3 className="serviceTitle graphics">MEDICAL ORIENTATION</h3>
+                <h3 className="serviceTitle graphics">
+                  <Trans i18nKey="services.medH3"></Trans>
+                </h3>
               </div>
 
               <div
@@ -144,11 +183,19 @@ export default function Services() {
                 aria-label="backside of card"
                 tabIndex="0"
               >
-                <h4>Balancing the requirements of:</h4>
+                <h4>
+                  <Trans i18nKey="services.medH4"></Trans>
+                </h4>
                 <ul>
-                  <li>Database Architecture</li>
-                  <li>Scientific Standards</li>
-                  <li>Easy Data Input</li>
+                  <li>
+                    <Trans i18nKey="services.medPoint1"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.medPoint2"></Trans>
+                  </li>
+                  <li>
+                    <Trans i18nKey="services.medPoint3"></Trans>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import CircleLoader from "react-spinners/ClipLoader";
+import { Trans } from "react-i18next";
 
 export default function Contact() {
   const form = useRef();
@@ -45,7 +46,9 @@ export default function Contact() {
   return (
     <section id="contact" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">Contact</h2>
+        <h2 className="sectionTitle">
+          <Trans i18nKey="contact.heading"></Trans>
+        </h2>
         <form
           ref={form}
           className="contactForm"
@@ -53,47 +56,26 @@ export default function Contact() {
           onSubmit={sendEmail}
         >
           <label htmlFor="user_name" className="primary">
-            What's your name? *
+            <Trans i18nKey="contact.form1"></Trans>
           </label>
-          <input
-            type="text"
-            placeholder="name"
-            name="user_name"
-            id="user_name"
-            required
-          />
+          <input type="text" name="user_name" id="user_name" required />
           <label htmlFor="user_email" className="primary">
-            Enter your e-mail address *
+            <Trans i18nKey="contact.form2"></Trans>
           </label>
-          <input
-            type="user_email"
-            placeholder="e-mail"
-            name="email"
-            id="user_email"
-            required
-          />
+          <input type="user_email" name="email" id="user_email" required />
           <label htmlFor="subject" className="primary">
-            What can I do for you? *
+            <Trans i18nKey="contact.form3"></Trans>
           </label>
-          <input
-            type="text"
-            placeholder="subject"
-            name="subject"
-            id="subject"
-            required
-          />
+          <input type="text" name="subject" id="subject" required />
           <label htmlFor="message" className="primary">
-            Enter your message *
+            <Trans i18nKey="contact.form4"></Trans>
           </label>
-          <textarea
-            placeholder="your message"
-            name="message"
-            id="message"
-            required
-          />
+          <textarea name="message" id="message" required />
           <button className="formButton" aria-label="send mail">
             <RiMailSendLine size="1.7em" />
-            <p>Send Mail</p>
+            <p>
+              <Trans i18nKey="contact.button"></Trans>
+            </p>
           </button>
         </form>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import CodingSampleTile from "./CodingSampleTile";
+import { Trans } from "react-i18next";
 
 function Samples() {
   const samples = [
@@ -10,18 +11,16 @@ function Samples() {
       linkRepo: "https://github.com/VerenaSchwachmeyer/Meme-Generator",
       src: "/images/Screenshot_MemeGenerator-2.jpg",
       alt: "Screenshot of Meme Generator",
-      caption:
-        "Create your own memes. Used tech stack: React JS, REST-API and upload/save file functions.",
+      caption: <Trans i18nKey="samples.memetext"></Trans>,
     },
     {
       id: 4,
-      name: `To-Do List`,
+      name: <Trans i18nKey="samples.todoH3"></Trans>,
       linkSite: "https://mariamac92.github.io/Notizzettel/",
       linkRepo: "https://github.com/MariamaC92/Notizzettel/",
       src: "/images/Screenshot_Memorandum-1.jpg",
       alt: "Screenshot of To-Do-List",
-      caption:
-        "Make notes on the fly, no biggie. Logic written in Vanilla JavaScript.",
+      caption: <Trans i18nKey="samples.todotext"></Trans>,
     },
     // {
     //   id: 5,
@@ -37,7 +36,9 @@ function Samples() {
   return (
     <section id="samples" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">Coding Samples</h2>
+        <h2 className="sectionTitle">
+          <Trans i18nKey="samples.heading"></Trans>
+        </h2>
 
         <div className="sampleContainer">
           {samples.map((project) => {
