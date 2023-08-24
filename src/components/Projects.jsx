@@ -8,6 +8,7 @@ import Downtown2 from "./Projects/Downtown/Downtown2";
 import Downtown3 from "./Projects/Downtown/Downtown3";
 import Downtown4 from "./Projects/Downtown/Downtown4";
 import Linov1 from "./Projects/Linov/Linov1";
+import { Trans } from "react-i18next";
 
 function Projects() {
   //This list of projects could be "outsourced" into a separate file or even database in the future
@@ -50,7 +51,9 @@ function Projects() {
   return (
     <section id="projects" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">My Work</h2>
+        <h2 className="sectionTitle">
+          <Trans i18nKey="projects.heading"></Trans>
+        </h2>
 
         <AliceCarousel
           role="list"

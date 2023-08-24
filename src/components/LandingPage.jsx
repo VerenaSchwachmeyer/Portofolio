@@ -1,5 +1,6 @@
 import { FaReact, FaJs, FaNode } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
+import { Trans } from "react-i18next";
 // import Lottie from "lottie-react";
 // import animation_llbbxeag from "../components/Errorpage/lotties/animation_llbbxeag.json";
 
@@ -24,14 +25,20 @@ export default function LandingPage() {
             </h1>
 
             <div className="wrapper">
-              <p id="softwareDeveloper">Web & App Developer</p>
+              <p id="softwareDeveloper">
+                <Trans i18nKey="softwaredeveloper.text"></Trans>
+              </p>
             </div>
             <div className="buttonContainer">
               <ScrollIntoView selector="#contact" smooth="true">
-                <button id="contactMebutton">Contact me</button>
+                <button id="contactMebutton">
+                  <Trans i18nKey="Buttons.contactme"></Trans>
+                </button>
               </ScrollIntoView>
               <ScrollIntoView selector="#services" smooth="true">
-                <button id="moreInfobutton">More info</button>
+                <button id="moreInfobutton">
+                  <Trans i18nKey="Buttons.moreinfo"></Trans>
+                </button>
               </ScrollIntoView>
             </div>
             {/* <Lottie

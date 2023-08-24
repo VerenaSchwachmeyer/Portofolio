@@ -15,8 +15,8 @@ import { SiMui } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { SiWebrtc } from "react-icons/si";
 import { SiBootstrap } from "react-icons/si";
-import { SiGoogletagmanager } from "react-icons/si";
 import "react-tooltip/dist/react-tooltip.css";
+import { Trans } from "react-i18next";
 
 function TechStack() {
   const logos = [
@@ -87,7 +87,9 @@ function TechStack() {
   return (
     <section id="techStack" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">Tech Stack</h2>
+        <h2 className="sectionTitle">
+          <Trans i18nKey="techstack.heading"></Trans>
+        </h2>
         <ul className="logoList">
           <IconContext.Provider
             value={{

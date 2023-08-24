@@ -1,11 +1,12 @@
+import { Trans } from "react-i18next";
+
 export default function Linov1() {
   return (
     <div className="project secondary" tabIndex="0">
       <div className="projectText">
         <h3 className="secondary">Linov</h3>
         <p className="slide1 secondary">
-          I created this one-pager website for a talented 13-year old musician,
-          singer, and songwriter.
+          <Trans i18nKey="projects.linovtext"></Trans>
         </p>
         <a
           href="https://www.linov-music.de"
@@ -14,7 +15,7 @@ export default function Linov1() {
           className="buttonLinks secondary"
           aria-label="Link to Linov Homepage"
         >
-          Visit Website
+          <Trans i18nKey="Buttons.visitWebsite"></Trans>
         </a>
       </div>
       <div className="poligon">

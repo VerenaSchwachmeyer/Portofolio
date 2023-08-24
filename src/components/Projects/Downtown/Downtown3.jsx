@@ -1,11 +1,14 @@
+import { Trans } from "react-i18next";
+
 export default function Downtown3() {
   return (
     <div className="project secondary" tabIndex="0">
       <div className="projectText">
-        <h4>Video chatrooms</h4>
-        <p className="slide1">
-          The platform provides video chatrooms that can easily be entered and
-          left by a group member at any time.
+        <h4 className="secondary">
+          <Trans i18nKey="projects.downtown4H3"></Trans>
+        </h4>
+        <p className="slide1 secondary">
+          <Trans i18nKey="projects.downtown4text"></Trans>
         </p>
       </div>
       <div className="poligon">

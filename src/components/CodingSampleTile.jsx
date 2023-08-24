@@ -1,3 +1,5 @@
+import { Trans } from "react-i18next";
+
 export default function CodingSampleTile(project) {
   return (
     <div className="cardContainer sample secondary" tabIndex="0">
@@ -14,7 +16,7 @@ export default function CodingSampleTile(project) {
           role="menuitem"
           className="sampleLink buttonLinks secondary"
         >
-          View Sample App
+          <Trans i18nKey="Buttons.viewsampleapp"></Trans>
         </a>
         <a
           href={project.linkRepo}
@@ -23,7 +25,7 @@ export default function CodingSampleTile(project) {
           role="menuitem"
           className="sampleLink buttonLinks secondary"
         >
-          Go to Repo
+          <Trans i18nKey="Buttons.go2repo"></Trans>
         </a>
       </div>
     </div>
