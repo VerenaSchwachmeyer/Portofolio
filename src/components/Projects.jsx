@@ -5,7 +5,7 @@ import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
 import Downtown1 from "./Projects/Downtown/Downtown1";
 import Downtown2 from "./Projects/Downtown/Downtown2";
-import Downtown3 from "./Projects/Downtown/Downtown3";
+// import Downtown3 from "./Projects/Downtown/Downtown3";
 import Downtown4 from "./Projects/Downtown/Downtown4";
 import Linov1 from "./Projects/Linov/Linov1";
 import { Trans } from "react-i18next";
@@ -41,7 +41,7 @@ function Projects() {
 
   // const handleDragStart = (e) => e.preventDefault();
 
-  const items = [<Downtown1 />, <Downtown2 />, <Downtown4 />, <Downtown3 />];
+  const items = [<Downtown1 />, <Downtown2 />, <Downtown4 />];
 
   const responsive = {
     0: { items: 1 },

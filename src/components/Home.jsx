@@ -9,19 +9,17 @@ import Projects from "./Projects";
 import Samples from "./Samples";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import VSLogo from "./VSLogo";
 import Scroll2Top from "./Scroll2Top";
 import SkipLink from "./SkipLink";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Scroll2Top />
       <SkipLink />
 
-      <HeaderHome />
-
       <LandingPage />
+
       <main id="main" lang="en">
         <Services />
         <AboutMe />
@@ -31,6 +29,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
-    </div>
+    </>
   );
 }
