@@ -1,6 +1,7 @@
 import { FaReact, FaJs, FaNode } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { Trans } from "react-i18next";
+import HeaderHome from "./HeaderHome";
 // import Lottie from "lottie-react";
 // import animation_llbbxeag from "../components/Errorpage/lotties/animation_llbbxeag.json";
 
@@ -13,6 +14,7 @@ export default function LandingPage() {
 
   return (
     <div id="top" className="startpage">
+      <HeaderHome />
       <div className="startImage">
         <div className="startpageContainer">
           <div className="startTextContainer">

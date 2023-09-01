@@ -64,7 +64,7 @@ main {
 
 /* headings */
 h1 {
-  font-size: 5em;
+  font-size: 4.7em;
   font-family: "Segoe-Semibold";
   width: 50%;
 }
@@ -161,6 +161,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 0;
+}
+
+#services {
+  padding-top: none;
 }
 
 .content {
@@ -228,7 +233,7 @@ section {
   position: absolute;
   top: 18px;
   right: 85px;
-  font-family: "Roboto-Bold";
+  font-family: "Roboto-Regular";
   font-size: 1.6em;
   z-index: 5;
   -webkit-text-stroke-width: 0.4px;
@@ -240,7 +245,7 @@ section {
 .startpage {
   background-color: var(--color-0);
   margin: 0;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -292,7 +297,7 @@ figcaption {
   box-sizing: border-box;
   position: absolute;
   left: 5%;
-  top: 35vh;
+  top: 32vh;
   max-width: 600px;
 }
 
@@ -351,7 +356,7 @@ figcaption {
   background-color: transparent;
   border: 2px solid var(--color-5);
   color: var(--color-5);
-  margin-top: 8vh;
+  margin-top: 7vh;
   position: relative;
   left: 25%;
 }
@@ -661,7 +666,7 @@ header {
 }
 
 .project h3 {
-  font-size: 3.3em;
+  font-size: 3.1em;
   padding: 0% 3% 5% 0%;
   color: var(--color-5);
   text-align: left;
@@ -1314,6 +1319,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: rgba(0, 0, 0, 0.4);
   }
 
+  #contactMebutton,
+  #moreInfobutton {
+    margin-top: 3vh;
+  }
+
   .portrait-info {
     flex-direction: column;
     justify-content: center;
@@ -1364,6 +1374,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .project p {
     font-size: 1em;
     width: 100%;
+  }
+
+  .project h3 {
+    font-size: 2.2em;
   }
 
   .poligon {
@@ -1433,10 +1447,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-align: center;
 }
 
+@media only screen and (max-height: 600px) {
+  h1 {
+    font-size: 2.8em;
+  }
+  .project h3 {
+    font-size: 2.2em;
+  }
+}
+
 /* Cell phone held wide */
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
   h1 {
-    font-size: 3em;
+    font-size: 2.8em;
     position: relative;
     top: -10px;
   }
@@ -1446,7 +1469,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   #contactMeButton {
-    margin-top: 3px;
+    /* margin-top: 3px; */
+    visibility: hidden;
   }
 
   .project {
@@ -1454,7 +1478,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .project h3 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-top: 0;
   }
 
@@ -1476,11 +1500,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 @media only screen and (max-height: 400px) and (orientation: landscape) {
   h1 {
-    font-size: 3em;
+    font-size: 2.8em;
   }
 
   .project h3 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-top: 0;
   }
 

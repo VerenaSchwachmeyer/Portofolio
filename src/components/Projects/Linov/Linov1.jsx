@@ -22,7 +22,7 @@ export default function Linov1() {
         <img
           className="projectScreenshot"
           src="/images/Screenshot-Linov-1.png"
-          alt="Linov Landing Page: background shows black-and-white photo with dark clouds."
+          alt="Linov Landing Page: background shows dark clouds in black and white."
         />
       </div>
     </div>

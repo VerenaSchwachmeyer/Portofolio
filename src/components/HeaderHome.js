@@ -12,10 +12,9 @@ export default function HeaderHome() {
   const { t, i18n } = useTranslation();
 
   return (
-    <>
-      <header className="headerHome">
-        <VSLogo id="VSlogo-top" />
-      </header>
+    <header className="headerHome">
+      <VSLogo id="VSlogo-top" />
+
       <div className="headerMenu">
         <Menu right role="menu" aria-label="Menu" className="primary">
           <div>
@@ -82,6 +81,6 @@ export default function HeaderHome() {
           <Trans i18nKey="header.menu"></Trans>
         </p>
       </div>
-    </>
+    </header>
   );
 }

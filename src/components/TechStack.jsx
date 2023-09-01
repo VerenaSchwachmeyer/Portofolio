@@ -35,7 +35,6 @@ function TechStack() {
         <img src="/images/ExpressJS-Logo-color0.png" height="40em" alt=""></img>
       ),
     },
-    // { id: 10, name: "Google Tag Manager", icon: <SiGoogletagmanager /> },
     { id: 11, name: "GitHub", icon: <FaGithub /> },
     {
       id: 12,

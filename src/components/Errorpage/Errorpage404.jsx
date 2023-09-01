@@ -9,7 +9,6 @@ export default function Errorpage404() {
     height: 200,
   };
 
-  const user_uuid = sessionStorage.getItem("uuid");
   // const { View } = useLottie(options);
 
   return (
