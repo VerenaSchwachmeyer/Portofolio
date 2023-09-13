@@ -15,7 +15,10 @@ export default function HeaderHome() {
     <header className="headerHome">
       <VSLogo id="VSlogo-top" />
 
-      <div className="headerMenu">
+      <div className="menuContainer">
+        <p id="menu">
+          <Trans i18nKey="header.menu"></Trans>
+        </p>
         <Menu right role="menu" aria-label="Menu" className="primary">
           <div>
             {Object.keys(lngs).map((lng) => (
@@ -76,10 +79,6 @@ export default function HeaderHome() {
             </button>
           </ScrollIntoView>
         </Menu>
-
-        <p id="menu">
-          <Trans i18nKey="header.menu"></Trans>
-        </p>
       </div>
     </header>
   );

@@ -3,10 +3,13 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
-import Downtown1 from "./Projects/Downtown/Downtown1";
-import Downtown2 from "./Projects/Downtown/Downtown2";
+import Flowerbauer1 from "./Projects/Flowerbauer/Flowerbauer1";
+import Flowerbauer2 from "./Projects/Flowerbauer/Flowerbauer2";
+import Flowerbauer3 from "./Projects/Flowerbauer/Flowerbauer3";
+// import Downtown1 from "./Projects/Downtown/Downtown1";
+// import Downtown2 from "./Projects/Downtown/Downtown2";
 // import Downtown3 from "./Projects/Downtown/Downtown3";
-import Downtown4 from "./Projects/Downtown/Downtown4";
+// import Downtown4 from "./Projects/Downtown/Downtown4";
 import Linov1 from "./Projects/Linov/Linov1";
 import { Trans } from "react-i18next";
 
@@ -41,7 +44,7 @@ function Projects() {
 
   // const handleDragStart = (e) => e.preventDefault();
 
-  const items = [<Downtown1 />, <Downtown2 />, <Downtown4 />];
+  const items = [<Flowerbauer1 />, <Flowerbauer2 />, <Flowerbauer3 />];
 
   const responsive = {
     0: { items: 1 },
@@ -54,12 +57,11 @@ function Projects() {
         <h2 className="sectionTitle">
           <Trans i18nKey="projects.heading"></Trans>
         </h2>
-
         <AliceCarousel
           role="list"
           aria-label="Project named Downtown"
           mouseTracking
-          // infinite
+          infinite
           autowidth
           items={items}
           paddingLeftt={5}

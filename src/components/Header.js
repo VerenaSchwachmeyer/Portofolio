@@ -2,7 +2,7 @@ import VSLogo from "./VSLogo";
 
 function Header() {
   return (
-    <header className="header">
+    <header className="headerSmall">
       <VSLogo id="VSlogo-top" />
     </header>
   );
