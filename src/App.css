@@ -132,6 +132,14 @@ button:active,
   transform: translate(3px, 3px);
 }
 
+.checked {
+  cursor: pointer;
+  background-color: var(--color-button-text);
+  color: var(--color-button-background);
+  border: 2px solid var(--color-button-background);
+  border-radius: 50px;
+}
+
 /* link styling without button */
 a {
   font-family: "Segoe-Semibold";
@@ -946,6 +954,11 @@ footer a {
   align-items: center;
   min-width: 300px;
   max-width: 25vw;
+}
+
+.col2 > a {
+  width: 80%;
+  margin: 2px;
 }
 
 .col3 > p {

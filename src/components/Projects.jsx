@@ -57,6 +57,9 @@ function Projects() {
         <h2 className="sectionTitle">
           <Trans i18nKey="projects.heading"></Trans>
         </h2>
+        <p className="aboutmeText">
+          <Trans i18nKey="projects.text"></Trans>
+        </p>
         <AliceCarousel
           role="list"
           aria-label="Project named Downtown"

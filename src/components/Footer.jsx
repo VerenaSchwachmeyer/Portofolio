@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { Trans } from "react-i18next";
 
 function Footer() {
   // const infos = [
@@ -85,7 +86,10 @@ function Footer() {
             Home
           </Link>
           <Link to="/impressum" className="secondary">
-            Impressum
+            <Trans i18nKey="footer.sitenotice"></Trans>
+          </Link>
+          <Link to="/datenschutz" className="secondary">
+            <Trans i18nKey="footer.dataprotection"></Trans>
           </Link>
         </nav>
 

@@ -179,7 +179,7 @@ export default function Services() {
               </div>
 
               <div
-                className="serviceContent serviceCard-back secondary"
+                className="serviceContent serviceCard-back secklondary"
                 aria-label="backside of card"
                 tabIndex="0"
               >
@@ -203,12 +203,21 @@ export default function Services() {
         </div>
         <div>
           {/* <p className="aboutmeText">
-            I develop websites with a fully responsive frontend. full-stack web
-            apps that include a database and server communication via API. Your
-            website can be checked and improved for optimal accessibility. I can
-            provide a deep understanding and best consulting service for apps
-            with a medical aim.
+            Erstellung von Webseiten mit responsivem Design bis hin zur
+            Entwicklung komplexerer Anwendungen inklusive Datenbank und Server.
+            Eine App-Entwicklung für Android Endgeräte ist ebenfalls möglich.
+            <br></br>
+            Besonderen Fokus lege ich auf digitale Barrierefreiheit nach den
+            Kriterien der Web Content Accessibility Guidelines (WCAG)
+            beziehungsweise der BITV 2.0. Die Konformitätsstufen A, AA oder AAA
+            können geprüft und eingerichtet werden. Mit meinem
+            wissenschaftlichen Hintergrund kann ich bei Softwareanwendungen für
+            den Gesundheitsbereich nicht nur Programmierkenntnisse, sondern auch
+            medizinisches Hintergrundwissen einbringen - für die Umsetzung einer
+            optimalen User Experience.
           </p> */}
+
+          {/* Weiterführende Informationen zum Thema barrierefreie Webseiten finden Sie unter <a href="https://www.schwachmeyer-gottschalk.de"> www.schwachmeyer-gottschalk.de. </a>   */}
         </div>
       </div>
     </section>

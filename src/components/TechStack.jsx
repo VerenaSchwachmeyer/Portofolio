@@ -23,7 +23,7 @@ function TechStack() {
     { id: 1, name: "JavaScript", icon: <FaJs /> },
     { id: 2, name: "HTML5", icon: <FaHtml5 /> },
     { id: 3, name: "CSS3", icon: <FaCss3Alt /> },
-    { id: 4, name: "React JS", icon: <FaReact /> },
+    { id: 4, name: "React JS/ React Native", icon: <FaReact /> },
     { id: 5, name: "Node JS", icon: <FaNode /> },
     { id: 6, name: "Mongo DB", icon: <DiMongodb /> },
     { id: 7, name: "PostGreSQL", icon: <SiPostgresql /> },
@@ -89,6 +89,9 @@ function TechStack() {
         <h2 className="sectionTitle">
           <Trans i18nKey="techstack.heading"></Trans>
         </h2>
+        <p className="aboutmeText">
+          <Trans i18nKey="techstack.text"></Trans>
+        </p>
         <ul className="logoList">
           <IconContext.Provider
             value={{

@@ -60,9 +60,11 @@ i18n
           },
           techstack: {
             heading: `Tech Stack`,
+            text: `My tech stack is focused on JavaScript-based technologies with ReactJS used as a main library. See the list below for an overview of the languages, tools, frameworks and libraries that I utilized. `,
           },
           projects: {
             heading: `Projects`,
+            text: `Some of my projects and my previous scientific work fall into intellectual property and cannot be published at this point. If you wish for more code sample, please contact me.`,
             downtown1H3: `Video Chat App`,
             downtown1text: `This app provides an accessible, digital meet-up spot for people with Down syndrome.`,
             downtown2H3: `Accessibility`,
@@ -95,6 +97,10 @@ i18n
             form3: `Give me a topic: What can I do for you? *`,
             form4: `Your message *`,
             button: `Send Mail`,
+          },
+          footer: {
+            sitenotice: `Site Notice`,
+            dataprotection: `Data Protection`,
           },
         },
       },
@@ -145,9 +151,11 @@ i18n
           },
           techstack: {
             heading: `Technologien`,
+            text: `Ich programmiere hauptsächlich in JavaScript-basierten Technologien mit Fokus auf ReactJS als Library. Die Liste gibt einen Überblick über meine verschiedenen Sprachen, Werkzeuge, Frameworks und Libraries.`,
           },
           projects: {
             heading: `Projekte`,
+            text: `Einige meiner Projekte sowie meine frühere wissenschaftliche Arbeit fällt unter geistiges Eigentum und kann zu diesem Zeitpunkt nicht ohne Weiteres veröffentlicht werden. Kontaktieren Sie mich bitte, wenn Sie Codebeispiele wünschen.`,
             downtown1H3: `Video Chat App`,
             downtown1text: `Diese App bietet einen barrierefreien, digitalen Treffpunkt für Menschen mit Down Syndrom.`,
             downtown2H3: `Barrierefrei`,
@@ -179,6 +187,10 @@ i18n
             form3: `Gib mir ein Stichwort: Worum geht es? *`,
             form4: `Deine Nachricht an mich. *`,
             button: `Mail absenden`,
+          },
+          footer: {
+            sitenotice: `Impressum`,
+            dataprotection: `Datenschutzerklärung`,
           },
         },
       },

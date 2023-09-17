@@ -2,6 +2,7 @@ import { slide as Menu } from "react-burger-menu";
 import VSLogo from "./VSLogo";
 import ScrollIntoView from "react-scroll-into-view";
 import { useTranslation, Trans } from "react-i18next";
+import { useState } from "react";
 
 const lngs = {
   en: { nativeName: "ENGLISH" },
@@ -9,6 +10,7 @@ const lngs = {
 };
 
 export default function HeaderHome() {
+  const [language, setLanguage] = useState("ENGLISH");
   const { t, i18n } = useTranslation();
 
   return (
@@ -23,13 +25,21 @@ export default function HeaderHome() {
           <div>
             {Object.keys(lngs).map((lng) => (
               <button
-                className="secondary mdl-button mdl-js-button mdl-button--raised"
+                className={
+                  language === lngs[lng].nativeName
+                    ? "secondary checked"
+                    : "secondary"
+                }
                 key={lng}
                 style={{
                   margin: "8%",
                 }}
                 type="submit"
-                onClick={() => i18n.changeLanguage(lng)}
+                name={lngs[lng].nativeName}
+                onClick={(e) => {
+                  i18n.changeLanguage(lng);
+                  setLanguage(e.target.name);
+                }}
               >
                 {lngs[lng].nativeName}
               </button>
@@ -40,15 +50,16 @@ export default function HeaderHome() {
               id="menu-item"
               className="mdl-button mdl-js-button mdl-button--raised"
             >
-              <Trans i18nKey="services.heading"></Trans>
+              <Trans i18nKey="services.heading">Service</Trans>
             </button>
           </ScrollIntoView>
+
           <ScrollIntoView selector="#aboutme">
             <button
               id="menu-item"
               className="mdl-button mdl-js-button mdl-button--raised"
             >
-              <Trans i18nKey="aboutme.heading"></Trans>
+              <Trans i18nKey="aboutme.heading">Über mich</Trans>
             </button>
           </ScrollIntoView>
 
@@ -57,7 +68,7 @@ export default function HeaderHome() {
               id="menu-item"
               className="mdl-button mdl-js-button mdl-button--raised"
             >
-              <Trans i18nKey="techstack.heading"></Trans>
+              <Trans i18nKey="techstack.heading">Tech Stack</Trans>
             </button>
           </ScrollIntoView>
 
@@ -66,7 +77,7 @@ export default function HeaderHome() {
               id="menu-item"
               className="mdl-button mdl-js-button mdl-button--raised"
             >
-              <Trans i18nKey="projects.heading"></Trans>
+              <Trans i18nKey="projects.heading">My Work</Trans>
             </button>
           </ScrollIntoView>
 
@@ -75,7 +86,7 @@ export default function HeaderHome() {
               id="menu-item"
               className="mdl-button mdl-js-button mdl-button--raised"
             >
-              <Trans i18nKey="contact.heading"></Trans>
+              <Trans i18nKey="contact.heading">Kontakt</Trans>
             </button>
           </ScrollIntoView>
         </Menu>
