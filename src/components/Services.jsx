@@ -179,7 +179,7 @@ export default function Services() {
               </div>
 
               <div
-                className="serviceContent serviceCard-back secklondary"
+                className="serviceContent serviceCard-back secondary"
                 aria-label="backside of card"
                 tabIndex="0"
               >

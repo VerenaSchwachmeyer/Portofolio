@@ -70,9 +70,8 @@ function TechStack() {
         data-tooltip-content={logo.name}
         className="logoListItems"
       >
-        <Tooltip id="my-tooltip" className="secondary" />
+        <Tooltip id="my-tooltip" className="secondary logoTile" />
         <div
-          id="logoTile"
           className="graphics"
           data-tooltip-id="my-tooltip"
           data-tooltip-content={logo.name}

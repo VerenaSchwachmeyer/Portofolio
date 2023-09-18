@@ -15,7 +15,7 @@ export default function Flowerbauer3() {
         <img
           className="projectScreenshot"
           src="/images/FlowerBauer3.jpg"
-          alt=""
+          alt="The properties of the garden area can be selected: sunlight, water level, soil etc."
         />
       </div>
     </div>

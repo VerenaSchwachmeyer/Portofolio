@@ -7,7 +7,7 @@ export default function Datenschutz() {
     <main>
       <Scroll2Top />
       <Header />
-      <section id="impressum" className="primary">
+      <section id="impressum" className="primary" lang="de">
         <div className="content">
           <h2>Datenschutz auf einen Blick</h2>
           <h3>Allgemeine Hinweise</h3>{" "}

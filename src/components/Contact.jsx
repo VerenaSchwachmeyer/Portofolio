@@ -59,18 +59,22 @@ export default function Contact() {
             <Trans i18nKey="contact.form1"></Trans>
           </label>
           <input type="text" name="user_name" id="user_name" required />
-          <label htmlFor="user_email" className="primary">
+
+          <label htmlFor="email" className="primary">
             <Trans i18nKey="contact.form2"></Trans>
           </label>
           <input type="user_email" name="email" id="user_email" required />
+
           <label htmlFor="subject" className="primary">
             <Trans i18nKey="contact.form3"></Trans>
           </label>
           <input type="text" name="subject" id="subject" required />
+
           <label htmlFor="message" className="primary">
             <Trans i18nKey="contact.form4"></Trans>
           </label>
           <textarea name="message" id="message" required />
+
           <button className="formButton" aria-label="send mail">
             <RiMailSendLine size="1.7em" />
             <p>

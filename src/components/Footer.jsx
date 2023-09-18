@@ -88,9 +88,9 @@ function Footer() {
           <Link to="/impressum" className="secondary">
             <Trans i18nKey="footer.sitenotice"></Trans>
           </Link>
-          <Link to="/datenschutz" className="secondary">
+          {/* <Link to="/datenschutz" className="secondary">
             <Trans i18nKey="footer.dataprotection"></Trans>
-          </Link>
+          </Link> */}
         </nav>
 
         <div className="col3">
@@ -99,7 +99,7 @@ function Footer() {
           <IconContext.Provider
             value={{
               size: "1.8em",
-              className: "logos",
+              className: "footerLogos",
             }}
           >
             <div className="info">
@@ -110,7 +110,7 @@ function Footer() {
                 role="link"
                 aria-label="go to LinkedIn profile"
               >
-                <FaLinkedin id="footerLogos" />
+                <FaLinkedin />
               </Link>
               <Link
                 reloadDocument
@@ -120,7 +120,7 @@ function Footer() {
                 role="link"
                 aria-label="go to Github profile"
               >
-                <FaGithub id="footerLogos" />
+                <FaGithub />
               </Link>
             </div>
           </IconContext.Provider>

@@ -9,12 +9,16 @@ export default function Impressum() {
     <main>
       <Scroll2Top />
       <Header />
-      <section id="impressum" className="primary">
+      <section id="impressum" className="primary" lang="de">
         <div className="content">
-          <h2>Impressum</h2>
+          <h1 lang="de" style={{ fontSize: "3.5em" }}>
+            Impressum
+          </h1>
           <div className="impressumContainer">
             <br></br>
-            <h3>Angaben gemäß §5 TMG</h3>
+            <h2 lang="de" style={{ fontSize: "1.5em" }}>
+              Angaben gemäß §5 TMG
+            </h2>
             <br></br>
             <p>Verena Schwachmeyer</p>
             <p>Bietzkestr. 3</p>
@@ -30,15 +34,20 @@ export default function Impressum() {
             </p>
 
             <br></br>
-            <h3>Umsatzsteuer-Identifikationsnummer </h3>
+            <h2 style={{ fontSize: "1.5em" }}>
+              Umsatzsteuer-Identifikationsnummer{" "}
+            </h2>
+            <br></br>
             <p> Gemäß §19 UStG im Jahr 2023 umsatzsteuerbefreit.</p>
             {/* <p>Die Umsatzsteuer-Nummer befindet sich in der Beantragung.</p> */}
             {/* <p> gemäß § 27a UStG ...USt-ID-Nr: DE1234567890</p> */}
             <br></br>
 
             <div classname="disclaimer">
-              <h3>Haftungsausschluss</h3>
-              <h4>Haftung für Inhalte</h4>
+              <br></br>
+              <h2 style={{ fontSize: "1.5em" }}>Haftungsausschluss</h2>
+              <br></br>
+              <h3 style={{ fontSize: "1.1em" }}>Haftung für Inhalte</h3>
               <p>
                 Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
                 Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
@@ -55,7 +64,7 @@ export default function Impressum() {
                 Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden
                 wir diese Inhalte umgehend entfernen.
               </p>
-              <h4>Haftung für Links</h4>
+              <h3 style={{ fontSize: "1.1em" }}>Haftung für Links</h3>
               <p>
                 Unser Angebot enthält Links zu externen Websites Dritter, auf
                 deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
@@ -71,7 +80,7 @@ export default function Impressum() {
                 Rechtsverletzungen werden wir derartige Links umgehend
                 entfernen.
               </p>
-              <h4>Urheberrecht</h4>
+              <h3 style={{ fontSize: "1.1em" }}>Urheberrecht</h3>
               <p>
                 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
                 diesen Seiten unterliegen dem deutschen Urheberrecht. Die
@@ -88,7 +97,7 @@ export default function Impressum() {
                 Bekanntwerden von Rechtsverletzungen werden wir derartige
                 Inhalte umgehend entfernen.
               </p>
-              <h6 id="impressumQuelle">Quelle: www.e-recht24.de</h6>
+              <p id="impressumQuelle">Quelle: www.e-recht24.de</p>
             </div>
           </div>
         </div>
