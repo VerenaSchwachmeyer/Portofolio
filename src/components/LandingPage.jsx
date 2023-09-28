@@ -18,10 +18,10 @@ export default function LandingPage() {
       {/* <div className="startImage"> */}
       <div className="startpageContainer">
         <div className="startTextContainer">
-          <FaReact className="landingPageLogo" />
-          <FaJs className="landingPageLogo" />
-          <FaNode className="landingPageLogo" />
-          <GrMysql className="landingPageLogo" />
+          <FaReact className="landingPageLogo" aria-label="React JS Logo" />
+          <FaJs className="landingPageLogo" aria-label="JavaScript Logo" />
+          <FaNode className="landingPageLogo" aria-label="Node JS Logo" />
+          <GrMysql className="landingPageLogo" aria-label="MySQL Logo" />
           <h1 className="startText" lang="de">
             Verena Schwachmeyer
           </h1>

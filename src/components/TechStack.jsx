@@ -91,7 +91,7 @@ function TechStack() {
         <p className="aboutmeText">
           <Trans i18nKey="techstack.text"></Trans>
         </p>
-        <ul className="logoList">
+        <ul className="logoList" style={{ margin: "auto" }}>
           <IconContext.Provider
             value={{
               size: "2.5em",

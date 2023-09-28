@@ -24,6 +24,7 @@ i18n
             visitWebsite: `Visit Website`,
             viewsampleapp: `View Sample App`,
             go2repo: `Go To Repo`,
+            backButton: `back`,
           },
           header: {
             menu: `Menu`,
@@ -74,13 +75,16 @@ i18n
             downtown4H3: `Video Chatrooms`,
             downtown4text: `The platform provides video chatrooms that can easily be entered and left by a group member at any time.`,
 
-            flowerbauer1H3: `Flower Bauer`,
+            flowerbauer1H3: `Flower Bauer App`,
             flowerbauer1text: `This app selects plants that are optimal for a specific location in the garden. The project is still work in progress and written in React Native.`,
             flowerbauer2H3: `For each individual spot`,
             flowerbauer2text: `Each garden spot has its own conditions: sunshine, soil, water, ph value, lime content. Create a project for each garden area. `,
             flowerbauer3H3: "Search for plants",
             flowerbauer3text:
               "Select the conditions of your garden spot and search for plants that match those conditions.",
+            flowerbauer4H3: "Suitable plants",
+            flowerbauer4text:
+              "Plants that fit the specified conditions are searched in the database and listed. Details can be opened.",
 
             linovtext: `I created this one-pager website for a talented 13-year old musician, singer, and songwriter.`,
           },
@@ -118,6 +122,7 @@ i18n
             visitWebsite: `Zur Webseite`,
             viewsampleapp: `Zur App`,
             go2repo: `Zum Repository`,
+            backButton: `zurück`,
           },
           services: {
             heading: `Leistungen`,
@@ -165,12 +170,15 @@ i18n
             downtown4H3: `Video Chatrooms`,
             downtown4text: `Die Plattform besitzt feste Video Chatrooms, welche leicht und zu jeder Zeit betreten und wieder verlassen werden können.`,
 
-            flowerbauer1H3: `Flower Bauer`,
+            flowerbauer1H3: `Flower Bauer App`,
             flowerbauer1text: `Diese App findet Pflanzen, die optimal für einen Gartenbereich ausgesucht sind. Sie ist noch im Entwicklugnsmodus, geschrieben in React Native.`,
             flowerbauer2H3: `für jede individuelle Gartenecke`,
             flowerbauer2text: `Jeder Gartenbereich hat seine eigenen Bedingungen und muss individuell geplant werden. `,
             flowerbauer3H3: `Geeignete Pflanzen suchen`,
             flowerbauer3text: `Wähle die Standortbedingungen und suche nach Pflanzen, welche zum Standort passen.`,
+            flowerbauer4H3: "Passende Pflanzauswahl",
+            flowerbauer4text:
+              "Pflanzen, die zum angegebenen Standort passen, werden von der Datenbank abgerufen und aufgelistet. Details können eingesehen werden.",
 
             linovtext: `Diese One-Page-Webseite habe ich erstellt für einen sehr talentierten, erst 13 Jahre jungen Musiker, Songwriter und Sänger.`,
           },

@@ -11,7 +11,7 @@ const lngs = {
 
 export default function HeaderHome() {
   const [language, setLanguage] = useState("ENGLISH");
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   return (
     <header className="headerHome">

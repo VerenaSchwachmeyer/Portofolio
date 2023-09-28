@@ -6,6 +6,7 @@ import { GrPrevious } from "react-icons/gr";
 import Flowerbauer1 from "./Projects/Flowerbauer/Flowerbauer1";
 import Flowerbauer2 from "./Projects/Flowerbauer/Flowerbauer2";
 import Flowerbauer3 from "./Projects/Flowerbauer/Flowerbauer3";
+import Flowerbauer4 from "./Projects/Flowerbauer/Flowerbauer4";
 // import Downtown1 from "./Projects/Downtown/Downtown1";
 // import Downtown2 from "./Projects/Downtown/Downtown2";
 // import Downtown3 from "./Projects/Downtown/Downtown3";
@@ -44,7 +45,12 @@ function Projects() {
 
   // const handleDragStart = (e) => e.preventDefault();
 
-  const items = [<Flowerbauer1 />, <Flowerbauer2 />, <Flowerbauer3 />];
+  const items = [
+    <Flowerbauer1 />,
+    <Flowerbauer2 />,
+    <Flowerbauer3 />,
+    <Flowerbauer4 />,
+  ];
 
   const responsive = {
     0: { items: 1 },

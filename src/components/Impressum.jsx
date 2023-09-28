@@ -3,15 +3,21 @@ import Footer from "./Footer.jsx";
 import { MdMail } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
 import Scroll2Top from "./Scroll2Top";
+import { useNavigate } from "react-router-dom";
 
 export default function Impressum() {
+  const navigate = useNavigate();
+
   return (
     <main>
       <Scroll2Top />
       <Header />
       <section id="impressum" className="primary" lang="de">
         <div className="content">
-          <h1 lang="de" style={{ fontSize: "3.5em" }}>
+          <h1
+            lang="de"
+            style={{ fontSize: "3.5em", textAlign: "left", width: "100%" }}
+          >
             Impressum
           </h1>
           <div className="impressumContainer">
@@ -101,6 +107,13 @@ export default function Impressum() {
             </div>
           </div>
         </div>
+        <button
+          className="primary"
+          style={{ margin: "20px" }}
+          onClick={() => navigate(-1)}
+        >
+          zurück
+        </button>
       </section>
       <Footer />
     </main>

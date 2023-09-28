@@ -1,15 +1,34 @@
 import Header from "./Header.js";
 import Footer from "./Footer.jsx";
 import Scroll2Top from "./Scroll2Top";
+import { useNavigate } from "react-router-dom";
 
 export default function Datenschutz() {
+  const navigate = useNavigate();
+
   return (
     <main>
       <Scroll2Top />
       <Header />
       <section id="impressum" className="primary" lang="de">
-        <div className="content">
-          <h2>Datenschutz auf einen Blick</h2>
+        <div className="content" style={{ alignItems: "flex-start" }}>
+          <h1
+            style={{
+              fontSize: "3.5em",
+              textAlign: "left",
+              width: "100%",
+              marginBottom: "2%",
+            }}
+          >
+            Datenschutzerklärung
+          </h1>
+          <h2
+            lang="de"
+            style={{ fontSize: "1.9em", marginBottom: "2%", marginTop: "5%" }}
+          >
+            Datenschutz auf einen Blick
+          </h2>
+          <br></br>
           <h3>Allgemeine Hinweise</h3>{" "}
           <p>
             Die folgenden Hinweise geben einen einfachen &Uuml;berblick
@@ -69,7 +88,12 @@ export default function Datenschutz() {
             Sie sich jederzeit an uns wenden.
           </p>
           <br></br>
-          <h2>Hosting</h2>
+          <h2
+            style={{ fontSize: "1.9em", marginBottom: "2%", marginTop: "5%" }}
+          >
+            Hosting
+          </h2>
+          <br></br>
           <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
           <h3>Externes Hosting</h3>{" "}
           <p>
@@ -119,7 +143,11 @@ export default function Datenschutz() {
             DSGVO verarbeitet.
           </p>
           <br></br>
-          <h2>Allgemeine Hinweise und Pflicht&shy;informationen</h2>
+          <h2
+            style={{ fontSize: "1.9em", marginBottom: "2%", marginTop: "5%" }}
+          >
+            Allgemeine Hinweise und Pflicht&shy;informationen
+          </h2>
           <h3>Datenschutz</h3>{" "}
           <p>
             Die Betreiber dieser Seiten nehmen den Schutz Ihrer
@@ -367,7 +395,11 @@ export default function Datenschutz() {
             Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
           </p>
           <br></br>
-          <h2>Datenerfassung auf dieser Website</h2>
+          <h2
+            style={{ fontSize: "1.9em", marginBottom: "2%", marginTop: "5%" }}
+          >
+            Datenerfassung auf dieser Website
+          </h2>
           <h3>Kontaktformular</h3>{" "}
           <p>
             Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden
@@ -425,6 +457,13 @@ export default function Datenschutz() {
           </p>
           <h6 id="impressumQuelle">Quelle: www.e-recht24.de</h6>
         </div>
+        <button
+          className="primary"
+          style={{ margin: "20px" }}
+          onClick={() => navigate(-1)}
+        >
+          zurück
+        </button>
       </section>
       <Footer />
     </main>
