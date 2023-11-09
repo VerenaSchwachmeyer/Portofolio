@@ -300,10 +300,11 @@ figcaption {
   color: var(--color-2);
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 3px;
   writing-mode: vertical-lr;
   text-orientation: mixed;
   font-size: 0.6em;
+  height: 150px;
 }
 
 .homeLogoTop {

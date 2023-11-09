@@ -50,7 +50,9 @@ export default function LandingPage() {
             /> */}
         </div>
         <figcaption aria-hidden="true">
-          Photo: Tobias Büchner | dervj.de
+          <a href="https://dervj.de/" target="_blank" rel="noreferrer">
+            Photo: Tobias Büchner | dervj.de
+          </a>
         </figcaption>
       </div>
       {/* </div> */}

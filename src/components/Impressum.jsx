@@ -44,6 +44,7 @@ export default function Impressum() {
               Umsatzsteuer-Identifikationsnummer{" "}
             </h2>
             <br></br>
+            <p>Steueridentifikationsnummer: DE363017090</p>
             <p> Gemäß §19 UStG im Jahr 2023 umsatzsteuerbefreit.</p>
             {/* <p>Die Umsatzsteuer-Nummer befindet sich in der Beantragung.</p> */}
             {/* <p> gemäß § 27a UStG ...USt-ID-Nr: DE1234567890</p> */}
@@ -103,7 +104,7 @@ export default function Impressum() {
                 Bekanntwerden von Rechtsverletzungen werden wir derartige
                 Inhalte umgehend entfernen.
               </p>
-              <p id="impressumQuelle">Quelle: www.e-recht24.de</p>
+              <h6 id="impressumQuelle">Quelle: www.e-recht24.de</h6>
             </div>
           </div>
         </div>

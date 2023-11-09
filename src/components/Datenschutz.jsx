@@ -328,7 +328,8 @@ export default function Datenschutz() {
             jederzeit an uns wenden. Das Recht auf Einschr&auml;nkung der
             Verarbeitung besteht in folgenden F&auml;llen:
           </p>{" "}
-          <ul>
+          <br></br>
+          <ul style={{ marginLeft: "30px" }}>
             {" "}
             <li>
               Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten
@@ -359,6 +360,7 @@ export default function Datenschutz() {
               zu verlangen.
             </li>{" "}
           </ul>
+          <br></br>
           <p>
             Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten
             eingeschr&auml;nkt haben, d&uuml;rfen diese Daten &ndash; von ihrer
@@ -392,7 +394,8 @@ export default function Datenschutz() {
             ausdr&uuml;cklich angeforderter Werbung und Informationsmaterialien
             wird hiermit widersprochen. Die Betreiber der Seiten behalten sich
             ausdr&uuml;cklich rechtliche Schritte im Falle der unverlangten
-            Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
+            Zusendung von Werbeinformationen, etwa durch Spam-E-Mails oder
+            Telefonwerbung, vor.
           </p>
           <br></br>
           <h2

@@ -18,10 +18,10 @@ export default function Contact() {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_f97y0mr",
-        "template_5jn891l",
+        process.env.REACT_APP_SERVICEID_VP, //service ID
+        process.env.REACT_APP_TEMPLATEID_VP, //template ID
         form.current,
-        "e51Xaa8_nyoLWg0Wg"
+        process.env.REACT_APP_PUBLIC_KEY_VP //public key
       )
       .then(
         (result) => {

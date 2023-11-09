@@ -88,9 +88,9 @@ function Footer() {
           <Link to="/impressum" className="secondary">
             <Trans i18nKey="footer.sitenotice"></Trans>
           </Link>
-          {/* <Link to="/datenschutz" className="secondary">
+          <Link to="/datenschutz" className="secondary">
             <Trans i18nKey="footer.dataprotection"></Trans>
-          </Link> */}
+          </Link>
         </nav>
 
         <div className="col3">
