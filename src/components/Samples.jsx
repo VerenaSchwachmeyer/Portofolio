@@ -1,44 +1,35 @@
 import React from "react";
 import CodingSampleTile from "./CodingSampleTile";
-import { Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function Samples() {
+  const { t } = useTranslation();
+
   const samples = [
     {
       id: 3,
       name: "Meme Generator",
       linkSite: "https://charming-pothos-c44bc4.netlify.app/",
       linkRepo: "https://github.com/VerenaSchwachmeyer/Meme-Generator",
-      src: "/images/Screenshot_MemeGenerator-2.jpg",
+      src: "/images/Screenshot_MemeGenerator-2.webp",
       alt: "Screenshot of Meme Generator",
-      caption: <Trans i18nKey="samples.memetext"></Trans>,
+      caption: t("samples.memetext"),
     },
     {
       id: 4,
-      name: <Trans i18nKey="samples.todoH3"></Trans>,
+      name: t("samples.todoH3"),
       linkSite: "https://mariamac92.github.io/Notizzettel/",
       linkRepo: "https://github.com/MariamaC92/Notizzettel/",
-      src: "/images/Screenshot_Memorandum-1.jpg",
+      src: "/images/Screenshot_Memorandum-1.webp",
       alt: "Screenshot of To-Do-List",
-      caption: <Trans i18nKey="samples.todotext"></Trans>,
+      caption: t("samples.todotext"),
     },
-    // {
-    //   id: 5,
-    //   name: "Blog",
-    //   link: "https://verenaschwachmeyer.github.io/Blog/",
-    //   src: "/images/Blog.png",
-    //   alt: "Screenshot of Blog",
-    //   caption:
-    //     "Just a small blog example using plain HTML and CSS including responsive design. ",
-    // },
   ];
 
   return (
     <section id="samples" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">
-          <Trans i18nKey="samples.heading"></Trans>
-        </h2>
+        <h2 className="sectionTitle">{t("samples.heading")}</h2>
 
         <div className="sampleContainer">
           {samples.map((project) => {

@@ -1,0 +1,156 @@
+.burgermenu-bars-container,
+.burgermenu-button {
+  height: 36px;
+  width: 36px;
+  z-index: 1001;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+}
+
+.burgermenu-bars {
+  background-color: var(--color-2);
+  border: 2px solid white;
+  display: inline-block;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  right: 0px;
+  opacity: 1;
+  transition-duration: 500ms;
+  z-index: 1001;
+}
+
+/* .burgermenu-bars-container:hover .burgermenu-bars  */
+
+.burgermenu-button:hover {
+  cursor: pointer;
+}
+
+.burgermenu-bars-container:hover .burgermenu-bars {
+  background-color: var(--color-4);
+  border: 2px solid var(--color-1);
+}
+
+.openedmenu.burgermenu-bars-container:hover .burgermenu-bars {
+  background-color: var(--color-2);
+}
+
+.cross-1 {
+  transform: rotate(45deg) translateY(20px);
+  transition-duration: 500ms;
+}
+
+.cross-2 {
+  visibility: hidden;
+  transition-duration: 1ms;
+}
+
+.cross-3 {
+  transform: rotate(-45deg) translateY(-20px);
+  transition-duration: 500ms;
+}
+
+.burgermenu-button {
+  opacity: 0;
+  z-index: 1002;
+}
+
+.burgermenu {
+  height: 100vh;
+  width: 300px;
+  z-index: 1000;
+  background-color: var(--color-3);
+  position: fixed;
+  top: 0;
+  right: -300px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /*ggf hier center/flex-start wählen! */
+  align-items: flex-start;
+  justify-content: flex-start;
+  transform: translateX(300px);
+  transition-duration: 500ms;
+}
+
+.opened {
+  transform: translateX(-300px);
+  transition-duration: 500ms;
+}
+
+.openedmenu {
+  transition-duration: 500ms;
+}
+
+/* öffnen/schliessen */
+/* .instr {
+  background-color: var(--color-3);
+  position: relative;
+  top: 5px;
+  right: 11px;
+  text-align: center;
+  z-index: 1001;
+  color: var(--text-color-primary);
+  transition-duration: 500ms;
+  font-size: 0.8em;
+} */
+/* 
+.openedmenu.instr {
+  background-color: var(--color-2);
+} */
+
+/* .burgermenu-bars-container:hover .instr {
+  color: var(--color-4);
+}
+
+.openedmenu.burgermenu-bars-container:hover .instr {
+  color: var(--color-5);
+} */
+
+.burgermenu-listItems {
+  list-style: none;
+  padding: 6%;
+  background-color: var(--color-3);
+}
+
+.burgermenu-listItems button {
+  text-decoration: none;
+  font-size: 1.5em;
+  background-color: var(--color-3);
+  padding: 10px;
+  /* border: 1px solid var(--color-3); */
+}
+
+/* can be adapted to customers wishes ! */
+.burgermenu-listItems button:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  /* border: 1px solid var(--color-1); */
+  color: var(--color-1);
+}
+
+.overlay {
+  background-color: rgba(50, 46, 48, 0.3);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed; /* Sit on top of the page content */
+}
+
+/* @media screen and (min-width: 1000px) {
+  .burgermenu {
+    visibility: hidden;
+  }
+
+  .burgermenu-bars-container {
+    visibility: hidden;
+  }
+} */

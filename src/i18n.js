@@ -1,6 +1,5 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-// import { Trans } from "react-i18next";
 
 i18n
   .use(initReactI18next) // this is mandatory so that is it accessible in all components!!
@@ -42,7 +41,7 @@ i18n
             webappsPoint1: `Browser-Based`,
             webappsPoint2: `Including Functionalities`,
             webappsPoint3: `Frontend`,
-            webappsPoint4: `Backend including <br></br> Server & Database`,
+            webappsPoint4: `Backend including Server & Database`,
             accH3: `ACCESSIBILITY`,
             accH4: `Optimiziation of Operability`,
             accPoint1: `Screen Reader Usability`,
@@ -54,18 +53,20 @@ i18n
             medPoint1: `Database Architecture`,
             medPoint2: `Scientific Standards`,
             medPoint3: `Easy Data Input`,
+            p1: `I undertake the development of websites and full-stack applications, encompassing databases and servers. Additionally, I am proficient in creating apps for Android devices.`,
+            p2: `A particular emphasis for me is the incorporation of digital accessibility, adhering to the criteria outlined in the Web Content Accessibility Guidelines (WCAG) and BITV 2.0. Leveraging my scientific background, I can integrate medical expertise into the development of software applications within the healthcare sector. This not only facilitates the implementation of technical aspects but also ensures an optimal user experience aligned with the specific requirements of the healthcare industry.`,
           },
           aboutme: {
             heading: `About me`,
-            text: `I have worked in clinical research as a post-doctoral fellow for 12 years before I decided to pursue my passion for coding as a web-developer. With my previous experience as a scientist and physiotherapist, I speak not only the language of techies but also physicians, therapists, nurses, and patients. But a medical topic of your project is not necessary - contact me for any subject matter.`,
+            text: `I spent 12 years in clinical research as a post-doctoral fellow before I decided to follow my passion for coding and become a web developer. With my background as a scientist and physiotherapist, I'm not only fluent in tech-speak but also in the language of healthcare professionals and patients. Whether your project is medically related or not, feel free to get in touch, and I'll be happy to help with any subject matter.`,
           },
           techstack: {
             heading: `Tech Stack`,
-            text: `My tech stack is focused on JavaScript-based technologies with ReactJS used as a main library. See the list below for an overview of the languages, tools, frameworks and libraries that I utilized. `,
+            text: `My technical stack is strategically centered around JavaScript-based technologies, with ReactJS serving as the primary library to drive dynamic and responsive user interfaces. Below, I provide a short overview of the diverse set of languages, tools, frameworks, and libraries that I have incorporated into my projects: `,
           },
           projects: {
             heading: `Projects`,
-            text: `Some of my projects and my previous scientific work fall into intellectual property and cannot be published at this point. If you wish for more code sample, please contact me.`,
+            text: `Some of my projects and my previous scientific work fall into intellectual property and cannot be published at this point. If you wish for more code samples, please contact me.`,
             downtown1H3: `Video Chat App`,
             downtown1text: `This app provides an accessible, digital meet-up spot for people with Down syndrome.`,
             downtown2H3: `Accessibility`,
@@ -76,9 +77,9 @@ i18n
             downtown4text: `The platform provides video chatrooms that can easily be entered and left by a group member at any time.`,
 
             flowerbauer1H3: `Flower Bauer App`,
-            flowerbauer1text: `This app selects plants that are optimal for a specific location in the garden. The project is still work in progress and written in React Native.`,
+            flowerbauer1text: `This app selects plants that are optimal for a specific location in the garden. Website and app will be launched soon!`,
             flowerbauer2H3: `For each individual spot`,
-            flowerbauer2text: `Each garden spot has its own conditions: sunshine, soil, water, ph value, lime content. Create a project for each garden area. `,
+            flowerbauer2text: `Each garden spot has its own conditions: sunshine, soil, water, ph value, lime content. A concomitant website will provide additional and detailed information.`,
             flowerbauer3H3: "Search for plants",
             flowerbauer3text:
               "Select the conditions of your garden spot and search for plants that match those conditions.",
@@ -86,7 +87,7 @@ i18n
             flowerbauer4text:
               "Plants that fit the specified conditions are searched in the database and listed. Details can be opened.",
 
-            linovtext: `I created this one-pager website for a talented 13-year old musician, singer, and songwriter.`,
+            linovtext: `I created this simple one-pager website for a talented 13-year old musician, singer, and songwriter.`,
           },
           samples: {
             heading: `Coding Samples`,
@@ -103,8 +104,8 @@ i18n
             button: `Send Mail`,
           },
           footer: {
-            sitenotice: `Site Notice`,
-            dataprotection: `Data Protection`,
+            sitenotice: `Imprint`,
+            dataprotection: `Privacy Policy`,
           },
         },
       },
@@ -137,7 +138,7 @@ i18n
             webappsPoint1: `Browser-Basiert`,
             webappsPoint2: `inklusive diverser Funktionen`,
             webappsPoint3: `inklusive Frontend`,
-            webappsPoint4: `inklusive Backend mit <br></br> Server & Datenbank`,
+            webappsPoint4: `inklusive Backend mit Server & Datenbank`,
             accH3: `BARRIEREFREIHEIT`,
             accH4: `Optimierung der Bedienbarkeit:`,
             accPoint1: `Screen Reader Nutzung`,
@@ -149,6 +150,17 @@ i18n
             medPoint1: `Datenbankarchitektur`,
             medPoint2: `Wissenschaftlichen Standards`,
             medPoint3: `Leichter Dateneingabe`,
+            p1: `Ich übernehme die Entwicklung von Webseiten oder auch Full-Stack
+            Anwendungen inklusive Datenbanken und Servern – auch die Erstellung
+            von Apps für Android-Endgeräte ist in meinem Repertoire.`,
+            p2: `Besonders wichtig ist mir dabei die Integration digitaler
+            Barrierefreiheit gemäß den Kriterien der Web Content Accessibility
+            Guidelines (WCAG) und der BITV 2.0. Dabei kann ich durch meinen
+            wissenschaftlichen Hintergrund auch medizinisches Fachwissen in die
+            Entwicklung von Softwareanwendungen im Gesundheitsbereich einfließen
+            lassen. Dies ermöglicht nicht nur die Umsetzung technischer Aspekte,
+            sondern auch eine optimale User Experience im Einklang mit den
+            spezifischen Anforderungen des Gesundheitswesens.`,
           },
           aboutme: {
             heading: `Über mich`,
@@ -156,7 +168,7 @@ i18n
           },
           techstack: {
             heading: `Technologien`,
-            text: `Ich programmiere hauptsächlich in JavaScript-basierten Technologien mit Fokus auf ReactJS als Library. Die Liste gibt einen Überblick über meine verschiedenen Sprachen, Werkzeuge, Frameworks und Libraries.`,
+            text: `Meine Hauptdomäne ist die Programmierung in JavaScript-basierten Technologien, wobei mein Fokus besonders auf ReactJS als Library liegt. Ich setzte dabei eine Vielzahl von Werkzeugen, Frameworks und Libraries ein. Diese breite Palette ermöglicht es mir, flexibel auf unterschiedlichste Anforderungen einzugehen und innovative Lösungen in der Welt der Webentwicklung zu gestalten.`,
           },
           projects: {
             heading: `Projekte`,
@@ -171,9 +183,9 @@ i18n
             downtown4text: `Die Plattform besitzt feste Video Chatrooms, welche leicht und zu jeder Zeit betreten und wieder verlassen werden können.`,
 
             flowerbauer1H3: `Flower Bauer App`,
-            flowerbauer1text: `Diese App findet Pflanzen, die optimal für einen Gartenbereich ausgesucht sind. Sie ist noch im Entwicklugnsmodus, geschrieben in React Native.`,
+            flowerbauer1text: `Diese App findet Pflanzen, die optimal für einen Gartenbereich ausgesucht sind. Webseite und App werden in einigen Wochen gelauncht.`,
             flowerbauer2H3: `für jede individuelle Gartenecke`,
-            flowerbauer2text: `Jeder Gartenbereich hat seine eigenen Bedingungen und muss individuell geplant werden. `,
+            flowerbauer2text: `Jeder Gartenbereich hat seine eigenen Bedingungen und muss individuell geplant werden. Eine begleitende Webseite wird zusätzliche, detaillierte Informationen liefern.`,
             flowerbauer3H3: `Geeignete Pflanzen suchen`,
             flowerbauer3text: `Wähle die Standortbedingungen und suche nach Pflanzen, welche zum Standort passen.`,
             flowerbauer4H3: "Passende Pflanzauswahl",

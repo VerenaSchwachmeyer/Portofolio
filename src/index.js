@@ -1,31 +1,18 @@
 import React from "react";
-// import ReactDOM from "react-dom/client";
-import { hydrate, render } from "react-dom";
-import "./index.css";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import "./index.css";
 
 import "./i18n";
 
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
-    rootElement
-  );
-} else {
-  render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
-    rootElement
-  );
-}
+const domNode = document.getElementById("root");
+const root = createRoot(domNode);
 
-// root.render(
-//   <BrowserRouter>
-//     <App />
-//   </BrowserRouter>
-// );
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);

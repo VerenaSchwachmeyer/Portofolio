@@ -3,9 +3,10 @@ import { CgWebsite } from "react-icons/cg";
 import { ImAccessibility } from "react-icons/im";
 import { FaUserMd } from "react-icons/fa";
 import { MdOutlineAppSettingsAlt } from "react-icons/md";
-import { Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function Services() {
+  const { t } = useTranslation();
   const [flipped1, setFlipped1] = useState(false);
   const [flipped2, setFlipped2] = useState(false);
   const [flipped3, setFlipped3] = useState(false);
@@ -25,9 +26,7 @@ export default function Services() {
   return (
     <section id="services" className="section primary" aria-label="services">
       <div className="content">
-        <h2 className="sectionTitle">
-          <Trans i18nKey="services.heading"></Trans>
-        </h2>
+        <h2 className="sectionTitle">{t("services.heading")}</h2>
         <div className="serviceContainer">
           {/* Websites */}
           <div
@@ -44,7 +43,7 @@ export default function Services() {
               >
                 <CgWebsite className="serviceLogo graphics" />
                 <h3 className="serviceTitle graphics">
-                  <Trans i18nKey="services.websitesH3"></Trans>
+                  {t("services.websitesH3")}
                 </h3>
               </div>
 
@@ -54,22 +53,12 @@ export default function Services() {
                 aria-label="backside of card about my website services"
                 tabIndex="0"
               >
-                <h4>
-                  <Trans i18nKey="services.websitesH4"></Trans>
-                </h4>
+                <h4>{t("services.websitesH4")}</h4>
                 <ul>
-                  <li>
-                    <Trans i18nKey="services.websitesPoint1"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.websitesPoint2"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.websitesPoint3"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.websitesPoint4"></Trans>
-                  </li>
+                  <li>{t("services.websitesPoint1")}</li>
+                  <li>{t("services.websitesPoint2")}</li>
+                  <li>{t("services.websitesPoint3")}</li>
+                  <li>{t("services.websitesPoint4")}</li>
                 </ul>
               </div>
             </div>
@@ -90,7 +79,7 @@ export default function Services() {
                 </div>
 
                 <h3 className="serviceTitle graphics">
-                  <Trans i18nKey="services.webappsH3"></Trans>
+                  {t("services.webappsH3")}
                 </h3>
               </div>
 
@@ -98,22 +87,12 @@ export default function Services() {
                 className="serviceContent serviceCard-back secondary"
                 tabIndex="0"
               >
-                <h4>
-                  <Trans i18nKey="services.webappsH4"></Trans>
-                </h4>
+                <h4>{t("services.webappsH4")}</h4>
                 <ul>
-                  <li>
-                    <Trans i18nKey="services.webappsPoint1"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.webappsPoint2"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.webappsPoint3"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.webappsPoint4"></Trans>
-                  </li>
+                  <li>{t("services.webappsPoint1")}</li>
+                  <li>{t("services.webappsPoint2")}</li>
+                  <li>{t("services.webappsPoint3")}</li>
+                  <li>{t("services.webappsPoint4")}</li>
                 </ul>
               </div>
             </div>
@@ -130,9 +109,7 @@ export default function Services() {
             <div className="serviceCard" aria-label="frontside of card">
               <div className="serviceContent serviceCard-front primary">
                 <ImAccessibility className="serviceLogo graphics" />
-                <h3 className="serviceTitle graphics">
-                  <Trans i18nKey="services.accH3"></Trans>
-                </h3>
+                <h3 className="serviceTitle graphics">{t("services.accH3")}</h3>
               </div>
 
               <div
@@ -140,22 +117,12 @@ export default function Services() {
                 aria-label="backside of card"
                 tabIndex="0"
               >
-                <h4>
-                  <Trans i18nKey="services.accH4"></Trans>
-                </h4>
+                <h4>{t("services.accH3")}</h4>
                 <ul>
-                  <li>
-                    <Trans i18nKey="services.accPoint1"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.accPoint2"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.accPoint3"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.accPoint4"></Trans>
-                  </li>
+                  <li>{t("services.accPoint1")}</li>
+                  <li>{t("services.accPoint2")}</li>
+                  <li>{t("services.accPoint3")}</li>
+                  <li>{t("services.accPoint4")}</li>
                 </ul>
               </div>
             </div>
@@ -173,9 +140,7 @@ export default function Services() {
             <div className="serviceCard" aria-label="frontside of card">
               <div className="serviceContent serviceCard-front primary">
                 <FaUserMd className="serviceLogo graphics" />
-                <h3 className="serviceTitle graphics">
-                  <Trans i18nKey="services.medH3"></Trans>
-                </h3>
+                <h3 className="serviceTitle graphics">{t("services.medH3")}</h3>
               </div>
 
               <div
@@ -183,40 +148,19 @@ export default function Services() {
                 aria-label="backside of card"
                 tabIndex="0"
               >
-                <h4>
-                  <Trans i18nKey="services.medH4"></Trans>
-                </h4>
+                <h4>{t("services.medH4")}</h4>
                 <ul>
-                  <li>
-                    <Trans i18nKey="services.medPoint1"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.medPoint2"></Trans>
-                  </li>
-                  <li>
-                    <Trans i18nKey="services.medPoint3"></Trans>
-                  </li>
+                  <li>{t("services.medPoint1")}</li>
+                  <li>{t("services.medPoint2")}</li>
+                  <li>{t("services.medPoint3")}</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div>
-          {/* <p className="aboutmeText">
-            Erstellung von Webseiten mit responsivem Design bis hin zur
-            Entwicklung komplexerer Anwendungen inklusive Datenbank und Server.
-            Eine App-Entwicklung für Android Endgeräte ist ebenfalls möglich.
-            <br></br>
-            Besonderen Fokus lege ich auf digitale Barrierefreiheit nach den
-            Kriterien der Web Content Accessibility Guidelines (WCAG)
-            beziehungsweise der BITV 2.0. Die Konformitätsstufen A, AA oder AAA
-            können geprüft und eingerichtet werden. Mit meinem
-            wissenschaftlichen Hintergrund kann ich bei Softwareanwendungen für
-            den Gesundheitsbereich nicht nur Programmierkenntnisse, sondern auch
-            medizinisches Hintergrundwissen einbringen - für die Umsetzung einer
-            optimalen User Experience.
-          </p> */}
-
+          <p className="aboutmeText">{t("services.p1")}</p>
+          <p className="aboutmeText">{t("services.p2")}</p>
           {/* Weiterführende Informationen zum Thema barrierefreie Webseiten finden Sie unter <a href="https://www.schwachmeyer-gottschalk.de"> www.schwachmeyer-gottschalk.de. </a>   */}
         </div>
       </div>
