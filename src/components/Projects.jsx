@@ -7,14 +7,15 @@ import Flowerbauer1 from "./Projects/Flowerbauer/Flowerbauer1";
 import Flowerbauer2 from "./Projects/Flowerbauer/Flowerbauer2";
 import Flowerbauer3 from "./Projects/Flowerbauer/Flowerbauer3";
 import Flowerbauer4 from "./Projects/Flowerbauer/Flowerbauer4";
-// import Downtown1 from "./Projects/Downtown/Downtown1";
-// import Downtown2 from "./Projects/Downtown/Downtown2";
-// import Downtown3 from "./Projects/Downtown/Downtown3";
-// import Downtown4 from "./Projects/Downtown/Downtown4";
+import Downtown1 from "./Projects/Downtown/Downtown1";
+import Downtown2 from "./Projects/Downtown/Downtown2";
+import Downtown3 from "./Projects/Downtown/Downtown3";
+import Downtown4 from "./Projects/Downtown/Downtown4";
 import Linov1 from "./Projects/Linov/Linov1";
-import { Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
   //This list of projects could be "outsourced" into a separate file or even database in the future
   // the current "projects" are still crappy and need to be replaced with bigger and more complex projects!
 
@@ -45,12 +46,14 @@ function Projects() {
 
   // const handleDragStart = (e) => e.preventDefault();
 
-  const items = [
+  const itemsFB = [
     <Flowerbauer1 />,
     <Flowerbauer2 />,
     <Flowerbauer3 />,
     <Flowerbauer4 />,
   ];
+
+  const itemsDT = [<Downtown1 />, <Downtown2 />, <Downtown3 />, <Downtown4 />];
 
   const responsive = {
     0: { items: 1 },
@@ -60,19 +63,45 @@ function Projects() {
   return (
     <section id="projects" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">
-          <Trans i18nKey="projects.heading"></Trans>
-        </h2>
-        <p className="aboutmeText">
-          <Trans i18nKey="projects.text"></Trans>
-        </p>
+        <h2 className="sectionTitle">{t("projects.heading")}</h2>
+        <p className="aboutmeText">{t("projects.text")}</p>
         <AliceCarousel
           role="list"
           aria-label="Project named Downtown"
           mouseTracking
           infinite
           autowidth
-          items={items}
+          items={itemsDT}
+          paddingLeftt={5}
+          paddingRight={0}
+          responsive={responsive}
+          itemsFit="fill"
+          renderPrevButton={() => {
+            return (
+              <GrPrevious
+                className="carouselPrevButton"
+                role="button"
+                aria-label="go to previous slide"
+              />
+            );
+          }}
+          renderNextButton={() => {
+            return (
+              <GrNext
+                className="carouselNextButton"
+                role="button"
+                aria-label="go to next slide"
+              />
+            );
+          }}
+        />
+        <AliceCarousel
+          role="list"
+          aria-label="Project named Downtown"
+          mouseTracking
+          infinite
+          autowidth
+          items={itemsFB}
           paddingLeftt={5}
           paddingRight={0}
           responsive={responsive}

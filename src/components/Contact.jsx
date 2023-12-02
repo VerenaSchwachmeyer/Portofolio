@@ -1,12 +1,13 @@
 import { RiMailSendLine } from "react-icons/ri";
 import { useRef, useState, CSSProperties } from "react";
 import emailjs from "@emailjs/browser";
-import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import CircleLoader from "react-spinners/ClipLoader";
-import { Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
+import "react-responsive-modal/styles.css";
 
 export default function Contact() {
+  const { t } = useTranslation();
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
@@ -46,9 +47,7 @@ export default function Contact() {
   return (
     <section id="contact" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">
-          <Trans i18nKey="contact.heading"></Trans>
-        </h2>
+        <h2 className="sectionTitle">{t("contact.heading")}</h2>
         <form
           ref={form}
           className="contactForm"
@@ -56,30 +55,28 @@ export default function Contact() {
           onSubmit={sendEmail}
         >
           <label htmlFor="user_name" className="primary">
-            <Trans i18nKey="contact.form1"></Trans>
+            {t("contact.form1")}
           </label>
           <input type="text" name="user_name" id="user_name" required />
 
-          <label htmlFor="email" className="primary">
-            <Trans i18nKey="contact.form2"></Trans>
+          <label htmlFor="user_email" className="primary">
+            {t("contact.form2")}
           </label>
           <input type="user_email" name="email" id="user_email" required />
 
           <label htmlFor="subject" className="primary">
-            <Trans i18nKey="contact.form3"></Trans>
+            {t("contact.form3")}
           </label>
           <input type="text" name="subject" id="subject" required />
 
           <label htmlFor="message" className="primary">
-            <Trans i18nKey="contact.form4"></Trans>
+            {t("contact.form4")}
           </label>
           <textarea name="message" id="message" required />
 
           <button className="formButton" aria-label="send mail">
             <RiMailSendLine size="1.7em" />
-            <p>
-              <Trans i18nKey="contact.button"></Trans>
-            </p>
+            <p>{t("contact.button")}</p>
           </button>
         </form>
       </div>

@@ -8,7 +8,7 @@ export default function CodingSampleTile(project) {
         <img className="screenshotSample" src={project.src} alt={project.alt} />
         <p className="projectCaption secondary">{project.caption}</p>
       </div>
-      <div className="sampleLinkContainer" role="menu" aria-haspopup="true">
+      <div className="sampleLinkContainer" role="menu">
         <a
           href={project.linkSite}
           target="_blank"

@@ -10,15 +10,16 @@ import { DiMongodb } from "react-icons/di";
 import { SiPostgresql } from "react-icons/si";
 import { Tooltip } from "react-tooltip";
 import { DiVisualstudio } from "react-icons/di";
-// import { SiGimp } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { SiWebrtc } from "react-icons/si";
 import { SiBootstrap } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 import "react-tooltip/dist/react-tooltip.css";
-import { Trans } from "react-i18next";
 
 function TechStack() {
+  const { t } = useTranslation();
+
   const logos = [
     { id: 1, name: "JavaScript", icon: <FaJs /> },
     { id: 2, name: "HTML5", icon: <FaHtml5 /> },
@@ -32,7 +33,11 @@ function TechStack() {
       id: 9,
       name: "ExpressJS",
       icon: (
-        <img src="/images/ExpressJS-Logo-color0.png" height="40em" alt=""></img>
+        <img
+          src="/images/ExpressJS-Logo-color0.webp"
+          height="40em"
+          alt=""
+        ></img>
       ),
     },
     { id: 11, name: "GitHub", icon: <FaGithub /> },
@@ -41,7 +46,7 @@ function TechStack() {
       name: "MATLAB",
       icon: (
         <img
-          src="/images/Matlab-Logo-color0.png"
+          src="/images/Matlab-Logo-color0.webp"
           height="40em"
           width="auto"
           alt=""
@@ -57,7 +62,6 @@ function TechStack() {
     { id: 15, name: "Material UI", icon: <SiMui /> },
     { id: 16, name: "WebRTC", icon: <SiWebrtc /> },
     { id: 17, name: "Bootstrap", icon: <SiBootstrap /> },
-    // { id: 18, name: "Gimp", icon: <SiGimp /> },
   ];
 
   const logoItems = logos.map((logo) => {
@@ -71,13 +75,7 @@ function TechStack() {
         className="logoListItems"
       >
         <Tooltip id="my-tooltip" className="secondary logoTile" />
-        <div
-          className="graphics"
-          data-tooltip-id="my-tooltip"
-          data-tooltip-content={logo.name}
-        >
-          {logo.icon}
-        </div>
+        {logo.icon}
       </li>
     );
   });
@@ -85,12 +83,8 @@ function TechStack() {
   return (
     <section id="techStack" className="primary">
       <div className="content">
-        <h2 className="sectionTitle">
-          <Trans i18nKey="techstack.heading"></Trans>
-        </h2>
-        <p className="aboutmeText">
-          <Trans i18nKey="techstack.text"></Trans>
-        </p>
+        <h2 className="sectionTitle">{t("techstack.heading")}</h2>
+        <p className="aboutmeText">{t("techstack.text")}</p>
         <ul className="logoList" style={{ margin: "auto" }}>
           <IconContext.Provider
             value={{

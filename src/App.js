@@ -1,13 +1,13 @@
-import "./App.css";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Impressum from "./components/Impressum";
-import Errorpage404 from "./components/Errorpage/Errorpage404";
-import { useTranslation } from "react-i18next";
-import Datenschutz from "./components/Datenschutz";
+import Home from "./pages/Home";
+import Impressum from "./pages/Impressum";
+import Errorpage404 from "./pages/Errorpage/Errorpage404";
+import Datenschutz from "./pages/Datenschutz";
+import "./styles/App.css";
 
 function App() {
-  const { t, i18n } = useTranslation();
+  // const { i18n } = useTranslation();
 
   return (
     <div>
