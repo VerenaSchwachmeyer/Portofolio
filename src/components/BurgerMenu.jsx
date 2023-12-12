@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Scroll2Element } from "../utils/functions";
 import "../styles/burger-menu.css";
 
 export default function BurgerMenu() {

@@ -12,8 +12,8 @@ export default function Flowerbauer2() {
       <div className="poligon">
         <img
           className="projectScreenshot"
-          src="/images/FlowerBauer2.webp"
-          alt="A project can be created and named after the part of your garden for which you need plant suggestions."
+          src="/images/Screenshot_FlowerBauer_3b.webp"
+          alt="The website provides lots of information."
         />
       </div>
     </div>

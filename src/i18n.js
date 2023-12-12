@@ -77,9 +77,10 @@ i18n
             downtown4text: `The platform provides video chatrooms that can easily be entered and left by a group member at any time.`,
 
             flowerbauer1H3: `Flower Bauer App`,
-            flowerbauer1text: `This app selects plants that are optimal for a specific location in the garden. Website and app will be launched soon!`,
+            flowerbauer1text: `This app selects plants that are optimal for a specific location in the garden. Website is now launched, the app will come soon!`,
+            flowerbauerbutton: `Visit Website`,
             flowerbauer2H3: `For each individual spot`,
-            flowerbauer2text: `Each garden spot has its own conditions: sunshine, soil, water, ph value, lime content. A concomitant website will provide additional and detailed information.`,
+            flowerbauer2text: `Each garden spot has its own conditions: sunshine, soil, water, ph value, lime content. The website provides additional and detailed information whereas the app is best to plan garden projects and save them.`,
             flowerbauer3H3: "Search for plants",
             flowerbauer3text:
               "Select the conditions of your garden spot and search for plants that match those conditions.",
@@ -183,7 +184,8 @@ i18n
             downtown4text: `Die Plattform besitzt feste Video Chatrooms, welche leicht und zu jeder Zeit betreten und wieder verlassen werden können.`,
 
             flowerbauer1H3: `Flower Bauer App`,
-            flowerbauer1text: `Diese App findet Pflanzen, die optimal für einen Gartenbereich ausgesucht sind. Webseite und App werden in einigen Wochen gelauncht.`,
+            flowerbauer1text: `Diese App findet Pflanzen, die optimal für einen Gartenbereich ausgesucht sind. Die Webseite ist jetzt online, die App wird bald folgen!`,
+            flowerbauerbutton: `zur Webseite`,
             flowerbauer2H3: `für jede individuelle Gartenecke`,
             flowerbauer2text: `Jeder Gartenbereich hat seine eigenen Bedingungen und muss individuell geplant werden. Eine begleitende Webseite wird zusätzliche, detaillierte Informationen liefern.`,
             flowerbauer3H3: `Geeignete Pflanzen suchen`,
