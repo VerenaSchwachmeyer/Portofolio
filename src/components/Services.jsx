@@ -117,7 +117,7 @@ export default function Services() {
                 aria-label="backside of card"
                 tabIndex="0"
               >
-                <h4>{t("services.accH3")}</h4>
+                <h4>{t("services.accH4")}</h4>
                 <ul>
                   <li>{t("services.accPoint1")}</li>
                   <li>{t("services.accPoint2")}</li>

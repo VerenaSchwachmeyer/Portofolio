@@ -41,7 +41,7 @@ i18n
             webappsPoint1: `Browser-Based`,
             webappsPoint2: `Including Functionalities`,
             webappsPoint3: `Frontend`,
-            webappsPoint4: `Backend including Server & Database`,
+            webappsPoint4: `Backend incl. Server & Database`,
             accH3: `ACCESSIBILITY`,
             accH4: `Optimiziation of Operability`,
             accPoint1: `Screen Reader Usability`,
@@ -58,7 +58,10 @@ i18n
           },
           aboutme: {
             heading: `About me`,
-            text: `I spent 12 years in clinical research as a post-doctoral fellow before I decided to follow my passion for coding and become a web developer. With my background as a scientist and physiotherapist, I'm not only fluent in tech-speak but also in the language of healthcare professionals and patients. Whether your project is medically related or not, feel free to get in touch, and I'll be happy to help with any subject matter.`,
+            list1: `10+ years experience with various data base systems and RESTful-API interfaces`,
+            list2: `100+ scripts in MATLAB coded`,
+            list3: `frontend expertise`,
+            text: `I spent 12 years in clinical research as a post-doctoral fellow before I decided to complete my passion with web development. With my background as a scientist and physiotherapist, I'm not only fluent in tech-speak but also in the language of healthcare professionals and patients. Whether your project is medically related or not, feel free to get in touch, and I'll be happy to help with any subject matter.`,
           },
           techstack: {
             heading: `Tech Stack`,
@@ -165,6 +168,9 @@ i18n
           },
           aboutme: {
             heading: `Über mich`,
+            list1: `Mehr als 10 Jahre Erfahrung mit verschiedenen Datenbanksystemen und API-Schnittstellen`,
+            list2: `Mehr als 100 Skripte programmiert`,
+            list3: `Frontend Expertise`,
             text: `Als promovierte Wissenschaftlerin habe ich 12 Jahre lang in der klinischen Forschung Skripte zur Datenverarbeitung und -analyse programmiert. Dann verfolgte ich meine Leidenschaft weiter und ergänzte meine Coding-Kenntnisse mit der Web- und Appentwicklung. Aufgrund meines vielfältigen beruflichen Hintergrunds spreche ich verschiedene "Sprachen" und verstehe daher nicht nur die "Techies", sondern auch die Bedürfnisse von medizinischem Personal, Patient*innen, Usern etc. Aber ein medizinischer Kontext des Projekts ist nicht zwingend notwendig, ich bin für alle Themenbereiche offen.`,
           },
           techstack: {
