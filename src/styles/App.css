@@ -93,7 +93,7 @@ h4 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: clamp(0.8em, 1.3vw, 1.1em);
   line-height: 1.6;
 }
 
@@ -421,7 +421,7 @@ figcaption {
 .serviceFlipCard {
   background-color: transparent;
   width: 40%;
-  min-width: 350px;
+  min-width: 300px;
   height: 40vh;
   max-height: 330px;
   min-height: 300px;
@@ -524,12 +524,6 @@ figcaption {
   justify-content: center;
 }
 
-.portrait-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .infoArea {
   display: flex;
   flex-direction: column;
@@ -557,7 +551,7 @@ figcaption {
 }
 
 .aboutmeText {
-  font-size: 1.3em;
+  font-size: clamp(1em, 1.7vw, 1.3em);
   line-height: 2;
   text-align: justify;
   text-align: center;
@@ -566,13 +560,27 @@ figcaption {
   padding: var(--padding-Thickness);
 }
 
-.aboutMe > ul {
+.portrait-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait-info > div > ul {
   line-height: 200%;
-  font-size: 0.9em;
-  background: var(--color-2);
+  font-size: clamp(0.8em, 1.3vw, 1.1em);
   border-radius: 5px;
-  padding: 2%;
-  max-width: 1000px;
+  padding: 15px;
+  margin: 20px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  max-width: 850px;
+}
+
+.portrait-info > div > ul > li {
+  padding: 0;
+  width: 75%;
+  text-align: left;
 }
 
 .link2Repo {
@@ -650,10 +658,13 @@ figcaption {
   background-color: var(--color-background);
   color: var(--color-text);
   border-radius: 5px;
-  font-size: 1.1em;
+  font-size: clamp(0.7em, 1.1em, 1.5em);
+  /* font-size: 1.1em; */
   min-width: 100px;
   width: auto;
-  max-height: 30px;
+  max-height: 50px;
+  padding: 3px;
+  text-align: center;
 }
 
 /* Projects */
@@ -1373,6 +1384,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   input,
   textarea {
     width: 100%;
+  }
+
+  .portrait-info > div > ul {
+    margin: 0;
   }
 
   #copyright {

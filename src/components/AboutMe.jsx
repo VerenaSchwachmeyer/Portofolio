@@ -17,8 +17,15 @@ export default function AboutMe() {
               alt="Portrait of Verena Schwachmeyer"
               aria-label="Portrait of Verena wearing a dark blue shirt. Blond hair, blue eyes."
             />
-            <p className="aboutmeText">{t("aboutme.text")}</p>
+            <div style={{ margin: "10px" }}>
+              <ul className="secondary">
+                <li className="aboutmeText">{t("aboutme.list1")}</li>
+                <li className="aboutmeText graphics">{t("aboutme.list2")}</li>
+                <li className="aboutmeText graphics">{t("aboutme.list3")}</li>
+              </ul>
+            </div>
           </div>
+          <p className="aboutmeText graphics">{t("aboutme.text")}</p>
         </div>
       </section>
     </>
