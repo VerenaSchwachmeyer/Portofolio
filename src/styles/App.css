@@ -93,7 +93,7 @@ h4 {
 }
 
 p {
-  font-size: clamp(0.8em, 1.3vw, 1.1em);
+  font-size: clamp(1em, 1.8vw, 1.3em);
   line-height: 1.6;
 }
 
@@ -176,6 +176,7 @@ section {
   justify-content: center;
   align-items: center;
   z-index: 0;
+  max-width: 1200px;
 }
 
 /* #services {
@@ -551,7 +552,7 @@ figcaption {
 }
 
 .aboutmeText {
-  font-size: clamp(1em, 1.7vw, 1.3em);
+  /* font-size: clamp(0.9em, 1.1em, 1.3em); */
   line-height: 2;
   text-align: justify;
   text-align: center;
@@ -564,22 +565,22 @@ figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border-radius: 5px;
+  padding: 2%;
 }
 
 .portrait-info > div > ul {
   line-height: 200%;
-  font-size: clamp(0.8em, 1.3vw, 1.1em);
-  border-radius: 5px;
+  /* font-size: clamp(0.9em, 1.1em, 1.3em); */
   padding: 15px;
-  margin: 20px;
-  background-color: var(--color-background);
-  color: var(--color-text);
   max-width: 850px;
 }
 
 .portrait-info > div > ul > li {
   padding: 0;
-  width: 75%;
+  width: 80%;
   text-align: left;
 }
 
@@ -658,7 +659,7 @@ figcaption {
   background-color: var(--color-background);
   color: var(--color-text);
   border-radius: 5px;
-  font-size: clamp(0.7em, 1.1em, 1.5em);
+  font-size: clamp(0.7em, 1.1em, 1.3em);
   /* font-size: 1.1em; */
   min-width: 100px;
   width: auto;
