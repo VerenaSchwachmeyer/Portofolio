@@ -91,7 +91,7 @@ i18n
             flowerbauer4text:
               "Plants that fit the specified conditions are searched in the database and listed. Details can be opened.",
 
-            linovtext: `I created this simple one-pager website for a talented 13-year old musician, singer, and songwriter.`,
+            linovtext: `I created this simple one-pager website for a talented 13-year old musician, singer, and songwriter. Open in Chrome, Opera, MS Edge to see scrolling animations.`,
           },
           samples: {
             heading: `Coding Samples`,
@@ -200,7 +200,7 @@ i18n
             flowerbauer4text:
               "Pflanzen, die zum angegebenen Standort passen, werden von der Datenbank abgerufen und aufgelistet. Details können eingesehen werden.",
 
-            linovtext: `Diese One-Page-Webseite habe ich erstellt für einen sehr talentierten, erst 13 Jahre jungen Musiker, Songwriter und Sänger.`,
+            linovtext: `Diese One-Page-Webseite habe ich für einen sehr talentierten, erst 13 Jahre jungen Musiker, Songwriter und Sänger erstellt. In Chrome, Opera oder MS Edge öffnen, um die Scrolling-Effekte zu sehen.`,
           },
           samples: {
             heading: `Code Beispiele`,
@@ -214,7 +214,7 @@ i18n
             form2: `Deine E-Mail-Adresse *`,
             form3: `Gib mir ein Stichwort: Worum geht es? *`,
             form4: `Deine Nachricht an mich. *`,
-            button: `Mail absenden`,
+            button: `Senden`,
           },
           footer: {
             sitenotice: `Impressum`,
