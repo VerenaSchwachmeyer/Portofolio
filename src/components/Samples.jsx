@@ -7,7 +7,16 @@ function Samples() {
 
   const samples = [
     {
-      id: 3,
+      id: 1,
+      name: t("samples.scrollh3"),
+      linkSite: "https://verenaschwachmeyer.github.io/Scroll-Effect/",
+      linkRepo: "https://github.com/VerenaSchwachmeyer/Scroll-Effect",
+      src: "/images/Screenshot_Scroll-Effect.webp",
+      alt: "Screenshot of Scroll-Effect",
+      caption: t("samples.scrolltext"),
+    },
+    {
+      id: 2,
       name: "Meme Generator",
       linkSite: "https://charming-pothos-c44bc4.netlify.app/",
       linkRepo: "https://github.com/VerenaSchwachmeyer/Meme-Generator",
@@ -16,7 +25,7 @@ function Samples() {
       caption: t("samples.memetext"),
     },
     {
-      id: 4,
+      id: 3,
       name: t("samples.todoH3"),
       linkSite: "https://mariamac92.github.io/Notizzettel/",
       linkRepo: "https://github.com/MariamaC92/Notizzettel/",
