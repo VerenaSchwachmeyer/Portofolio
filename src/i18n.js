@@ -95,6 +95,8 @@ i18n
           },
           samples: {
             heading: `Coding Samples`,
+            scrollh3: `Scroll Effects`,
+            scrolltext: `Watch the moon set and sun rise. Created with pure HTML and CSS. Supported by Chrome, Opera, Edge, Webview, and SamsungInternet.`,
             memetext: `Create your own memes. Used tech stack: ReactJS, REST-API and upload/save file functions.`,
             todoH3: `to-Do List`,
             todotext: `Make notes on the fly, no biggie. Logic written in Vanilla JavaScript.`,
@@ -203,10 +205,12 @@ i18n
             linovtext: `Diese One-Page-Webseite habe ich für einen sehr talentierten, erst 13 Jahre jungen Musiker, Songwriter und Sänger erstellt. In Chrome, Opera oder MS Edge öffnen, um die Scrolling-Effekte zu sehen.`,
           },
           samples: {
-            heading: `Code Beispiele`,
-            memetext: `Erstelle Deine eigenen Memes. Verwendete Elemente: ReactJS, REST-API und upload/save file functions.`,
-            todoH3: `to-Do-Liste`,
-            todotext: `Erstelle auf die Schnelle eine to-Do-Liste. Logik geschrieben in Vanilla JavaScript.`,
+            heading: `Coding Samples`,
+            scrollh3: `Scroll Effekte`,
+            scrolltext: `Erstellt mit reinem HTML und CSS. Effekte werden unterstützt in Browsern Chrome, Opera, Edge, Webview und SamsungInternet.`,
+            memetext: `Create your own memes. Used tech stack: ReactJS, REST-API and upload/save file functions.`,
+            todoH3: `to-Do List`,
+            todotext: `Make notes on the fly, no biggie. Logic written in Vanilla JavaScript.`,
           },
           contact: {
             heading: `Kontakt`,
