@@ -208,9 +208,9 @@ i18n
             heading: `Coding Samples`,
             scrollh3: `Scroll Effekte`,
             scrolltext: `Erstellt mit reinem HTML und CSS. Effekte werden unterstützt in Browsern Chrome, Opera, Edge, Webview und SamsungInternet.`,
-            memetext: `Create your own memes. Used tech stack: ReactJS, REST-API and upload/save file functions.`,
-            todoH3: `to-Do List`,
-            todotext: `Make notes on the fly, no biggie. Logic written in Vanilla JavaScript.`,
+            memetext: `Kreiere Deine eigenen Memes. Verwendete Technologien und Funktionen: ReactJS, REST-API and upload/save file Funktionen.`,
+            todoH3: `to-Do Liste`,
+            todotext: `Einfach schnelle Notizen erstellen, was noch zu erledigen ist. Logik geschrieben in Vanilla JavaScript.`,
           },
           contact: {
             heading: `Kontakt`,
