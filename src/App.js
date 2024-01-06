@@ -10,15 +10,13 @@ function App() {
   // const { i18n } = useTranslation();
 
   return (
-    <div>
-      <div className="app">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/impressum" element={<Impressum />} />
-          <Route path="/datenschutz" element={<Datenschutz />} />
-          <Route path="/*" element={<Errorpage404 />} />
-        </Routes>
-      </div>
+    <div className="app">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/datenschutz" element={<Datenschutz />} />
+        <Route path="/*" element={<Errorpage404 />} />
+      </Routes>
     </div>
   );
 }

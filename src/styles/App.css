@@ -10,7 +10,7 @@
 }
 
 main {
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,15 +221,16 @@ section {
 
 /* headerHome */
 .headerHome {
+  padding: 5px;
   height: 7vh;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   z-index: 99;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   background: transparent;
   background-image: linear-gradient(
     to bottom,
@@ -242,6 +243,7 @@ section {
   -moz-animation: fadeIn ease var(--fadeInTime);
   -o-animation: fadeIn ease var(--fadeInTime);
   -ms-animation: fadeIn ease var(--fadeInTime);
+  overflow-y: hidden;
 }
 
 /* .menuContainer {
@@ -250,12 +252,12 @@ section {
 
 #menu {
   position: fixed;
-  top: 18px;
-  right: 70px;
-  font-family: "Roboto-Bold", sans-serif;
+  top: 5px;
+  right: 60px;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6em;
   z-index: 99;
-  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: var(--color-6);
   -webkit-text-fill-color: var(--color-2);
 }
@@ -265,17 +267,14 @@ section {
   background-color: var(--color-0);
   margin: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   /* ab hier startimage */
   min-height: 430px;
-  right: 0;
-  z-index: 1;
   background-image: url("../../public/images/Verena-Schwachmeyer-Coding-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
-  margin: 0;
   animation: fadeIn ease var(--fadeInTme);
   -webkit-animation: fadeIn ease var(--fadeInTme);
   -moz-animation: fadeIn ease var(--fadeInTime);
@@ -287,7 +286,7 @@ figcaption {
   color: var(--color-2);
   position: absolute;
   bottom: 10px;
-  right: 3px;
+  right: 0px;
   writing-mode: vertical-lr;
   text-orientation: mixed;
   font-size: 0.6em;
@@ -1010,8 +1009,8 @@ textarea {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe-Semilight",
-    "Roboto-Regular", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe-Semilight", "Roboto",
+    sans-serif;
 }
 
 textarea {
@@ -1348,8 +1347,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: 100%;
     height: 100%;
     min-height: 430px;
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
     background-color: rgba(0, 0, 0, 0.3);
   }
 
