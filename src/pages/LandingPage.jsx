@@ -2,7 +2,6 @@ import React from "react";
 import { FaReact, FaJs, FaNode } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { useTranslation } from "react-i18next";
-import HeaderHome from "../components/HeaderHome";
 import { Scroll2Element } from "../utils/functions";
 
 export default function LandingPage() {
@@ -10,7 +9,6 @@ export default function LandingPage() {
 
   return (
     <div id="top" className="startpage">
-      <HeaderHome />
       <div className="startpageContainer">
         <div className="startTextContainer">
           <FaReact className="landingPageLogo" aria-label="React JS Logo" />

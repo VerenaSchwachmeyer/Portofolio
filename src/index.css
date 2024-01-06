@@ -1,26 +1,4 @@
 @font-face {
-  font-family: "Roboto-Regular";
-  src: url("../public/fonts/Roboto/Roboto-Regular.ttf") format("truetype"),
-    url("../public/fonts/Roboto/Roboto-Regular.woff") format("woff"),
-    url("../public/fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
-    url("../public/fonts/Roboto/Roboto-Regular.eot") format("eot");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("../public/fonts/Roboto/Roboto-Bold.ttf") format("truetype"),
-    url("../public/fonts/Roboto/Roboto-Bold.woff") format("woff"),
-    url("../public/fonts/Roboto/Roboto-Bold.woff2") format("woff2"),
-    url("../public/fonts/Roboto/Roboto-Bold.eot") format("eot");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Segoe-Bold";
   src: url("../public/fonts/Segoe/Segoe-Bold.ttf") format("truetype"),
     url("../public/fonts/Segoe/Segoe-Bold.woff") format("woff"),
@@ -37,17 +15,6 @@
     url("../public/fonts/Segoe/SegoeUI-Semibold.eot") format("woff"),
     url("../public/fonts/Segoe/SegoeUI-Semibold.woff2") format("woff2"),
     url("../public/fonts/Segoe/SegoeUI-Semibold.eot") format("eot");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Segoe-Light";
-  src: url("../public/fonts/Segoe/SegoeUI-Light.ttf") format("truetype"),
-    url("../public/fonts/Segoe/SegoeUI-Light.woff") format("woff"),
-    url("../public/fonts/Segoe/SegoeUI-Light.woff2") format("woff2"),
-    url("../public/fonts/Segoe/SegoeUI-Light.eot") format("eot");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
