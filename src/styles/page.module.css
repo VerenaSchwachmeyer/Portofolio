@@ -1,15 +1,6 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.app {
-  overflow-x: hidden;
-}
-
-main {
+.main {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,20 +10,6 @@ main {
 }
 
 /* Source Color Code: https://colorhunt.co/palette/2c3333395b64a5c9cae7f6f2 */
-:root {
-  --color-green: rgb(3, 63, 58);
-  --color-0: rgb(20, 23, 23);
-  --color-1: rgb(44, 51, 51);
-  --color-1-a: rgba(44, 51, 51, 0.8);
-  --color-2: rgb(57, 91, 100);
-  --color-2-a: rgba(57, 91, 100, 0.7);
-  --color-3: rgb(165, 201, 201);
-  --color-4: rgb(231, 246, 242);
-  --color-5: rgb(195, 250, 250);
-  --color-6: white;
-  --fadeInTime: 1s;
-  --padding-Thickness: 3%;
-}
 
 .primary {
   background-color: var(--color-6);
@@ -63,23 +40,23 @@ main {
 }
 
 /* headings */
-h1 {
-  font-size: clamp(2.8em, 8vw, 4.7em);
+.h1 {
+  font-size: 4.7em;
   font-family: "Segoe-Semibold", sans-serif;
   width: 50%;
 }
 
-h2 {
-  font-size: clamp(2.5em, 5vw, 3.2em);
+.h2 {
+  font-size: 3.2em;
   font-family: "Segoe-Bold", sans-serif;
 }
 
-h3 {
+.h3 {
   font-family: "Segoe-Bold", sans-serif;
   padding-bottom: var(--padding-Thickness);
 }
 
-h4 {
+.h4 {
   font-family: "Segoe-Bold", sans-serif;
   font-size: 0.9em;
   padding-bottom: var(--padding-Thickness);
@@ -92,13 +69,13 @@ h4 {
   /* font-family: "Segoe-Semibold"; */
 }
 
-p {
+.p {
   font-size: clamp(1em, 1.8vw, 1.3em);
   line-height: 1.6;
 }
 
 /* button and link styling */
-button,
+.button,
 .buttonLinks {
   font-family: "Segoe-Semibold", sans-serif;
   font-size: 1.1em;
@@ -117,7 +94,7 @@ button,
   text-decoration: none;
 }
 
-button:hover,
+.button:hover,
 .buttonLinks:hover,
 .buttonLinks:focus-within {
   cursor: pointer;
@@ -127,7 +104,7 @@ button:hover,
   border-radius: 50px;
 }
 
-button:active,
+.button:active,
 .buttonLinks:active {
   transform: translate(3px, 3px);
 }
@@ -147,7 +124,7 @@ button:active,
 }
 
 /* link styling without button */
-a {
+.a {
   font-family: "Segoe-Semibold", sans-serif;
   background-color: var(--color-background);
   color: var(--color-text);
@@ -161,13 +138,13 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.a:hover {
   background-color: var(--color-text);
   color: var(--color-background);
 }
 
 /* overall page styling */
-section {
+.section {
   width: 100%;
   /* background-color: var(--color-background);
   color: var(--color-text); */
@@ -179,8 +156,16 @@ section {
   max-width: 1400px;
 }
 
+/* #services {
+  padding-top: none;
+} */
+
 .content {
   width: 80%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
   margin-top: var(--padding-Thickness);
   margin-bottom: var(--padding-Thickness);
 }
@@ -274,7 +259,7 @@ section {
   -ms-animation: fadeIn ease var(--fadeInTime);
 }
 
-figcaption {
+.figcaption {
   color: var(--color-2);
   position: absolute;
   bottom: 10px;
@@ -466,12 +451,12 @@ figcaption {
   transform: rotateY(180deg);
 }
 
-.serviceCard-back h3 {
+.serviceCard-back .h3 {
   font-size: 100%;
   color: var(--color-heading);
 }
 
-.serviceCard-back h4 {
+.serviceCard-back .h4 {
   font-size: 1.7em;
   color: var(--color-heading);
   margin: 4%;
@@ -687,14 +672,14 @@ figcaption {
   justify-content: flex-start;
 }
 
-.project h3 {
+.project .h3 {
   font-size: 3.1em;
   padding: 0% 3% 5% 0%;
   color: var(--color-5);
   text-align: left;
 }
 
-.project h4 {
+.project .h4 {
   font-size: 2.2em;
   padding: 0% 3% 5% 0%;
   color: var(--color-5);
@@ -844,7 +829,7 @@ figcaption {
   align-items: center;
 }
 
-.cardContainerContent h3 {
+.cardContainerContent .h3 {
   color: var(--color-heading);
   font-size: 1.8em;
   text-align: center;
@@ -912,7 +897,7 @@ figcaption {
 } */
 
 /* Footer */
-footer {
+.footer {
   padding: 1%;
   width: 100%;
   min-height: 25vh;
@@ -923,7 +908,7 @@ footer {
   justify-content: center;
 }
 
-footer a {
+.footer a {
   text-underline-offset: 3px;
 }
 
@@ -985,8 +970,8 @@ footer a {
   padding: 1%;
 }
 
-input,
-textarea {
+.input,
+.textarea {
   background-color: var(--color-4);
   color: var(--color-contrast);
   outline: var(--color-2) solid 2px;
@@ -1005,7 +990,7 @@ textarea {
     sans-serif;
 }
 
-textarea {
+.textarea {
   height: 30vh;
   /* outline: var(--color-2) solid 2px;
   outline-offset: 0px; */
@@ -1014,8 +999,8 @@ textarea {
   font-size: 1.1em;
 }
 
-input:focus,
-textarea:focus {
+.input:focus,
+.textarea:focus {
   border: 2px solid var(--color-2);
   /* transform: scale(1.05); */
 }
@@ -1028,7 +1013,7 @@ textarea:focus {
   width: 200px;
 }
 
-label {
+.label {
   width: 80%;
   margin-top: 20px;
   /* text-align: left; */
@@ -1069,7 +1054,7 @@ label {
   justify-content: flex-end;
 }
 
-.modal h3 {
+.modal .h3 {
   font-size: 2em;
   color: var(--color-1);
 }
@@ -1285,7 +1270,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     max-height: 250px;
   }
 
-  h3 {
+  .h3 {
     padding: 20px;
   }
 
@@ -1311,18 +1296,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
     margin: 30px;
   }
 
-  .project h3 {
+  .project .h3 {
     font-size: 2.2em;
   }
 }
 
 /* cell phone width */
 @media only screen and (max-width: 600px) {
-  h2 {
+  .h1 {
+    font-size: 2.8em;
+  }
+
+  .h2 {
     margin-top: 30px;
   }
 
-  footer a {
+  .footer .a {
     font-size: 1.5em;
     padding: 2%;
   }
@@ -1345,10 +1334,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-position: right -90px top 0px;
   }
 
-  .buttonContainer {
-    width: 60%;
-  }
-
   #contactMebutton,
   #moreInfobutton {
     margin-top: 3vh;
@@ -1360,13 +1345,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     align-items: center;
   }
 
+  .buttonContainer {
+    width: 60%;
+  }
+
   #portrait {
     width: 200px;
     height: auto;
-  }
-
-  .portrait-info > div > ul {
-    margin: 0;
   }
 
   .header {
@@ -1377,9 +1362,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: 95%;
   }
 
-  input,
-  textarea {
+  .input,
+  .textarea {
     width: 100%;
+  }
+
+  .portrait-info > div > ul {
+    margin: 0;
   }
 
   #copyright {
@@ -1396,8 +1385,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     flex-direction: column;
   }
 
-  .project h4,
-  .project h3 {
+  .project .h4,
+  .project .h3 {
     margin-top: 20px;
   }
 
@@ -1405,12 +1394,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: 90%;
   }
 
-  .project p {
+  .project .p {
     font-size: 1em;
     width: 100%;
   }
 
-  .project h3 {
+  .project .h3 {
     font-size: 2.2em;
   }
 
@@ -1427,23 +1416,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     /* object-fit: contain; */
   }
 
-  .alice-carousel {
-    margin: 20px 0;
-  }
-
-  .alice-carousel__dots {
-    margin: 15px 0px 10px !important;
-  }
-  /* 
-  .carouselPrevButton {
-    top: 80%;
-  }
-
-  .carouselNextButton {
-    top: 82%;
-  } */
-
-  label {
+  .label {
     width: 100%;
   }
 
@@ -1456,13 +1429,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 
-#impressum h2 {
+#impressum .h2 {
   color: var(--color-2);
 }
 
-#impressum h3,
-#impressum h4,
-#impressum h6 {
+#impressum .h3,
+#impressum .h4,
+#impressum .h6 {
   color: var(--color-1);
   padding: 2% 0% 2% 0%;
 }
@@ -1498,17 +1471,17 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 @media only screen and (max-height: 600px) {
-  h1 {
+  .h1 {
     font-size: 2.8em;
   }
-  .project h3 {
+  .project .h3 {
     font-size: 2.2em;
   }
 }
 
 /* Cell phone held wide */
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
-  h1 {
+  .h1 {
     font-size: 2.8em;
     position: relative;
     top: -10px;
@@ -1549,16 +1522,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 @media only screen and (max-height: 400px) and (orientation: landscape) {
-  h1 {
+  .h1 {
     font-size: 2.8em;
   }
 
-  .project h3 {
+  .project .h3 {
     font-size: 2.2em;
     margin-top: 0;
   }
 
-  .project h4 {
+  .project .h4 {
     font-size: 1.8em;
     margin-top: 0;
   }

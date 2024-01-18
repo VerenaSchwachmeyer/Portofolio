@@ -14,7 +14,7 @@ export default function Downtown2() {
       <div className="poligon">
         <img
           className="projectScreenshot"
-          src="/images/Laptop-Downtown-Dashboard.jpg"
+          src="/images/Laptop-Downtown-Dashboard.webp"
           alt="Screenshot showing the user dashboard with accessible features."
           style={{ objectPosition: "left" }}
         />

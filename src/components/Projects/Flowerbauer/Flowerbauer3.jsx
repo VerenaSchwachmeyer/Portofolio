@@ -14,6 +14,7 @@ export default function Flowerbauer3() {
           className="projectScreenshot"
           src="/images/FlowerBauer3.webp"
           alt="The properties of the garden area can be selected: sunlight, water level, soil etc."
+          style={{ objectPosition: "center" }}
         />
       </div>
     </div>

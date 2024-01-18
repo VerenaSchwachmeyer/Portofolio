@@ -13,6 +13,7 @@ export default function Flowerbauer4() {
           className="projectScreenshot"
           src="/images/FlowerBauer4.webp"
           alt="Suitable plants for the specified conditions are listed."
+          style={{ objectPosition: "center" }}
         />
       </div>
     </div>

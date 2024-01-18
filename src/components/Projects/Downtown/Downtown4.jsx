@@ -14,7 +14,7 @@ export default function Downtown3() {
       <div className="poligon">
         <img
           className="projectScreenshot"
-          src="/images/Screenshot-Downtown-Guidance.jpg"
+          src="/images/Screenshot-Downtown-Guidance.webp"
           alt="Screenshot of website showing instructions how to log in"
           style={{ objectPosition: "left center" }}
         />

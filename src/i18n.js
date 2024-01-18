@@ -43,7 +43,7 @@ i18n
             webappsPoint3: `Frontend`,
             webappsPoint4: `Backend incl. Server & Database`,
             accH3: `ACCESSIBILITY`,
-            accH4: `Optimiziation of Operability`,
+            accH4: `Optimization of Operability`,
             accPoint1: `Screen Reader Usability`,
             accPoint2: `Keyboard Control`,
             accPoint3: `no Cognitive Overload`,
