@@ -1,5 +1,5 @@
 import { RiMailSendLine } from "react-icons/ri";
-import { useRef, useState, CSSProperties } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Modal } from "react-responsive-modal";
 import CircleLoader from "react-spinners/ClipLoader";
@@ -38,7 +38,7 @@ export default function Contact() {
     e.target.reset();
   };
 
-  const override: CSSProperties = {
+  const override = {
     display: "block",
     margin: "0 auto",
     border: "4px solid var(--color-1)",
@@ -89,12 +89,8 @@ export default function Contact() {
         aria-describedby="modal-description"
         aria-busy="false"
       >
-        <h3 id="Message-was-sent">Thank you</h3>
-
-        <div id="modal-description">
-          Your message has been successfully sent. Thanks for contacting me, I
-          will get back to you soon.
-        </div>
+        <h3 id="Message-was-sent">{t("modal.header")}</h3>
+        <div id="modal-description">{t("modal.text")}</div>
       </Modal>
       {loading && (
         <CircleLoader

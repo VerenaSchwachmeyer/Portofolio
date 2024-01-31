@@ -113,6 +113,10 @@ i18n
             sitenotice: `Imprint`,
             dataprotection: `Privacy Policy`,
           },
+          modal: {
+            header: "Thank you",
+            text: "Your message has been successfully sent. Thanks for contacting me, I will get back to you soon.",
+          },
         },
       },
       de: {
@@ -223,6 +227,10 @@ i18n
           footer: {
             sitenotice: `Impressum`,
             dataprotection: `Datenschutzerklärung`,
+          },
+          modal: {
+            header: "Vielen Dank",
+            text: "Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich zeitnah bei Ihnen zurück.",
           },
         },
       },

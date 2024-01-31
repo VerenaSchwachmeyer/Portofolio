@@ -10,10 +10,9 @@ import { DiMongodb } from "react-icons/di";
 import { SiPostgresql } from "react-icons/si";
 import { Tooltip } from "react-tooltip";
 import { DiVisualstudio } from "react-icons/di";
-import { SiMui } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { SiWebrtc } from "react-icons/si";
-import { SiBootstrap } from "react-icons/si";
+import { SiBootstrap, SiI18Next, SiNextdotjs, SiMui } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import "react-tooltip/dist/react-tooltip.css";
 
@@ -25,12 +24,13 @@ function TechStack() {
     { id: 2, name: "HTML5", icon: <FaHtml5 /> },
     { id: 3, name: "CSS3", icon: <FaCss3Alt /> },
     { id: 4, name: "React JS/ React Native", icon: <FaReact /> },
-    { id: 5, name: "Node JS", icon: <FaNode /> },
-    { id: 6, name: "Mongo DB", icon: <DiMongodb /> },
-    { id: 7, name: "PostGreSQL", icon: <SiPostgresql /> },
-    { id: 8, name: "MySQL", icon: <GrMysql /> },
+    { id: 5, name: "Next JS", icon: <SiNextdotjs /> },
+    { id: 6, name: "Node JS", icon: <FaNode /> },
+    { id: 7, name: "Mongo DB", icon: <DiMongodb /> },
+    { id: 8, name: "PostGreSQL", icon: <SiPostgresql /> },
+    { id: 9, name: "MySQL", icon: <GrMysql /> },
     {
-      id: 9,
+      id: 10,
       name: "ExpressJS",
       icon: (
         <img
@@ -60,8 +60,13 @@ function TechStack() {
       icon: <FaGitSquare />,
     },
     { id: 15, name: "Material UI", icon: <SiMui /> },
-    { id: 16, name: "WebRTC", icon: <SiWebrtc /> },
-    { id: 17, name: "Bootstrap", icon: <SiBootstrap /> },
+    { id: 16, name: "Bootstrap", icon: <SiBootstrap /> },
+    {
+      id: 17,
+      name: "i18next",
+      icon: <SiI18Next />,
+    },
+    { id: 18, name: "WebRTC", icon: <SiWebrtc /> },
   ];
 
   const logoItems = logos.map((logo) => {

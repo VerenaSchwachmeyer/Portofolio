@@ -331,7 +331,7 @@ figcaption {
 
 #softwareDeveloper {
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.2em;
+  font-size: clamp(1em, 1.8vw, 1.2em);
   font-weight: bold;
   color: var(--color-5);
   opacity: 0;
@@ -472,14 +472,14 @@ figcaption {
 }
 
 .serviceCard-back h4 {
-  font-size: 1.7em;
+  font-size: clamp(1.3em, 1.8vw, 1.7em);
   color: var(--color-heading);
   margin: 4%;
   text-align: center;
 }
 
 .serviceCard-back li {
-  font-size: 1.1em;
+  font-size: clamp(0.9em, 1.3vw, 1.1em);
 }
 
 .serviceContent {
@@ -1514,10 +1514,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
     top: -10px;
   }
 
-  #softwareDeveloper {
-    font-size: 1em;
-  }
-
   #contactMeButton {
     /* margin-top: 3px; */
     visibility: hidden;
@@ -1575,6 +1571,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 @media (prefers-reduced-motion) {
   #softwareDeveloper {
+    opacity: 1;
     animation: none;
+    border: none;
+  }
+  .serviceFlipCard:hover .serviceCard {
+    transform: none;
+  }
+  .serviceFlipCard:focus .serviceCard {
+    transform: none;
+  }
+
+  .serviceFlipCard:focus > div > .serviceCard-front {
+    opacity: 0;
+  }
+
+  .serviceFlipCard:focus > div > .serviceCard-back {
+    transform: none;
   }
 }
