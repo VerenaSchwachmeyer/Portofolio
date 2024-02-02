@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { CgWebsite } from "react-icons/cg";
 import { ImAccessibility } from "react-icons/im";
 import { FaUserMd } from "react-icons/fa";
@@ -124,6 +125,20 @@ export default function Services() {
                   <li>{t("services.accPoint3")}</li>
                   <li>{t("services.accPoint4")}</li>
                 </ul>
+                <Link
+                  title="Link to my affiliate website www.webseiten-barrierefrei.de"
+                  className="button secondary"
+                  to="https://webseiten-barrierefrei.de"
+                  target="_blank"
+                  style={{
+                    margin: "15px",
+                    padding: "8px 15px",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "4px",
+                  }}
+                >
+                  Details
+                </Link>
               </div>
             </div>
           </div>
@@ -160,7 +175,20 @@ export default function Services() {
         </div>
         <div>
           <p className="aboutmeText">{t("services.p1")}</p>
-          <p className="aboutmeText">{t("services.p2")}</p>
+          <h3 className="primary" style={{ marginTop: "20px", padding: 0 }}>
+            {t("services.accwebsitesh3")}
+          </h3>
+          <p className="aboutmeText">
+            {t("services.p2")}{" "}
+            <Link
+              className="inlineLink"
+              to="https://webseiten-barrierefrei.de/barrierefreiheit"
+              target="_blank"
+            >
+              www.webseiten-barrierefrei.de
+            </Link>
+          </p>
+
           {/* Weiterführende Informationen zum Thema barrierefreie Webseiten finden Sie unter <a href="https://www.schwachmeyer-gottschalk.de"> www.schwachmeyer-gottschalk.de. </a>   */}
         </div>
       </div>
