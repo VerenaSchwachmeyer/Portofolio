@@ -166,6 +166,19 @@ a:hover {
   color: var(--color-background);
 }
 
+.inlineLink {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--color-text);
+  height: auto;
+  padding: 0px 20px;
+}
+
+.inlineLink:hover {
+  color: var(--color-6);
+  background-color: var(--color-contrast);
+}
+
 /* overall page styling */
 section {
   width: 100%;
@@ -506,6 +519,12 @@ figcaption {
   text-align: center;
   text-transform: capitalize;
   border-radius: 5px;
+}
+
+#services > div > div > h3 {
+  font-size: clamp(1.7em, 5vw, 2em);
+  color: var(--color-heading);
+  text-align: center;
 }
 
 /* AboutMe */
