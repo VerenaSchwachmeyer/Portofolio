@@ -14,6 +14,9 @@ i18n
     resources: {
       en: {
         translation: {
+          skiplink: {
+            text: "Skip to main content",
+          },
           softwaredeveloper: {
             text: `Web & App Developer`,
           },
@@ -123,6 +126,9 @@ i18n
       },
       de: {
         translation: {
+          skiplink: {
+            text: "Zum Hauptinhalt springen",
+          },
           softwaredeveloper: {
             text: `Webentwicklerin`,
           },

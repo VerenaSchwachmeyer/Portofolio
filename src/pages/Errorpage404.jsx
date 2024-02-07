@@ -1,8 +1,8 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Lottie from "lottie-react";
-import Error404 from "./lotties/Error404.json";
-import Scroll2Top from "../../components/Scroll2Top";
+import Error404 from "../utils/lotties/Error404.json";
+import Scroll2Top from "../components/Scroll2Top";
 import { useNavigate } from "react-router-dom";
 
 export default function Errorpage404() {
