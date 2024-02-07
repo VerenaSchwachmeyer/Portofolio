@@ -1,6 +1,8 @@
-import { Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function CodingSampleTile(project) {
+  const { t } = useTranslation();
+
   return (
     <div className="cardContainer sample secondary" tabIndex="0">
       <div className="cardContainerContent">
@@ -16,7 +18,7 @@ export default function CodingSampleTile(project) {
           role="menuitem"
           className="sampleLink buttonLinks secondary"
         >
-          <Trans i18nKey="Buttons.viewsampleapp"></Trans>
+          {t("Buttons.viewsampleapp")}
         </a>
         <a
           href={project.linkRepo}
@@ -25,7 +27,7 @@ export default function CodingSampleTile(project) {
           role="menuitem"
           className="sampleLink buttonLinks secondary"
         >
-          <Trans i18nKey="Buttons.go2repo"></Trans>
+          {t("Buttons.go2repo")}
         </a>
       </div>
     </div>
