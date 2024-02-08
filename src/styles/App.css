@@ -204,16 +204,6 @@ section {
   width: 100%;
 }
 
-/* Skip Link */
-.skip {
-  position: absolute;
-  left: -100000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
 /* VS Logo */
 .VSlogo-top {
   height: 0px;
