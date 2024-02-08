@@ -4,13 +4,10 @@ This is the code I have written, you are welcome to take a look at it.
 
 ## Used tech for this website
 
-Website created in React JS
- 
-Translations: i18next
-
-Custom CSS styles
-
-Lottie animation (see 404 Errorpage)
+- website created in React JS
+- translations: i18next
+- custom CSS styles
+- Lottie animation (see 404 Errorpage)
 
 
 ## Accessibility
