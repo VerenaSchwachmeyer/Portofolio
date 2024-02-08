@@ -1,16 +1,35 @@
 # Hey there, welcome to my Portfolio Website
 
-This is the code, you are welcome to take a look at the code structure. 
+This is the code I have written, you are welcome to take a look at it. 
 
-## Used Tech for this website
+## Used tech for this website
 
 Website created in React JS
  
 Translations: i18next
 
-Custom styles
+Custom CSS styles
 
 Lottie animation (see 404 Errorpage)
+
+
+## Accessibility
+
+Following the WCAG criteria, accessibility is achieved by implementing...
+
+- sufficient color contrast (AAA level)
+- line-spacing of 1.6
+- semantic HTML used effectively
+- tab indexes
+- implemented prefers-reduced-motion: animations of flipping cards are minimized
+- animations such as flipping cards of tooltips require user-interactivity (clicking, hovering), hence making the UX less confusing
+- aria-labels where necessary
+- alt-Attributes and titles set
+- form fields contain a label
+- skip to main content link
+... and more
+
+The page is operable solely by keyboard and can be read entirely by screen readers. However, the accessibility for this page has not been tested yet by people who actually have permanent challenges. So if you notice an aspect that can be further improved, let me know :-)  
 
 
 
