@@ -19,7 +19,7 @@ Following the WCAG criteria, accessibility is achieved by implementing...
 - semantic HTML used effectively
 - tab indexes
 - implemented prefers-reduced-motion: animations of flipping cards are minimized
-- animations such as flipping cards of tooltips require user-interactivity (clicking, hovering), hence making the UX less confusing
+- animations such as flipping cards or tooltips require user-interactivity (clicking, hovering) instead of just appearing unexpectedly, hence making the UX less confusing
 - aria-labels where necessary
 - alt-Attributes and titles set
 - form fields contain a label
