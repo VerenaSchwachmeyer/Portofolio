@@ -1,4 +1,4 @@
-# Hey there, welcome to my Portfolio Website
+# Hey there, welcome to my portfolio website
 
 This is the code I have written, you are welcome to take a look at it. 
 
