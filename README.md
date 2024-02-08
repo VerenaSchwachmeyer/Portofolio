@@ -26,7 +26,7 @@ Following the WCAG criteria, accessibility is achieved by implementing...
 - skip to main content link
 ... and more
 
-The page is operable solely by keyboard and can be read entirely by screen readers. However, the accessibility for this page has not been tested yet by people who actually have permanent challenges. So if you notice an aspect that can be further improved, let me know :-)  
+The page is operable by keyboard and can be read entirely by screen readers. However, the accessibility for this page has not been tested yet by people who actually have permanent challenges. So if you notice an aspect that can be further improved, let me know :-)  
 
 
 
