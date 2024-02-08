@@ -24,14 +24,12 @@
 }
 
 /* .burgermenu-bars-container:hover .burgermenu-bars  */
-
 .burgermenu-button:hover {
   cursor: pointer;
 }
 
 .burgermenu-bars-container:hover .burgermenu-bars {
   background-color: var(--color-2);
-  /* border: 1px solid var(--color-1); */
 }
 
 .openedmenu.burgermenu-bars-container:hover .burgermenu-bars {
@@ -70,7 +68,6 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  /*ggf hier center/flex-start wählen! */
   align-items: flex-start;
   justify-content: flex-start;
   transform: translateX(300px);

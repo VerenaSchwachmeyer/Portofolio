@@ -1,0 +1,14 @@
+/* Skip Link */
+.skip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.skip:focus {
+  color: white;
+}

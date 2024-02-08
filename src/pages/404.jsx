@@ -18,7 +18,7 @@ export default function Errorpage404() {
     <main>
       <Scroll2Top />
       <Header />
-      <section id="errorpage">
+      <section id="errorpage" style={{ minHeight: "62vh" }}>
         <h1 id="errorH1">404</h1>
         <h2 style={{ fontSize: "1em" }}>
           Upsie, hier solltest Du gar nicht landen.
