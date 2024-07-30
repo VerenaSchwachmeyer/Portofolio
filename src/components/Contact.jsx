@@ -1,18 +1,15 @@
 import { RiMailSendLine } from "react-icons/ri";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Modal } from "react-responsive-modal";
+import Modal from "./Modal";
 import CircleLoader from "react-spinners/ClipLoader";
 import { useTranslation } from "react-i18next";
-import "react-responsive-modal/styles.css";
 
 export default function Contact() {
   const { t } = useTranslation();
   const form = useRef();
   const [loading, setLoading] = useState(false);
-  const [open, setOpen] = useState(false);
-
-  const onCloseModal = () => setOpen(false);
+  const [showModal, setShowModal] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,7 +24,7 @@ export default function Contact() {
       .then(
         (result) => {
           setLoading(false);
-          setOpen(true);
+          setShowModal(true);
         },
         (error) => {
           setLoading(false);
@@ -80,18 +77,14 @@ export default function Contact() {
           </button>
         </form>
       </div>
-      <Modal
-        open={open}
-        onClose={onCloseModal}
-        center
-        aria-modal="true"
-        aria-labelledby="Message-was-sent"
-        aria-describedby="modal-description"
-        aria-busy="false"
-      >
-        <h3 id="Message-was-sent">{t("modal.header")}</h3>
-        <div id="modal-description">{t("modal.text")}</div>
-      </Modal>
+      {showModal && (
+        <Modal
+          header={t("modal.header")}
+          body={t("modal.text")}
+          buttontext={t("modal.button")}
+          setShowModal={setShowModal}
+        />
+      )}{" "}
       {loading && (
         <CircleLoader
           className="loadingSpinner"

@@ -121,6 +121,7 @@ i18n
           modal: {
             header: "Thank you",
             text: "Your message has been successfully sent. Thanks for contacting me, I will get back to you soon.",
+            button: "Close",
           },
         },
       },
@@ -240,6 +241,7 @@ i18n
           modal: {
             header: "Vielen Dank",
             text: "Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich zeitnah bei Ihnen zurück.",
+            button: "Schließen",
           },
         },
       },
