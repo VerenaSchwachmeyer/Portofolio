@@ -57,8 +57,8 @@ i18n
             medPoint2: `Scientific Standards`,
             medPoint3: `Easy Data Input`,
             p1: `I undertake the development of websites and full-stack applications, encompassing databases and servers. Additionally, I am proficient in creating apps for Android devices.`,
-            p2: `A particular emphasis for me is the incorporation of digital accessibility, adhering to the criteria outlined in the Web Content Accessibility Guidelines (WCAG) and BITV 2.0. Leveraging my scientific background, I can integrate medical expertise into the development of software applications within the healthcare sector. This not only facilitates the implementation of technical aspects but also ensures an optimal user experience aligned with the specific requirements of the healthcare industry. If you are interested in further information about web accessibiliy,
-            visit the affiliate website of me and my partner on`,
+            p2: `A particular emphasis for me is the incorporation of digital accessibility, adhering to the criteria outlined in the Web Content Accessibility Guidelines (WCAG 2.2) and BITV 2.1. Leveraging my scientific background, I can integrate medical expertise into the development of software applications within the healthcare sector. This not only facilitates the implementation of technical aspects but also ensures an optimal user experience aligned with the specific requirements of the healthcare industry.
+            `,
             accwebsitesh3: "Accessible websites",
           },
           aboutme: {
@@ -175,12 +175,12 @@ i18n
             accwebsitesh3: "Barrierefreie Webseiten",
             p2: `Besonders wichtig ist mir dabei die Integration digitaler
             Barrierefreiheit gemäß den Kriterien der Web Content Accessibility
-            Guidelines (WCAG) und der BITV 2.0. Dabei kann ich durch meinen
+            Guidelines (WCAG 2.2) und der BITV 2.1. Dabei kann ich durch meinen
             wissenschaftlichen Hintergrund auch medizinisches Fachwissen in die
             Entwicklung von Softwareanwendungen im Gesundheitsbereich einfließen
             lassen. Dies ermöglicht nicht nur die Umsetzung technischer Aspekte,
             sondern auch eine optimale User Experience im Einklang mit den
-            spezifischen Anforderungen des Gesundheitswesens. Wenn Sie mehr über Barrierefreiheit im Netz wissen wollen, schauen Sie auf die Partnerseite von mir und meinem Kollegen unter `,
+            spezifischen Anforderungen des Gesundheitswesens. `,
           },
           aboutme: {
             heading: `Über mich`,

@@ -23,12 +23,12 @@ export default function LandingPage() {
             <p id="softwareDeveloper">{t("softwaredeveloper.text")}</p>
           </div>
           <div className="buttonContainer">
-            <button
+            {/* <button
               id="contactMebutton"
               onClick={(e) => Scroll2Element(e, "#contact")}
             >
               {t("Buttons.contactme")}
-            </button>
+            </button> */}
 
             <button
               id="moreInfobutton"

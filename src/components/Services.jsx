@@ -149,13 +149,13 @@ export default function Services() {
           </h3>
           <p className="aboutmeText">
             {t("services.p2")}{" "}
-            <Link
+            {/* <Link
               className="inlineLink"
               to="https://webseiten-barrierefrei.de/barrierefreiheit"
               target="_blank"
             >
               www.webseiten-barrierefrei.de
-            </Link>
+            </Link> */}
           </p>
 
           {/* Weiterführende Informationen zum Thema barrierefreie Webseiten finden Sie unter <a href="https://www.schwachmeyer-gottschalk.de"> www.schwachmeyer-gottschalk.de. </a>   */}
