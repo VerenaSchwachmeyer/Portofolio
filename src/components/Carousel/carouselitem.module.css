@@ -1,0 +1,97 @@
+.carouselItemContainer {
+  opacity: 1;
+  transition: all 0.3s;
+  height: 66vh;
+  width: 60vw;
+  max-width: 1400px;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.imageContainer > .handy {
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.imageContainer > .display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+.textContainer {
+  position: absolute;
+  bottom: 0%;
+  height: 60%;
+  width: 100%;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 3;
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+}
+
+.textContainer > .projekt {
+  font-size: clamp(1.125rem, 0.9886rem + 0.7273vw, 1.625rem);
+  color: var(--color1);
+  /* position: absolute;
+    bottom: 40%;
+    left: 10%; */
+  z-index: 5;
+  padding: 10px;
+  text-align: center;
+}
+
+.textContainer > .titel {
+  font-size: clamp(0.8125rem, 0.7321rem + 0.4286vw, 1rem);
+  color: var(--color1);
+  /* position: absolute;
+    bottom: 22%;
+    left: 10%; */
+  z-index: 5;
+  padding: 10px 10px 20px 10px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.playButton {
+  position: absolute;
+  top: 60%;
+  left: 47%;
+  font-size: 4rem;
+  z-index: 5;
+  opacity: 0;
+  color: var(--color1);
+}
+
+.handyContainer:hover .imageContainer {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.handyContainer:hover .playButton {
+  opacity: 1;
+  cursor: pointer;
+}

@@ -217,6 +217,19 @@ i18n
               "Pflanzen, die zum angegebenen Standort passen, werden von der Datenbank abgerufen und aufgelistet. Details können eingesehen werden.",
 
             linovtext: `Diese One-Page-Webseite habe ich für einen sehr talentierten, erst 13 Jahre jungen Musiker, Songwriter und Sänger erstellt. In Chrome, Opera oder MS Edge öffnen, um die Scrolling-Effekte zu sehen.`,
+
+            dervj1H3: "der VJ.de",
+            derVJ1text:
+              "Ein Kunde hatte Probleme mit der SEO und Performance seiner Webseite. Ich entwickelte die Seite komplett neu und löste die Probleme.",
+            derVJ2H3: "Schnellere Performance",
+            derVJ2text:
+              "Die zahlreichen Bilddateien werden erst dann geladen, wenn sie benötigt werden, und dann im Cache gespeichert: Ultra schnelle Ladezeiten und verringerte Belastung der mobilen Daten für Endnutzer.",
+            derVJ3H3: "Verbessertes SEO",
+            derVJ3text:
+              "Durch die Verwendung sinnvoller HTML-Elemente und Einpflegen von Metadaten ist die Auffindbarkeit von Suchmaschinen drastisch gestiegen.",
+            derVJ4H3: "Erhöhte Barrierefreiheit",
+            derVJ4text:
+              "Die korrekte Nutzung von HTML, Nutzung von ALt-Attributen und ARIA-Funktionen sowie die richtige Verwendung von Farkontrasten wurde die Barrierefreiheit verbessert.",
           },
           samples: {
             heading: `Coding Samples`,

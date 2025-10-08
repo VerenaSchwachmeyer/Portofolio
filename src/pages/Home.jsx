@@ -24,7 +24,7 @@ export default function Home() {
         <TechStack />
         <Projects />
         <Samples />
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </>

@@ -12,6 +12,7 @@ import Downtown2 from "./Projects/Downtown/Downtown2";
 import Downtown3 from "./Projects/Downtown/Downtown3";
 import Downtown4 from "./Projects/Downtown/Downtown4";
 import Linov1 from "./Projects/Linov/Linov1";
+import DerVJ from "./Projects/derVJ/derVJ1";
 import { useTranslation } from "react-i18next";
 
 function Projects() {
@@ -25,7 +26,7 @@ function Projects() {
     <Flowerbauer4 />,
   ];
 
-  const itemsDT = [<Downtown1 />, <Downtown2 />, <Downtown3 />, <Downtown4 />];
+  // const itemsDT = [<Downtown1 />, <Downtown2 />, <Downtown3 />, <Downtown4 />];
 
   const responsive = {
     0: { items: 1 },
@@ -37,7 +38,7 @@ function Projects() {
       <div className="content">
         <h2 className="sectionTitle">{t("projects.heading")}</h2>
         <p className="aboutmeText">{t("projects.text")}</p>
-        <AliceCarousel
+        {/* <AliceCarousel
           role="list"
           aria-label="Project named Downtown"
           mouseTracking
@@ -66,7 +67,7 @@ function Projects() {
               />
             );
           }}
-        />
+        /> */}
         <AliceCarousel
           role="list"
           aria-label="Project named Downtown"
@@ -97,6 +98,7 @@ function Projects() {
             );
           }}
         />
+        {/* <DerVJ /> */}
         <Linov1 />
       </div>
     </section>

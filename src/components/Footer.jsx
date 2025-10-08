@@ -14,6 +14,7 @@ function Footer() {
         <div className="col1">
           <img src="/images/VS-Logo-no-code.webp" alt="" height="60px"></img>
           <p id="copyright">&copy; 2023 Copyright - Verena Schwachmeyer</p>
+          <p>mail@schwachmeyer.dev</p>
         </div>
 
         <nav className="col2">
